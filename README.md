@@ -1,6 +1,6 @@
 # 2023-kurssipaketti
 
-**Live demo** https://unctad-infovis.github.io/2023-kurssipaketti/
+**Live demo** https://teelmo.github.io/2023-kurssipaketti/
 
 ## Rights of usage
 
