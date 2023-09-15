@@ -55,7 +55,7 @@ function App() {
                 <div className="image_container"><img src={el.img} alt="Class" /></div>
                 <div className="stars_container">
                   {
-                    Array(el.stars).fill().map(() => <div className="star_container" key={uuidv4()}><img src="../assets/img/star.jpg" alt="Star" /></div>)
+                    Array(el.stars).fill().map(() => <div className="star_container" key={uuidv4()}><img src="./assets/data/img/star.jpg" alt="Star" /></div>)
                   }
                 </div>
               </div>
