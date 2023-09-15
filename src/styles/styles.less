@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Serif:600,700.css');
+
+@import 'colors.less';
+
+#app-root-2023-kurssipaketti .app {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #e9e9e9;
+  min-height: 100vh;
+  .container {
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+    margin: auto auto;
+    max-width: 700px;
+    padding: 20px;
+    h2 {
+      font-family: Roboto Serif;
+      margin: 0 0 20px 0;
+      font-size: 30px;
+    }
+    h4 {
+      font-family: Roboto Serif;
+      margin: 0 0 10px 0;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    h3 {
+      font-family: Roboto Serif;
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0 0 20px 0;
+    }
+    p {
+      font-size: 16px;
+    }
+    ul {
+      &.poll {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .class_selection {
+      display: flex;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #666;
+      .class_container {
+        border: 1px solid #ddd;
+        box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        box-shadow: border-box;
+        margin: 10px;
+        padding: 15px;
+        .image_container {
+          img {
+            width: 100%;
+          }
+        }
+        .stars_container {
+          .star_container {
+            display: inline-block;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+    .class_content_container {
+      margin: auto auto;
+      max-width: 600px;
+    }
+    .exercise_selection {
+      display: flex;
+      max-width: 300px;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      flex-direction: column;
+      border-bottom: 2px solid #666;
+      .exercise_container {
+        border: 1px solid #ddd;
+        box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        box-shadow: border-box;
+        margin: 10px 0;
+        padding: 15px;
+        .image_container {
+          img {
+            width: 100%;
+          }
+        }
+        .duration_container {
+          color: #666;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@import 'basics.less';
