@@ -126,7 +126,7 @@ function Course01() {
   return (
     <div className="app">
       <video autoPlay muted loop id="myVideo">
-        <source src="./assets/vid/vihrea.mp4" type="video/mp4" />
+        <source src="./assets/vid/vihrea_vaalee.mp4" type="video/mp4" />
       </video>
       <div className="content_container">
         {
