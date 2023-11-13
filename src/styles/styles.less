@@ -12,7 +12,6 @@
     z-index: 1;
   }
   .content_container {
-    background-color: #fff;
     box-sizing: border-box;
     margin: auto auto;
     max-width: 550px;
@@ -21,20 +20,70 @@
     z-index: 2;
     h2 {
       text-align: center;
+      color: #fff;
       margin: auto auto 20px auto;
     }
+    .content {
+      background-color: #fff;
+      margin-bottom: 20px;
+      padding: 20px 0;
+      p {
+        margin: 20px 0;
+        padding: 0 20px;
+      }
+
+    }
     .exercise_container {
+      margin-bottom: 20px;
       .exercise_toggler {
         text-align: center;
-        margin-bottom: 20px;
         button {
           background-color: #fff;
-          border: 1px solid #000;
-          margin: auto auto;
-          width: 100%;
-          max-width: 500px;
+          border-radius: 5px;
+          border: 0;
+          cursor: pointer;
           display: inline-block;
+          margin: auto auto;
+          outline: none;
           padding: 10px 15px;
+          position: relative;
+          width: 100%;
+          &.with_arrow {
+            &:after {
+              color: #666;
+              content: '▶';
+              font-size: 30px;
+              line-height: 30px;
+              position: absolute;
+              right: 25px;
+              top: calc(50% - 10px);
+              transition-duration: 0.2s;
+              transition-property: right, transform;
+            }
+            &:hover {
+              background-color: #1ff0a4;
+              &:after {
+                right: 15px;
+                transition-duration: 0.5s;
+                transition-property: right, transform;
+              }
+            }
+            &.active2 {
+              border-bottom: 1px solid #ccc;
+              border-radius: 5px 5px 0 0;
+            }
+            &.active {
+              &:hover {
+                &:after {
+                  right: 25px;
+                }
+              }
+              &:after {
+                content: '▶';
+                transform: rotate(90deg);
+              }
+            }
+          }
           h3 {
             margin: auto auto 10px auto;
           }
@@ -45,20 +94,20 @@
         }
       }
       .exercise_description {
+        background-color: #fff;
         margin: auto auto;
-        max-width: 500px;
         overflow: hidden;
+        padding: 0 20px;
         transition: height .5s ease;
-
         &:not(.active) {
           display: none;
         }
         p {
-          margin: auto auto 15px auto;
         }
         .exercise_toggler {
           margin-bottom: 20px;
           button {
+            background-color: #1ff0a4;
             width: auto;
           }
         }

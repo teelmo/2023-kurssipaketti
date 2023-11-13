@@ -88,9 +88,12 @@ function Course01() {
 
   const slideToggle = (group) => {
     const container = document.querySelector(`.exercise_description_${group}`);
+    const button_container = document.querySelector(`.exercise_button_${group}`);
     /** Slide down. */
     if (!container.classList.contains('active')) {
       container.classList.add('active');
+      button_container.classList.add('active');
+      button_container.classList.add('active2');
       container.style.height = 'auto';
 
       /** Get the computed height of the container. */
@@ -111,9 +114,11 @@ function Course01() {
       /** Set the height as 0px to trigger the slide up animation. */
       container.style.height = '0px';
 
+      button_container.classList.remove('active');
       /** Remove the `active` class when the animation ends. */
       container.addEventListener('transitionend', () => {
         container.classList.remove('active');
+        button_container.classList.remove('active2');
       }, { once: true });
     }
   };
@@ -128,14 +133,14 @@ function Course01() {
           data && data.slice(1).map((values) => {
             switch (values[0]) {
               case 'paragraph_section':
-                return <div className="" key={uuidv4()}><Markdown>{values[1]}</Markdown></div>;
+                return <div className="content" key={uuidv4()}><Markdown>{values[1]}</Markdown></div>;
               case 'title_section':
                 return <h2 className="" key={uuidv4()}>{values[1]}</h2>;
               case 'exercise':
                 return (
                   <div className="exercise_container" key={uuidv4()}>
-                    <div className="exercise_toggler">
-                      <button type="button" onClick={() => slideToggle(values[4])}>
+                    <div className="exercise_toggler ">
+                      <button type="button" className={`exercise_button_${values[4]} with_arrow`} onClick={() => slideToggle(values[4])}>
                         <h3>{values[2].split(';')[0]}</h3>
                         <h4>{values[2].split(';')[1]}</h4>
                       </button>
