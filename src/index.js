@@ -4,6 +4,12 @@ import { createRoot } from 'react-dom/client';
 
 import Course01 from './jsx/Course01.jsx';
 
-const container = document.getElementById('app-root-2023-kurssipaketti-course01');
-const root = createRoot(container);
-root.render(<Course01 />);
+import Course02 from './jsx/Course02.jsx';
+
+const containerCourse01 = document.getElementById('app-root-2023-kurssipaketti-course01');
+const rootCourse01 = createRoot(containerCourse01);
+rootCourse01.render(<Course01 />);
+
+const containerCourse02 = document.getElementById('app-root-2023-kurssipaketti-course02');
+const rootCourse02 = createRoot(containerCourse02);
+rootCourse02.render(<Course02 />);

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../styles/styles.less';
 
 // https://www.npmjs.com/package/uuid
@@ -12,13 +12,13 @@ import Markdown from 'react-markdown';
 // import roundNr from './helpers/RoundNr.js';
 import CSVtoJSON from './helpers/CSVtoJSON.js';
 
-// const appID = '#app-root-2023-kurssipaketti';
-
 const base_url = (window.location.href.includes('yle')) ? 'https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti' : '.';
 
 function Course01() {
   // Data states.
   const [data, setData] = useState(false);
+
+  const appRef = useRef(null);
 
   // Fetch data.
   const fetchData = () => {
@@ -55,8 +55,8 @@ function Course01() {
 
   useEffect(() => {
     if (window.tehtavaApp && window.location.href.includes('yle.fi')) {
-      document.querySelectorAll('.poll').forEach((poll) => {
-        window.tehtavaApp.mount(poll.dataset.id, document.querySelector(`.poll_${poll.dataset.id}`));
+      appRef.current.querySelectorAll('.poll').forEach((poll) => {
+        window.tehtavaApp.mount(poll.dataset.id, appRef.current.querySelector(`.poll_${poll.dataset.id}`));
       });
     }
   }, [data]);
@@ -87,8 +87,8 @@ function Course01() {
   // }, []);
 
   const slideToggle = (group) => {
-    const container = document.querySelector(`.exercise_description_${group}`);
-    const button_container = document.querySelector(`.exercise_button_${group}`);
+    const container = appRef.current.querySelector(`.exercise_description_${group}`);
+    const button_container = appRef.current.querySelector(`.exercise_button_${group}`);
     /** Slide down. */
     if (!container.classList.contains('active')) {
       container.classList.add('active');
@@ -124,9 +124,9 @@ function Course01() {
   };
 
   return (
-    <div className="app">
-      <video autoPlay muted loop id="myVideo">
-        <source src="./assets/vid/vihrea_vaalee.mp4" type="video/mp4" />
+    <div className="app" ref={appRef}>
+      <video autoPlay muted loop className="background_video">
+        <source src={`./assets/vid/${(window.location.hash.substr(1)) ? `${window.location.hash.substr(1)}.mp4` : 'vihrea.mp4'}`} type="video/mp4" />
       </video>
       <div className="content_container">
         {
