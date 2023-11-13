@@ -1,61 +1,68 @@
 @import 'ydd_overrides.less';
 @import 'tehtava_overrides.less';
+@import 'https://tehtava-ui.apps-test.yle.fi/static/css/embed.bfff28e3.css';
 
-.ydd-body-content {
-  position: relative;
-  ul.kurssipaketti-navigation {
-    list-style: none;
-    margin: 0;
-    padding: 0 20px;
-    li {
-      margin: 5px 0;
-      a {
-        background-color: #fff;
-        border-radius: 10px;
-        border: 0;
-        color: #000;
-        cursor: pointer;
-        display: block;
-        font-size: 20px;
-        padding: 5px 7px;
+.app-root-2023-kurssipaketti {
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+  }
+  .content_container {
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: auto auto;
+    max-width: 550px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    h2 {
+      text-align: center;
+      margin: auto auto 20px auto;
+    }
+    .exercise_container {
+      .exercise_toggler {
         text-align: center;
-        text-decoration: none;
-        width: 100%;
-        &:hover {
-          opacity: 0.5;
+        margin-bottom: 20px;
+        button {
+          background-color: #fff;
+          border: 1px solid #000;
+          margin: auto auto;
+          width: 100%;
+          max-width: 500px;
+          display: inline-block;
+          padding: 10px 15px;
+          h3 {
+            margin: auto auto 10px auto;
+          }
+          h4 {
+            font-weight: 400;
+            margin: auto auto auto auto;
+          }
         }
       }
-    }
-  }
-  div.kurssipaketti-video_container {
-    border-radius: 10px;
-    border: 1px solid #000;
-    box-sizing: border-box;
-    font-size: 0;
-    margin: 70px auto -25px auto;
-    max-width: 688px;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-    &:hover {
-      opacity: 0.5;
-    }
-    video.kurssipaketti-video {
-      border-radius: 10px;
-      margin: auto auto;
-      max-width: 680px;
-      width: 100%;
-    }
-  }
-  div.kurssipaketti-bg_video_container {
-    left: 0;
-    position: sticky;
-    top: 0;
-    z-index: -1;
-    video.kurssipaketti-video {
-      margin: auto auto;
-      position: absolute;
-      width: 100%;
+      .exercise_description {
+        margin: auto auto;
+        max-width: 500px;
+        overflow: hidden;
+        transition: height .5s ease;
+
+        &:not(.active) {
+          display: none;
+        }
+        p {
+          margin: auto auto 15px auto;
+        }
+        .exercise_toggler {
+          margin-bottom: 20px;
+          button {
+            width: auto;
+          }
+        }
+      }
     }
   }
 }

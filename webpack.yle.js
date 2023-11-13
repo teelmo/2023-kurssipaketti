@@ -38,7 +38,7 @@ module.exports = merge(common, {
   plugins: [
     new HtmlWebPackPlugin({
       title: name,
-      template: "./src/html/index_yle.html",
+      template: "./src/html/index.html",
       filename: "./index.html"
     }),
     new DefinePlugin({

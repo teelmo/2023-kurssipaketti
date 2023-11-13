@@ -50,6 +50,9 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
+    "convert-csv-to-json": "^2.0.0",
+    "csvtojson": "^2.0.10",
+    "react-markdown": "^9.0.1",
     "uuid": "^9.0.1"
   }
 }
