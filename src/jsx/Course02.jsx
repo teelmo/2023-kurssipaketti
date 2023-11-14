@@ -126,7 +126,7 @@ function Course01() {
   return (
     <div className="app" ref={appRef}>
       <video autoPlay muted loop className="background_video">
-        <source src="./assets/vid/vihrea.mp4" type="video/mp4" />
+        <source src={`${base_url}/assets/vid/${(window.location.hash.substr(1)) ? `${window.location.hash.substr(1)}.mp4` : 'vihrea.mp4'}`} type="video/mp4" />
       </video>
       <div className="content_container">
         {

@@ -1,34 +1,93 @@
-type,content,title,poll_id,group,internal comment
-paragraph_section,"Psykologian tohtori ja aivoasiantuntija Mona Moisalan kanssa kehitetyssä harjoituskokonaisuudessa on viisi erilaista harjoitusta.
+type,content,title,group,poll_id,areena_id,ims_id,image_caption,image_copyright,internal comment
+paragraph_section,"Alla on viisi harjoitusta, joiden avulla:
 
-Harjoitusten kesto vaihtelee muutamasta minuutista yhteen tuntiin.
+* rauhoitat muistettavien asioiden kaaosta päässäsi
+* kehität työskentelyäsi ja ajatteluasi
+* luovien oivallustesi määrä saattaa kasvaa
 
-Harjoitukset voi toteuttaa omassa tahdissa riippumatta siitä, millaista oma arki on.
+Harjoitukset on kehitetty yhdessä työelämäprofessori **Lauri Järvilehdon** kanssa.
 
-Harjoitusten myötä päiviin saa enemmän palauttavia hetkiä, tilaa ja hallinnan tunnetta.
+Harjoituksissa esiteltyjä tekniikoita kannattaa toistaa arjessa säännöllisesti, jolloin niistä tulee osa rutiinia ja ne juolahtavat mieleen itsestään.
 
-Opit, miten voit ”siirtää” itsesi ongelmanratkaisumoodista rentoutukseen ja toisinpäin. Saat keinoja, miten jaksaa keskittyä myös tylsältä tuntuvien asioiden äärelle. Tulet tietoiseksi siitä, milloin ajatuksesi lähtee harhailemaan.",,,,"Refer to: https://www.markdownguide.org/basic-syntax/
+***TÄHÄN VIELÄ WHATSAPP + IG -YHTEISÖIDEN PUFFAUS. VOI TULLA JOHONKIN TOISEENKIN KOHTAAN, MUTTA AIKA ALKUUN KUITENKIN.***
+
+Onko sinulla hyvä muisti – tai muistitekniikka? Voit selvittää asiaa tällä testillä. Palaa sen jälkeen näihin harjoituksiin jutun lopussa olevasta [linkistä](http://yle.fi/).",,,,,,,,"Refer to: https://www.markdownguide.org/basic-syntax/
 
 Try to avoid having spaces at the end of paragraphs"
-title_section,Harjoitukset,,,,
+exercise,"**Kesto:** 15 min
+
+Näiden kahden niksin avulla opit painamaan nimet helpommin mieleesi.
+
+1. Kun uusi tuttavuus esittäytyy sinulle ja kertoo nimensä, toista nimi ääneen tervehtiessäsi häntä. Toistamalla nimen kertaat sitä itsellesi mielessäsi. Nimien, kuten minkä tahansa muunkin opittavan asian kertaaminen, voi synnyttää aivoissasi uusia hermoverkkoja. Näin muistijälki vahvistuu.
+2. Luo nimen ympärille jokin mielleyhtymä eli assosiaatio. Kun kuulet uuden ihmisen nimen, yritä keksiä mielessäsi jokin siihen liittyvä fakta, oivallus tai vaikkapa vitsi.
+
+Mitä hauskemman tai merkityksellisemmän mielleyhtymän keksit, sitä helpompaa sinun on palauttaa nimi mieleesi. Katso mallia alta:",Nimet haltuun;alaotsikko?,exercise_1,47-06d2995c-7aa4-4490-93c4-7cd024c3e961,1-67038618,,,,"In title, separate subtitle with a semicolon. No spaces."
+exercise,"Kesto: 10–15 minuuttia
+
+Kun muistiasi kuormittaa hoitamattomien asioiden monenkirjava vyyhti, istu alas ja ota avuksi aihepiireittäin luodut, käsintehdyt listat.
+
+Tämä harjoitus voi helpottaa myös tekemättömiin askareisiin liittyvää stressiä.
+
+1. Tarvitset harjoitusta varten A4-kokoisen paperin ja kynän. Kirjaa paperille kaikki mielessäsi pyörivät tehtävät, jotka sinun pitää muistaa tehdä.
+2. Sen jälkeen ryhmittele tehtävät allekkain erilaisiin sarakkeisiin sen mukaan, missä tehtäviin voit vaikuttaa. Ryhmittele esimerkiksi kotona, töissä ja harrastuksissa hoidettavat tehtävät eri sarakkeisiin. Voit merkitä kuhunkin sarakkeeseen myös, vaatiiko tehtävän tekeminen esimerkiksi tietokonetta tai puhelinta.
+3. Voit viedä harjoituksen pidemmälle leikkaamalla paperista kunkin sarakkeen erilleen. Tämän jälkeen voit viedä kunkin listan ympäristöön, jossa voit konkreettisesti toteuttaa listalle kirjoitetun asian. Vie esimerkiksi työhuoneessa hoidettaviin tehtäviin liittyvä lista työhuoneeseen.",Taltuta muistikaaos;alaotsikko?,exercise_2,47-4dd1b18e-daa3-4077-bddc-44e2ec094173,,39-11950906543b300ee3e0,Esimerkki harjoituksessa tehdystä taulukosta.,Kuva: Jussi Meling,
 exercise,"**Kesto:** muutama minuutti
 
-Tämä erittäin matalan kynnyksen harjoitus sopii tehtäväksi silloin, kun tunnet olosi väsyneeksi ja kätesi hakeutuu puolihuomaamattomasti puhelimelle.
+Harjoituksen avulla pidät hyvät ideasi helposti tallessa ja pystyt palaamaan niihin vuosienkin jälkeen. Kättesi ulottuvilla on aina runsas ideavarasto moniin tarpeisiin.
 
-Harjoituksen avulla katkaiset jatkuvan viriketulvan ja teet suuren palveluksen yöunillesi: nukut paremmin, kun aivosi saavat lepoa ja palautumisaikaa.
+Harjoituksessa kannattaa käyttää kynää ja muistivihkoa, sillä tutkimusten mukaan käsin kirjoittaminen edistää asioiden muistamista.
 
-1. Mieti itsellesi sopiva apukeino sellaisiin hetkiin, kun tunnet olosi väsyneeksi ja sinun tekisi mieli kaivaa kännykkä esiin. Rauhoitutko iltaisin parhaiten esimerkiksi äänikirjaa kuuntelemalla, lukemalla tai teetä keittämällä? Mikä on sinun keinosi?
-2. Tee harjoitus ainakin illalla ennen nukkumaan menoa. Sen sijaan, että selaat päämäärättömästi puhelintasi, turvaudu omaan apukeinoosi.",Päihitä kännykän vetovoima;Anna aivoillesi lepoa kännykän selailun sijaan,47-4a5cfc8c-3c5c-4228-8542-65899dba7710,exercise_1,Separate subtitle with a semicolon
-exercise,"**Kesto:** 5 minuutista eteenpäin
+Voit käyttää myös puhelimen muistiinpanotoimintoa tai tallettaa ideasi tietokoneelle.
 
-Tämä harjoitus on helppo toteuttaa ajasta ja paikasta riippumatta.
+1. Kanna mukanasi pientä muistivihkoa. Kun saat hyvän idean, pysähdy ja kirjoita se oitis muistivihkoon. Näin ideasi pysyvät tallessa, sillä toisin kuin usein kuvittelemme, loistavatkin aivoitukset voivat kadota tiedostamattoman mielemme syövereihin.
+2. Kun ideoita alkaa olla paljon, voit viedä harjoituksen entistä pidemmälle hyödyntämällä erilaisia digitaalisia muistiinpanosovelluksia. Kirjaa uudet ideat arkistoon viikoittain tai kuukausittain. Näin pääset nopeasti käsiksi vaikka kymmenen vuoden takaisiin ideoihisi.
 
-Harjoituksen tehtyäsi opit tietoisesti välttämään multitaskaamista. Samalla lisäät päivääsi palauttavia hetkiä.
+**Vinkki:** Saat arkistostasi vieläkin toimivamman, jos voit käyttää sovelluksissa erilaisia tunnisteita, kuten hashtageja. Jos merkitset esimerkiksi kaikki puutarhanhoitoon liittyvät ideat tunnisteella #puutarha, pystyt etsimään kaikki samaan teemaan liittyvät ideat arkistostasi pelkästään muistamalla niitä yhdistävän tunnisteen.",Tallenna loistoideat;alaotsikko?,exercise_3,47-e4d881f5-fcc2-4c54-a558-854493b970ed,,,,,
+exercise,"**Kesto:** 15–30 min
 
-1. Päätä, että päivässäsi on yksi hetki, jolloin keskityt vain yhteen asiaan kerrallaan. Se voi olla esimerkiksi bussimatka, kirjan lukeminen tai hetki, jolloin sinun pitää vain odottaa. Välttele harjoituksen aikana mahdollisuuksiesi mukaan erilaisia häiriötekijöitä, kuten älylaitteita.
+Tämä harjoitus sopii tilanteisiin, kun sinun pitää opetella muistamaan asioita ulkoa. Opit, miten voit laajentaa muistin kapasiteettia ympäristöä hyödyntämällä.
 
-2. Jos keskittyminen tuntuu vaikealta ja sinun tekisi mieli tehdä jotain aivan muuta, keksi itsellesi multitaskaamisen sijaan jokin sijaistoiminto. Voit turvautua siihen, jos tuntuu, että hetkeen keskittyminen on haastavaa.
+1. Tarvitset harjoitusta varten kynän ja muistilappuja. Kirjoita eri muistilapuille asiat, jotka sinun pitää oppia muistamaan.
 
-Jos esimerkiksi paikallaan istuminen tuntuu vaikealta, pieni liike voi auttaa. Voit myös tehdä jotain käsilläsi: piirtele tai tee helppoa käsityötä. Voit myös laittaa taustalle rauhallista musiikkia tai ääntä taustalle, joka ei kuitenkaan häiritse keskittymistäsi.
+2. Kun olet kirjoittanut muistettavat asiat muistilapuille, silmäile ympäristöäsi ja kiinnitä muistilappuja eri puolelle tilaa, jossa olet. Paina samalla muistilapuille kirjoitettuja asioita mieleesi.
 
-**Vinkki!** Voit muokata harjoituksen kestoa pidemmäksi sitä mukaa, kun huomaat keskittymisen olevan yhä helpompaa.",Eroon multitaskaamisesta;Harjoittele keskittymään yhteen asiaa kerrallaan,47-4a5cfc8c-3c5c-4228-8542-65899dba7710,exercise_2,
+3. Harjoittele nyt asioiden muistamista ulkoa. Käy mielessäsi tilaa läpi ja testaa, pystytkö palauttamaan mieleesi muistilappuihin kirjoitetut asiat. Ajattele sijainti sijainnilta erilaisia kohtia, joihin kiinnitit muistilappuja. Mitä niissä luki? Jos et muista lappuihin kirjoitettuja asioita, käy lukemassa muistilaput läpi ja kokeile uudestaan.
+
+**Vinkki!** Toinen ympäristöä hyödyntävä muistitekniikka on jo antiikin aikana hyödynnetty muistipalatsi. Katso [Superihmiset-sarjan jaksosta](https://areena.yle.fi/1-63867762), miten rakennat mieleesi muistipalatsin.",Hyödynnä ympäristöä;alaotsikko....,exercise_4,47-ea2f2072-f4f6-4167-8553-9bc240b13956,,,,,
+exercise,"**Kesto:** n. 15 min
+
+Tämän harjoituksen myötä opit luomaan minkä tahansa asian ympärille miellekartan ja painamaan sen paremmin mieleesi.
+
+Tekniikka sopii mainiosti esimerkiksi opiskeluun ja suurten kokonaisuuksien opetteluun.
+
+1. Tarvitset harjoitusta varten kynän ja A4-kokoisen paperin. Kirjoita paperin keskelle asia, jonka haluat oppia tai joka sinun on toistuvasti vaikea muistaa.
+2. Pohdi nyt, mitä kaikkea kirjoittamastasi asiasta nousee sinulle mieleen. Mihin asia liittyy, mihin se vaikuttaa, mitä tiedät siitä, mikä yhteys sillä on omaan elämääsi? Millaisia tunteita se herättää? Lisää nyt kirjoittamasi asian ympärille viivoja, jotka johtavat keksimiisi asioihin ja siten yhä uusiin asioihin.",Miellekartta avuksi,exercise_5,47-3ae5dcea-2b6c-4216-a103-48ea92630b9d,,,,,
+title_section,Mikä harjoituksissa mietitytti?,,,,,,,,
+paragraph_section,"***PUHEKUPLA-KYSYMYSALUE JOKO TÄHÄN TAI HARJOITUSTEN VÄLIIN.***
+
+### Mitä harjoituksia tehdessä on hyvä tietää?
+
+**Lauri:** Jokaisella on oma kognitiivinen kapasiteettinsa, eikä harjoituksista kannata ottaa stressiä.
+
+Geenit vaikuttavat siihen, kuinka helposti opimme uusia asioita, mutta myös omalla toiminnallamme on vaikutusta. Toistamalla harjoituksia uudestaan ja uudestaan luomme aivoihimme vahvemman muistijäljen harjoittelemastamme asiasta. Harjoitukset helpottuvat ajan myötä, kun muistijälki vahvistuu.
+
+### Pelaan kotona perinteistä muistipeliä. Kehittääkö se muistiani?
+
+**Lauri:** Muistipelin pelaaminen, kuten kaikki muutkin muistiharjoitukset, ovat hyvää aivojumppaa ja pitävät vireystilaa yllä. On kuitenkin mahdotonta sanoa, edistääkö se muistin kapasiteettia muuten. Kannattaa kokeilla erilaisia muistiharjoituksia ja testata, mitä vaikutuksia niillä on.
+
+### Tuntuu, että harjoitukset eivät etene. Mikä neuvoksi?
+
+**Lauri:** Ei hätää. Laske rohkeasti vaatimustasoa alemmas ja tee jokin helpompi harjoitus. Tauon pitäminen on myös hyvä vaihtoehto.
+
+Toinen keino on koettaa miettiä, miten saisit harjoitukseen liitettyä edes jonkin itseäsi kiinnostavan seikan tai voimakkaan tunteen. Tutkimusten mukaan meidän on helpompi painaa mieleen asioita, jotka kiinnostavat, innostavat ja motivoivat meitä tai jotka herättävät tunteita.",,,,,,,,
+poll_section,,,,47-b5bc142a-0f80-404a-8412-97c8c65d78a5,,,,,
+poll_section,,,,47-1aebeb16-31fc-4393-a428-1b902424e466,,,,,
+poll_section,,,,47-a2487bef-4850-4e7a-ad05-fc2e1bedcfe7,,,,,
+title_section,Kiinnostuitko aiheesta?,,,,,,,,
+paragraph_section,"Lauri Järvilehto avaa muisti- ja ajattelutaitoja myös [Tämäkin on totta -luentosarjan](https://areena.yle.fi/1-61690735) jaksossa Yle Areenassa. Jos olet opiskelija, kurkkaa, mitkä muistitekniikat sopivat erityisesti opiskeluun.
+
+Juontaja **Sean Ricks** saa apua hajamielisyyteensä muistamisen maailmanmestarilta [Superihmiset-sarjan jaksossa](https://areena.yle.fi/1-63867748) Yle Areenassa.",,,,,,,,
+title_section,Lisää harjoituksia?,,,,,,,,
+paragraph_section,"Haluatko oppia paremmaksi keskittyjäksi tai etsitkö helppoja keinoja rentoutua? [Niihin löydät harjoituksia täältä](https://yle.fi/aihe/a/20-10005632).
+
+**Nousiko mieleesi jokin oivallus tai kysymys, jonka haluat jakaa muille harjoitukset tehneille? Onko sinulla jokin aivan huippu muistivinkki, joka auttoi harjoituksissa? Osallistu keskusteluun alla!**",,,,,,,,

@@ -10,6 +10,7 @@ import Markdown from 'react-markdown';
 // Load helpers.
 // import formatNr from './helpers/FormatNr.js';
 // import roundNr from './helpers/RoundNr.js';
+import slideToggle from './helpers/SlideToggle.js';
 import CSVtoJSON from './helpers/CSVtoJSON.js';
 
 const base_url = (window.location.href.includes('yle')) ? 'https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti' : '.';
@@ -17,7 +18,6 @@ const base_url = (window.location.href.includes('yle')) ? 'https://lusi-dataviz.
 function Course01() {
   // Data states.
   const [data, setData] = useState(false);
-
   const appRef = useRef(null);
 
   // Fetch data.
@@ -39,39 +39,63 @@ function Course01() {
     }
   };
 
-  const url = 'https://tehtava-ui.apps-test.yle.fi/static/js/embed.4e5a3e6d.js';
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = url;
-    script.async = true;
-    script.onload = () => {
-      fetchData();
-    };
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, [url]);
+    fetchData();
+  }, []);
 
   useEffect(() => {
-    if (window.tehtavaApp && window.location.href.includes('yle.fi')) {
-      appRef.current.querySelectorAll('.poll').forEach((poll) => {
-        window.tehtavaApp.mount(poll.dataset.id, appRef.current.querySelector(`.poll_${poll.dataset.id}`));
-      });
+    let script;
+    if (data) {
+      script = document.createElement('script');
+      script.src = 'https://tehtava-ui.apps-test.yle.fi/static/js/embed.4e5a3e6d.js';
+      script.async = true;
+      script.onload = () => {
+        if (window.tehtavaApp && window.location.href.includes('yle')) {
+          appRef.current.querySelectorAll('.poll').forEach((el) => {
+            window.tehtavaApp.mount(el.dataset.id, appRef.current.querySelector(`.poll_${el.dataset.id}`));
+          });
+        }
+      };
+      document.body.appendChild(script);
     }
+    return () => {
+      if (script) {
+        document.body.removeChild(script);
+      }
+    };
   }, [data]);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (window.tehtavaApp) {
-  //       window.tehtavaApp.mount('47-7e80d39e-05d6-47f9-b41e-04d8ac9c30e2', document.querySelector('.js-ydd-yle-tehtava-testi'));
-  //       clearInterval(interval);
-  //     }
-  //   }, 100);
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, []);
+  useEffect(() => {
+    let script;
+    if (data) {
+      script = document.createElement('script');
+      script.src = 'https://player-v2.yle.fi/embed.js';
+      script.async = true;
+      script.onload = () => {
+        if (window.ylePlayer !== 'undefined') {
+          appRef.current.querySelectorAll('.areena_player_container').forEach((el) => {
+            const props = {
+              autoplay: false,
+              id: el.dataset.id,
+              webKitPlaysInline: true
+            };
+            // https://github.com/Yleisradio/player-static/wiki/Player-embed-instructions
+            if (window.ylePlayer && window.location.href.includes('yle')) {
+              window.ylePlayer.render({
+                element: el, props
+              });
+            }
+          });
+        }
+      };
+      document.body.appendChild(script);
+    }
+    return () => {
+      if (script) {
+        document.body.removeChild(script);
+      }
+    };
+  }, [data]);
 
   // useEffect(() => {
   //   fetch('https://tehtava.api-test.yle.fi/v1/public/exams.json?uuid=7e80d39e-05d6-47f9-b41e-04d8ac9c30e2')
@@ -86,51 +110,24 @@ function Course01() {
   //     });
   // }, []);
 
-  const slideToggle = (group) => {
-    const container = appRef.current.querySelector(`.exercise_description_${group}`);
-    const button_container = appRef.current.querySelector(`.exercise_button_${group}`);
-    /** Slide down. */
-    if (!container.classList.contains('active')) {
-      container.classList.add('active');
-      button_container.classList.add('active');
-      button_container.classList.add('active2');
-      container.style.height = 'auto';
-
-      /** Get the computed height of the container. */
-      const height = `${container.clientHeight}px`;
-
-      /** Set the height of the content as 0px, */
-      /** so we can trigger the slide down animation. */
-      container.style.height = '0px';
-
-      /** Do this after the 0px has applied. */
-      /** It's like a delay or something. MAGIC! */
-      setTimeout(() => {
-        container.style.height = height;
-      }, 0);
-
-      /** Slide up. */
-    } else {
-      /** Set the height as 0px to trigger the slide up animation. */
-      container.style.height = '0px';
-
-      button_container.classList.remove('active');
-      /** Remove the `active` class when the animation ends. */
-      container.addEventListener('transitionend', () => {
-        container.classList.remove('active');
-        button_container.classList.remove('active2');
-      }, { once: true });
-    }
-  };
-
   return (
     <div className="app" ref={appRef}>
       <video autoPlay muted loop className="background_video">
-        <source src={`./assets/vid/${(window.location.hash.substr(1)) ? `${window.location.hash.substr(1)}.mp4` : 'vihrea.mp4'}`} type="video/mp4" />
+        <source src={`${base_url}/assets/vid/${(window.location.hash.substr(1)) ? `${window.location.hash.substr(1)}.mp4` : 'vihrea.mp4'}`} type="video/mp4" />
       </video>
       <div className="content_container">
         {
           data && data.slice(1).map((values) => {
+            /*
+            0: type
+            1: content
+            2: title
+            3: group
+            4: poll_id
+            5: areena_id
+            6: ims_id
+            7: image_caption
+            */
             switch (values[0]) {
               case 'paragraph_section':
                 return <div className="content" key={uuidv4()}><Markdown>{values[1]}</Markdown></div>;
@@ -140,15 +137,31 @@ function Course01() {
                 return (
                   <div className="exercise_container" key={uuidv4()}>
                     <div className="exercise_toggler ">
-                      <button type="button" className={`exercise_button_${values[4]} with_arrow`} onClick={() => slideToggle(values[4])}>
+                      <button type="button" className={`exercise_button_${values[3]} with_arrow`} onClick={() => slideToggle(appRef, values[3])}>
                         <h3>{values[2].split(';')[0]}</h3>
                         <h4>{values[2].split(';')[1]}</h4>
                       </button>
                     </div>
-                    <div className={`exercise_description exercise_description_${values[4]}`}>
+                    <div className={`exercise_description exercise_description_${values[3]}`}>
+                      {/* Text */}
                       <Markdown key={uuidv4()}>{values[1]}</Markdown>
-                      <div key={uuidv4()} className={`poll poll_${values[3]}`} data-id={values[3]}>{values[3]}</div>
-                      <div className="exercise_toggler"><button type="button" onClick={() => slideToggle(values[4])}>Sulje harjoitus</button></div>
+                      {/* Video */}
+                      {values[5] && <div className="areena_player_container" data-id={values[5]}><a href={`https://areena.yle.fi/${values[5]}`}>{values[5]}</a></div>}
+                      {values[6] && (
+                        <div className="image_container">
+                          <figure>
+                            <img src={`https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_4240/w_500/dpr_2/v1698983690/${values[6]}.jpg`} alt={values[7]} />
+                            <figcaption className="text-xs pt-8">
+                              {values[7] && <div className="image_caption text-gray-70">{values[7]}</div>}
+                              {values[8] && <div className="image_copyright text-gray-60">{values[8]}</div>}
+                            </figcaption>
+                          </figure>
+                        </div>
+                      )}
+                      {/* Poll */}
+                      <div className={`js-ydd-yle-tehtava ydd-yle-tehtava ydd-yle-tehtava--exam poll poll_${values[4]}`} data-id={values[4]}>{values[4]}</div>
+                      {/* Close */}
+                      <div className="exercise_toggler"><button type="button" onClick={() => slideToggle(appRef, values[3])}>Sulje harjoitus</button></div>
                     </div>
                   </div>
                 );
