@@ -165,6 +165,12 @@ function Course01() {
                     </div>
                   </div>
                 );
+              case 'poll_section':
+                return (
+                  <div className="poll_container" key={uuidv4()}>
+                    <div className={`js-ydd-yle-tehtava ydd-yle-tehtava ydd-yle-tehtava--exam poll poll_${values[4]}`} data-id={values[4]}>{values[4]}</div>
+                  </div>
+                );
               default:
                 return '';
             }
