@@ -20,7 +20,7 @@ const slideToggle = (appRef, group) => {
     setTimeout(() => {
       container.style.height = height;
     }, 0);
-
+    window.dispatchEvent(new Event('resize'));
     /** Slide up. */
   } else {
     /** Set the height as 0px to trigger the slide up animation. */

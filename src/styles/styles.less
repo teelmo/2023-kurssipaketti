@@ -11,23 +11,80 @@
     min-height: 100%;
     z-index: 1;
   }
+  .course_selection_container {
+    margin: auto auto;
+    max-width: 688px;
+    .course_selection_video_container {
+      margin-bottom: 20px;
+      max-width: 400px;
+      a {
+        &:hover {
+          video,
+          h2 {
+            transition: all .5s;
+            transform: scale(1.02);
+          }
+          h2 {
+            margin-bottom: 10px;
+          }
+        }
+        h2 {
+          transition: all 0.5s;
+          margin: auto auto 5px auto;
+        }
+        .course_selection_video {
+          transition: all 0.2s;
+          width: 100%;
+        }
+      }
+    }
+  }
+
   .content_container {
     box-sizing: border-box;
     margin: auto auto;
-    max-width: 550px;
-    padding: 20px;
     position: relative;
     z-index: 2;
-    h2 {
-      text-align: center;
-      color: #fff;
+    h1 {
+      box-sizing: border-box;
       margin: auto auto 20px auto;
+      max-width: 1220px;
+      padding: 0 20px;
+    }
+    .main_image_container {
+      box-sizing: border-box;
+      margin: auto auto 20px auto;
+      max-width: 1220px;
+      padding: 0 20px;
+      img {
+        width: 100%
+      }
+    }
+    h2 {
+      color: #000;
+      margin: 40px auto 20px auto;
+      max-width: 550px;
+      text-align: center;
+      @media all and (max-width: 590px) {
+        margin: auto 20px 20px 20px;
+      }
+    }
+    p.subtitle {
+      margin: 20px auto 40px auto;
+      max-width: 550px;
+      @media all and (max-width: 590px) {
+        margin: auto 20px 20px 20px;
+      }
     }
     .content {
       background-color: #fff;
       color: #222;
-      margin-bottom: 20px;
+      margin: auto auto 20px auto;
+      max-width: 550px;
       padding: 20px 0;
+      @media all and (max-width: 590px) {
+        margin: auto 20px 20px 20px;
+      }
       h3 {
         padding: 0 20px;
         margin: 0 0 20px 0;
@@ -38,10 +95,22 @@
         &:last-child {
           margin-bottom: 1px;
         }
+        a {
+          color: #000;
+          font-weight: 600;
+          text-decoration: underline;
+          &:hover {
+            text-decoration: none;
+          }
+        }
       }
     }
     .exercise_container {
-      margin-bottom: 20px;
+      max-width: 550px;
+      margin: auto auto 20px auto;
+      @media all and (max-width: 590px) {
+        margin: auto 20px 20px 20px;
+      }
       .exercise_toggler {
         text-align: center;
         button {
@@ -52,7 +121,8 @@
           display: inline-block;
           margin: auto auto;
           outline: none;
-          padding: 10px 15px;
+          vertical-align: middle;
+          padding: 20px 60px 20px 15px;
           position: relative;
           width: 100%;
           &.with_arrow {
@@ -93,12 +163,12 @@
           }
           h3 {
             color: #222;
-            margin: auto auto 10px auto;
+            margin: auto auto auto auto;
           }
           h4 {
             color: #222;
             font-weight: 400;
-            margin: auto auto auto auto;
+            margin: 10px auto auto auto;
           }
         }
       }
@@ -113,17 +183,45 @@
         }
         p {
           color: #222;
+          a {
+            color: #000;
+            font-weight: 600;
+            text-decoration: underline;
+            &:hover {
+              text-decoration: none;
+            }
+          }
         }
         ol,
         ul {
           li {
             color: #222;
+            margin-bottom: 20px;
             &:marker {
               color: #222;
+              font-weight: bold;
+            }
+          }
+        }
+        figure.areena_container {
+          margin: 0 0 20px 0;
+          padding: 0;
+          figcaption {
+            .caption {
+              font-size: 12px;
+            }
+            a {
+              color: #000;
+              font-weight: 600;
+              text-decoration: underline;
+              &:hover {
+                text-decoration: none;
+              }
             }
           }
         }
         .image_container {
+          margin: 0 0 20px 0;
           figure {
             padding: 0;
             margin: 0;
@@ -131,10 +229,10 @@
               width: 100%;
             }
             figcaption {
-              .image_caption {
+              .caption {
                 font-size: 12px;
               }
-              .image_copyright {
+              .copyright {
                 font-size: 11px;
               }
             }
@@ -144,15 +242,24 @@
           margin-bottom: 20px;
           button {
             background-color: #1ff0a4;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 10px 15px 10px 15px;
+            text-transform: uppercase;
             width: auto;
           }
         }
       }
     }
     .poll_container {
-      padding: 20px;
-      margin: auto auto 20px auto;
       background-color: #fff;
+      box-sizing: border-box;
+      margin: auto auto 20px auto;
+      max-width: 550px;
+      padding: 20px;
+      @media all and (max-width: 590px) {
+        margin: auto 20px 20px 20px;
+      }
     }
   }
 }

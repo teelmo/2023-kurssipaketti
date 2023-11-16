@@ -2,11 +2,25 @@
 
 **Live demo** https://teelmo.github.io/2023-kurssipaketti/
 
-Kurssin rakenteesta pääsee hyvin kärryille sieltä Sandboxista, jonne Anna loi versiot kurssista.
-* Etusivu: [https://aihe-sandbox.test.yle.fi/aihe/a/20-10000475](https://aihe-sandbox.test.yle.fi/aihe/a/20-10000475)
-* Keskittymiskurssi: [https://aihe-sandbox.test.yle.fi/aihe/a/20-10000469](https://aihe-sandbox.test.yle.fi/aihe/a/20-10000469)
-* Muistikurssi: [https://aihe-sandbox.test.yle.fi/aihe/a/20-10000477](https://aihe-sandbox.test.yle.fi/aihe/a/20-10000477)
-* Rentoutumiskurssi: [https://aihe-sandbox.test.yle.fi/aihe/a/20-10000478](https://aihe-sandbox.test.yle.fi/aihe/a/20-10000478)
+https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/
+
+* parameters:
+`course=frontpage`
+`course=keskittyminen`
+`course=muisti`
+`course=rentoutuminen`
+
+* kurssien etusivu: https://aihe.yle.fi/aihe/a/20-10005632 
+
+### Basic-artikkeli
+* keskittyminen: https://aihe.yle.fi/aihe/a/20-10005459 
+* muisti: https://aihe.yle.fi/aihe/a/20-10005478 
+* rentoutuminen: https://aihe.yle.fi/aihe/a/20-10005513
+
+### Tailored-artikkeli
+* keskittyminen: https://aihe.yle.fi/aihe/a/20-10005783
+* muisti: https://aihe.yle.fi/aihe/a/20-10005782
+* rentoutuminen: https://aihe.yle.fi/aihe/a/20-10005785
 
 ## Rights of usage
 
