@@ -10,18 +10,15 @@ import { v4 as uuidv4 } from 'uuid';
 // https://github.com/remarkjs/react-markdown
 import Markdown from 'react-markdown';
 
+// https://www.npmjs.com/package/scroll-into-view
+import scrollIntoView from 'scroll-into-view';
+
 // https://github.com/yle-interactive/wiki-site/blob/main/docs/comments-to-tailored-article.md
-import { CommentsPlugin } from '@yleisradio/comments-plugin';
+// import { CommentsPlugin } from '@yleisradio/comments-plugin';
 
 // Load helpers.
-import slideToggle from './helpers/SlideToggle.js';
+import slideToggle from './helpers/slideToggle.js';
 import CSVtoJSON from './helpers/CSVtoJSON.js';
-
-const commentsPluginProps = {
-  env: 'production',
-  theme: 'light',
-  topicId: '20-10000501' // Test with 7-740449
-};
 
 const base_url = (window.location.href.includes('yle')) ? 'https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti' : '.';
 
@@ -31,6 +28,18 @@ function Course({ parameters }) {
   const appRef = useRef(null);
 
   const { course } = parameters;
+
+  const darkMode = (window.getComputedStyle(document.querySelector('body')).getPropertyValue('background-color') === 'rgb(19, 20, 21)' || window.getComputedStyle(document.querySelector('body')).getPropertyValue('background-color') === 'rgb(0, 0, 0)' || window.getComputedStyle(document.querySelector('body')).getPropertyValue('background-color') === 'rgba(0, 0, 0, 0)');
+  // const articleIDs = {
+  //   keskittyminen: '20-10005783',
+  //   muisti: '20-10005782',
+  //   rentoutuminen: '20-10005785'
+  // };
+  // const commentsPluginProps = {
+  //   env: 'production',
+  //   theme: darkMode ? 'dark' : 'light',
+  //   topicId: articleIDs[course]
+  // };
 
   // Fetch data.
   const fetchData = useCallback(() => {
@@ -58,17 +67,30 @@ function Course({ parameters }) {
   useEffect(() => {
     let script;
     if (data) {
-      script = document.createElement('script');
-      script.src = 'https://tehtava-ui.apps.yle.fi/static/js/embed.8b4391f6.js';
-      script.async = true;
-      script.onload = () => {
-        if (window.tehtavaApp && window.location.href.includes('yle')) {
-          appRef.current.querySelectorAll('.poll').forEach((el) => {
-            window.tehtavaApp.mount(el.dataset.id, appRef.current.querySelector(`.poll_${el.dataset.id}`));
+      try {
+        fetch('https://tehtava-ui.apps.yle.fi/asset-manifest.json')
+          .then((response) => {
+            if (!response.ok) {
+              throw Error(response.statusText);
+            }
+            return response.text();
+          })
+          .then(body => {
+            script = document.createElement('script');
+            script.src = JSON.parse(body)['embed.js'];
+            script.async = true;
+            script.onload = () => {
+              if (window.tehtavaApp && window.location.href.includes('yle')) {
+                appRef.current.querySelectorAll('.poll').forEach((el) => {
+                  window.tehtavaApp.mount(el.dataset.id, appRef.current.querySelector(`.poll_${el.dataset.id}`));
+                });
+              }
+            };
+            document.body.appendChild(script);
           });
-        }
-      };
-      document.body.appendChild(script);
+      } catch (error) {
+        console.error(error);
+      }
     }
     return () => {
       if (script) {
@@ -110,21 +132,26 @@ function Course({ parameters }) {
     };
   }, [data]);
 
-  // useEffect(() => {
-  //   fetch('https://tehtava.api-test.yle.fi/v1/public/exams.json?uuid=7e80d39e-05d6-47f9-b41e-04d8ac9c30e2')
-  //     .then((response) => {
-  //       if (!response.ok) {
-  //         throw Error(response.statusText);
-  //       }
-  //       return response.json();
-  //     })
-  //     .then(body => {
-  //       document.querySelector('.testi-result').innerHTML = body.meta.count;
-  //     });
-  // }, []);
+  const closeButton = (ref, group) => {
+    slideToggle(ref, group);
+    setTimeout(() => {
+      scrollIntoView(ref.current.querySelector(`.exercise_description_${group}`), {
+        align: {
+          left: 0,
+          leftOffset: 0,
+          lockX: false,
+          lockY: false,
+          top: 0,
+          topOffset: 70
+        },
+        cancellable: false,
+        time: 300
+      });
+    }, 200);
+  };
 
   return (
-    <div className="app" ref={appRef}>
+    <div className={`app ${(darkMode) ? 'dark' : 'light'}`} ref={appRef}>
       <video autoPlay muted loop className="background_video" playsInline>
         <source src={`${base_url}/assets/vid/bg_video_${course}.mp4`} type="video/mp4" />
         <source src={`${base_url}/assets/vid/bg_video_${course}.webm`} type="video/webm" />
@@ -146,11 +173,11 @@ function Course({ parameters }) {
             */
             switch (values[0]) {
               case 'title':
-                return <h1>{values[2]}</h1>;
+                return <h1 key={uuidv4()}>{values[2]}</h1>;
               case 'main_image':
-                return <div className="main_image_container"><img src={`https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_3936/w_1300/dpr_2/v1700043657/${values[7]}.jpg`} alt={values[8]} /></div>;
+                return <div key={uuidv4()} className="main_image_container"><img src={`https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_3936/w_1300/dpr_2/v1700043657/${values[7]}.jpg`} alt={values[8]} /></div>;
               case 'subtitle':
-                return <p className="subtitle ydd-lead font-bold text-lg owl:text-xl">{values[2]}</p>;
+                return <p key={uuidv4()} className="subtitle ydd-lead font-bold text-lg owl:text-xl">{values[2]}</p>;
               case 'paragraph_section':
                 return <div className="content" key={uuidv4()}><Markdown>{values[1]}</Markdown></div>;
               case 'title_section':
@@ -159,7 +186,7 @@ function Course({ parameters }) {
                 return (
                   <div className="exercise_container" key={uuidv4()}>
                     <div className="exercise_toggler ">
-                      <button type="button" className={`exercise_button_${values[3]} with_arrow`} onClick={() => slideToggle(appRef, values[3])}>
+                      <button type="button" className={`exercise_button_${values[3]} with_arrow exercise_button_${course}`} onClick={() => slideToggle(appRef, values[3])}>
                         <h3>{values[2].split(';')[0]}</h3>
                         {values[2].split(';')[1] && <h4>{values[2].split(';')[1]}</h4>}
                       </button>
@@ -192,7 +219,7 @@ function Course({ parameters }) {
                       {/* Poll */}
                       <div className={`js-ydd-yle-tehtava ydd-yle-tehtava ydd-yle-tehtava--exam poll poll_${values[4]}`} data-id={values[4]}>{values[4]}</div>
                       {/* Close */}
-                      <div className="exercise_toggler"><button type="button" onClick={() => slideToggle(appRef, values[3])}>Sulje harjoitus</button></div>
+                      <div className="exercise_toggler"><button type="button" onClick={() => closeButton(appRef, values[3])}>Sulje harjoitus</button></div>
                     </div>
                   </div>
                 );
@@ -208,8 +235,9 @@ function Course({ parameters }) {
           })
         }
       </div>
-      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-      <CommentsPlugin {...commentsPluginProps} />
+      {/* <div className="comments_container">
+        <CommentsPlugin {...commentsPluginProps} />
+      </div> */}
       <noscript>Your browser does not support JavaScript!</noscript>
     </div>
   );

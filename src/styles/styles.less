@@ -3,38 +3,45 @@
 @import 'https://tehtava-ui.apps-test.yle.fi/static/css/embed.bfff28e3.css';
 
 .app-root-2023-kurssipaketti {
+  padding: 20px 0;
   .background_video {
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
     position: fixed;
     right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
     z-index: 1;
   }
   .course_selection_container {
+    box-sizing: border-box;
     margin: auto auto;
     max-width: 688px;
+    padding: 0 20px;
+    text-align: center;
     .course_selection_video_container {
-      margin-bottom: 20px;
+      margin: auto auto 20px auto;
       max-width: 400px;
       a {
+        color: #000;
+        text-decoration: none;
         &:hover {
-          video,
-          h2 {
-            transition: all .5s;
-            transform: scale(1.02);
+          video {
+            opacity: 0.75;
           }
-          h2 {
-            margin-bottom: 10px;
-          }
+          text-decoration: underline;
         }
         h2 {
-          transition: all 0.5s;
+          color: #000;
           margin: auto auto 5px auto;
         }
         .course_selection_video {
-          transition: all 0.2s;
           width: 100%;
+          &.dark {
+            display: none;
+          }
+          &.light {
+            display: block;
+          }
         }
       }
     }
@@ -47,31 +54,43 @@
     z-index: 2;
     h1 {
       box-sizing: border-box;
-      margin: auto auto 20px auto;
+      color: #000;
+      font-size: 46px;
+      line-height: 50px;
+      margin: auto auto 40px auto;
       max-width: 1220px;
       padding: 0 20px;
+      text-align: center;
+      @media all and (max-width: 590px) {
+        font-size: 30px;
+        line-height: 34px;
+      }
     }
     .main_image_container {
       box-sizing: border-box;
       margin: auto auto 20px auto;
-      max-width: 1220px;
+      max-width: 590px;
       padding: 0 20px;
       img {
         width: 100%
       }
     }
-    h2 {
+    >h2 {
       color: #000;
       margin: 40px auto 20px auto;
       max-width: 550px;
+      font-size: 26px;
       text-align: center;
       @media all and (max-width: 590px) {
         margin: auto 20px 20px 20px;
       }
     }
     p.subtitle {
+      box-sizing: border-box;
+      color: #fff;
       margin: 20px auto 40px auto;
       max-width: 550px;
+      padding: 0 20px;
       @media all and (max-width: 590px) {
         margin: auto 20px 20px 20px;
       }
@@ -82,12 +101,17 @@
       margin: auto auto 20px auto;
       max-width: 550px;
       padding: 20px 0;
+      &:last-child {
+        background-color: transparent;
+        line-height: 22px;
+      }
       @media all and (max-width: 590px) {
         margin: auto 20px 20px 20px;
       }
       h3 {
-        padding: 0 20px;
+        font-size: 20px;
         margin: 0 0 20px 0;
+        padding: 0 20px;
       }
       p {
         margin: 0 0 20px 0;
@@ -104,10 +128,25 @@
           }
         }
       }
+      ol,
+      ul {
+        margin-bottom: 20px;
+        margin-left: 38px;
+        padding: 0;
+        li {
+          margin: 0;
+          padding: 0;
+          color: #222;
+          &:marker {
+            color: #222;
+            font-weight: bold;
+          }
+        }
+      }
     }
     .exercise_container {
-      max-width: 550px;
       margin: auto auto 20px auto;
+      max-width: 550px;
       @media all and (max-width: 590px) {
         margin: auto 20px 20px 20px;
       }
@@ -121,52 +160,87 @@
           display: inline-block;
           margin: auto auto;
           outline: none;
-          vertical-align: middle;
-          padding: 20px 60px 20px 15px;
+          padding: 20px 60px 20px 60px;
           position: relative;
+          vertical-align: middle;
           width: 100%;
+          @media all and (max-width: 590px) {
+            // padding: 20px 20px 20px 20px;
+          }
+          &.exercise_button_keskittyminen {
+            &:hover {
+              background-color: #e6f7ec;
+            }
+          }
+          &.exercise_button_muisti {
+            &:hover {
+              background-color: #f9f5df;
+            }
+          }
+          &.exercise_button_rentoutuminen {
+            &:hover {
+              background-color: #ede5ee
+            }
+          }
           &.with_arrow {
-            &:after {
-              color: #666;
-              content: '▶';
-              font-size: 30px;
-              line-height: 30px;
+            &:before {
+              color: #9a9a9a;
+              content: '❯';
+              font-size: 20px;
+              line-height: 20px;
               position: absolute;
               right: 25px;
               top: calc(50% - 10px);
               transition-duration: 0.2s;
               transition-property: right, transform;
+              @media all and (max-width: 590px) {
+                // display: none;
+              }
             }
             &:hover {
-              background-color: #1ff0a4;
-              &:after {
+              &:before {
+                color: #9a9a9a;
                 right: 15px;
                 transition-duration: 0.5s;
                 transition-property: right, transform;
               }
             }
             &.active2 {
-              border-bottom: 1px solid #ccc;
               border-radius: 5px 5px 0 0;
+              &:after {
+                border-bottom: 1px solid #ddd;
+                box-sizing: border-box;
+                content:'';
+                position: absolute;
+                left: 0;
+                display: inline-block;
+                margin-top: 20px;
+                padding: 0 0;
+                width: calc(100% - 40px);
+                left: 20px
+              }
             }
             &.active {
               &:hover {
-                &:after {
+                &:before {
                   right: 25px;
                 }
               }
-              &:after {
-                content: '▶';
+              &:before {
+                content: '❯';
                 transform: rotate(90deg);
               }
             }
           }
           h3 {
             color: #222;
+            font-size: 20px;
+            font-weight: 600;
             margin: auto auto auto auto;
           }
           h4 {
             color: #222;
+            font-size: 18px;
             font-weight: 400;
             margin: 10px auto auto auto;
           }
@@ -183,6 +257,7 @@
         }
         p {
           color: #222;
+          margin-bottom: 20px auto 20px auto;
           a {
             color: #000;
             font-weight: 600;
@@ -194,6 +269,9 @@
         }
         ol,
         ul {
+          margin-bottom: 20px;
+          margin-left: 18px;
+          padding: 0;
           li {
             color: #222;
             margin-bottom: 20px;
@@ -233,7 +311,7 @@
                 font-size: 12px;
               }
               .copyright {
-                font-size: 11px;
+                font-size: 12px;
               }
             }
           }
@@ -241,12 +319,17 @@
         .exercise_toggler {
           margin-bottom: 20px;
           button {
-            background-color: #1ff0a4;
+            background-color: #fff;
+            border: 2px solid #000;
+            color: #000;
             font-size: 12px;
             font-weight: bold;
             padding: 10px 15px 10px 15px;
             text-transform: uppercase;
             width: auto;
+            &:hover {
+              background-color: #ddd;
+            }
           }
         }
       }
@@ -260,9 +343,24 @@
       @media all and (max-width: 590px) {
         margin: auto 20px 20px 20px;
       }
+      ul {
+        margin-bottom: 20px;
+        margin-left: 38px;
+        margin-top: 20px;
+        padding: 0;
+      }
     }
+  }
+  .comments_container {
+    box-sizing: border-box;
+    margin: auto auto;
+    max-width: 1220px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 3;
   }
 }
 
 @import 'basics.less';
+// @import 'darkmode.css';
 

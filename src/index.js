@@ -42,8 +42,11 @@ if (process.env.NODE_ENV === 'production' && window.yleVisualisation) {
     parameters[key] = value;
   }
   const root = createRoot(document.querySelector(ROOT_SELECTOR));
-  // root.render(<Course parameters={parameters} />);
-  root.render(<Course parameters={parameters} />);
+  if (parameters.course === 'frontpage') {
+    root.render(<Frontpage />);
+  } else {
+    root.render(<Course parameters={parameters} />);
+  }
 } else if (process.env.NODE_ENV === 'production' && !window.yleVisualisation) {
   // ARTICLE RENDERER OR STATIC HOSTING
   window.plusApp = window.plusApp || {};

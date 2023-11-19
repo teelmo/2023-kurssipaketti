@@ -1,0 +1,15 @@
+.app-root-2023-kurssipaketti .app .course_selection_container .course_selection_video_container a .course_selection_video.dark {
+  display: block;
+}
+.app-root-2023-kurssipaketti .app .course_selection_container .course_selection_video_container a .course_selection_video.light {
+  display: none;
+}
+
+.app-root-2023-kurssipaketti .app .course_selection_container .course_selection_video_container a {
+  color: #fff;
+}
+
+.app-root-2023-kurssipaketti .app .course_selection_container .course_selection_video_container a h2 {
+  color: #fff;
+}
+
