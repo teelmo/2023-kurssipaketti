@@ -6,6 +6,7 @@
   "yleDataviz": {
     "darkMode": true,
     "darkModeCss":"darkmode.css",
+    "darkModeCssPatterns": ["darkmode.css"],
     "externalContent": true
   },
   "scripts": {

@@ -138,7 +138,7 @@
   padding: 0 20px;
 }
 .app-root-2023-kurssipaketti .content_container .content p {
-  margin: 0 0 20px 0;
+  margin: 20px 0 20px 0;
   padding: 0 20px;
 }
 .app-root-2023-kurssipaketti .content_container .content p:last-child {
@@ -154,8 +154,7 @@
 }
 .app-root-2023-kurssipaketti .content_container .content ol,
 .app-root-2023-kurssipaketti .content_container .content ul {
-  margin-bottom: 20px;
-  margin-left: 38px;
+  margin: 0 0 20px 38px;
   padding: 0;
 }
 .app-root-2023-kurssipaketti .content_container .content ol li,
@@ -244,13 +243,13 @@
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button h3 {
   color: #222;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   margin: auto auto auto auto;
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button h4 {
   color: #222;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   margin: 10px auto auto auto;
 }
@@ -352,9 +351,7 @@
   }
 }
 .app-root-2023-kurssipaketti .content_container .poll_container ul {
-  margin-bottom: 20px;
-  margin-left: 38px;
-  margin-top: 20px;
+  margin: 20px 0 20px 38px;
   padding: 0;
 }
 .app-root-2023-kurssipaketti .comments_container {
