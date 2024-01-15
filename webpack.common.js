@@ -67,6 +67,7 @@ module.exports = {
         { from: 'assets/data/2023-kurssipaketti - keskittyminen.csv', to: '../public/assets/data/2023-kurssipaketti_keskittyminen.csv', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'] }},
         { from: 'assets/data/2023-kurssipaketti - muisti.csv', to: '../public/assets/data/2023-kurssipaketti_muisti.csv', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'] }},
         { from: 'assets/data/2023-kurssipaketti - rentoutuminen.csv', to: '../public/assets/data/2023-kurssipaketti_rentoutuminen.csv', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'] }},
+        { from: 'assets/data/2023-kurssipaketti - kutsumuskartta.csv', to: '../public/assets/data/2023-kurssipaketti_kutsumuskartta.csv', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'] }},
         { from: 'src/font/', to: '../public/font/', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'] }},
         { from: 'src/styles/darkmode.css', to: '../public/darkmode.css', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'] }},
         { from: './favicon.png', to: '../public', noErrorOnMissing: true, globOptions: { dot: true, gitignore: true, ignore: ['**/.DS_Store'] }}
