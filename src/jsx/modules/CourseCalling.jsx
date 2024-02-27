@@ -45,12 +45,6 @@ function CourseCalling({ values }) {
     setData(input_fields);
   };
 
-  const handleChangeChange = (event, index) => {
-    const input_fields = [...data];
-    input_fields[index].change = event.target.value;
-    setData(input_fields);
-  };
-
   return (
     <div className="exercise_container" ref={appRef} key="course_calling">
       <h3>{values[2].split(';')[0]}</h3>
@@ -70,29 +64,12 @@ function CourseCalling({ values }) {
               {
                 phase > 0 && (
                   <div className="rank_container">
-                    <h4>Miten on tämän homman osalta?</h4>
+                    <h4>Pisteytä tämä puuhasi</h4>
                     {
-                    ['En pääse tekemään juuri lainkaan tällä hetkellä', 'Pääsen tekemään jonkin verran, mutta haluaisin tehdä enemmän', 'Pääsen tällä hetkellä tekemään juuri niin paljon kuin haluan'].map((value, i) => (
+                    ['En pääse tekemään juuri lainkaan tällä hetkellä (1p)', 'Pääsen tekemään jonkin verran, mutta haluaisin tehdä enemmän (2p)', 'Pääsen tällä hetkellä tekemään juuri niin paljon kuin haluan (3p)'].map((value, i) => (
                       <div key={uuidv4()}>
                         <label htmlFor={`rank_label_${index}_${i}`}>
                           <input type="radio" name={`question_index_${index}`} checked={value === data[index].rank} value={value} id={`rank_label_${index}_${i}`} onChange={(event) => handleRankChange(event, index)} />
-                          <span className="label">{value}</span>
-                        </label>
-                      </div>
-                    ))
-                  }
-                  </div>
-                )
-              }
-              {
-                phase > 1 && (
-                  <div className="change_container">
-                    <h4>Voisitko kuvitella pystyväsi lisäämään tämän asian osuutta elämässäsi?</h4>
-                    {
-                    ['En ollenkaan', 'Ehkä hiukan', 'Voisin paljonkin'].map((value, i) => (
-                      <div key={uuidv4()}>
-                        <label htmlFor={`change_label_${index}_${i}`} key={uuidv4()}>
-                          <input type="radio" name={`change_index_${index}`} checked={value === data[index].change} value={value} id={`change_label_${index}_${i}`} onChange={(event) => handleChangeChange(event, index)} />
                           <span className="label">{value}</span>
                         </label>
                       </div>
@@ -107,8 +84,14 @@ function CourseCalling({ values }) {
       </div>
       <button type="button" onClick={() => increasePhase()}>Valmista tuli</button>
       {
-        phase > 2 && (
-          <div>VISUALISOINTI</div>
+        phase > 1 && (
+          <div>
+            <h3>VISUALISOINTI TULOKSISTA!</h3>
+            <p>Nyt näet paremmin, mihin haluaisit aikasi käyttää.Oma kutsumuskarttasi paljastaa, mitkä tekemisen muodot ovat sinulle niin innostavia, että olet valmis tekemään niitä tuntikausia, päivästä ja vuodesta toiseen.</p>
+            <p>Voit alkaa suunnata tarmosi siihen, että työssäsi ja vapaa-aikana on enemmän näitä juuri sinulle tärkeitä asioita. Suurin muutos tapahtuu, kun lisäät arkeesi niitä juttuja, joille annoit vain yhden pisteen. </p>
+            <p>Joitakin asioita et pysty toteuttamaan. Anna niiden jäädä mielen pohjalle kutkuttamaan. Voit edistää niitä todella pienin askelin, esimerkiksi vain katsomalla Youtubesta aiheeseen liittyvän videon.</p>
+            <p>Never say never, jonakin päivänä mahdottomalta tuntuva voikin onnistua. Frank Martela neuvoo ajattelemaan elämää jaksoissa. </p>
+          </div>
         )
       }
     </div>

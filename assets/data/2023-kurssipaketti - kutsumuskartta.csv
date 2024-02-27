@@ -1,6 +1,22 @@
 type,content,title,group,poll_id,areena_id,areena_caption,ims_id,image_caption,image_copyright,internal comment
 title,,Harjoituksen otsikko,,,,,,,,
 main_image,,,,,,,39-12023456557642418a11,Pääkuva,,
-paragraph_section,Harjoituksen kuvaus,,,,,,,,,
-title_section,,Harjoitukset,,,,,,,,
-calling_exercise,,Otsikko;Alaotsikko,exercise_1,,,,,,,
+poll_section,,,,47-a694f976-6ac3-46a0-8789-18c8ac24ae36,,,,,,
+paragraph_section,"Omalta tuntuvassa elämässä on tarpeeksi niitä asioita, joita haluat tehdä tekemisen itsensä takia. Kutsumuskartta auttaa löytämään sinun uniikit kiinnostuksen kohteesi. Se paljastaa, kuka oikeasti olet.
+
+Alla on kolmivaiheinen harjoitus, jonka avulla:
+* löydät isoja ja pieniä kutsumuksia
+* hahmotat, mistä sinun hyvä elämäsi koostuu
+* löydät unohtuneita mielipuuhia uudelleen
+* opit tuunaamaan arkeasi innostavammaksi
+
+Harjoitus perustuu työelämäprofessori Lauri Järvilehdon ja apulaisprofessori Frank Martelan kehittämiin metodeihin.",,,,,,,,,
+title_section,,Harjoitus,,,,,,,,
+paragraph_section,"Listaa kaikki pienet ja isommat tekemiset, joista pidät tekemisen itsensä takia. Lempipuuhat, joiden parissa viihdyt, ja joita tekisit, vaikket saisi niistä rahaa tai muuta hyötyä. 
+
+Käy läpi elämän eri osa-alueet ja pyri kirjoittamaan pitkä lista, mielellään kymmeniä asioita sisältävä. Ota mukaan työhön liittyvät ja vapaa-ajan mieluisat tekemiset. Ole tarkkana. Listaa vain asioita, joista ihan oikeasti tykkäät, ja unohda asiat, joita sinun pitäisi tehdä. Listaa myös asioita, joita et ole koskaan tehnyt, mutta haluaisit tehdä.
+
+Ole konkreettinen. Älä kirjoita “myyjän työ”, vaan kirjoita ylös niitä konkreettisia asioita, joiden tekemisestä kyseisessä työssä pidät, kuten “asiakkaan palveleminen”, “muotivaatteiden järjestely” tai “kassakoneen käyttäminen”.
+
+Jos mielikuvituksesi ehtyy, voit poimia mieluisia tekemisiä apulistalta.",,,,,,,,,
+calling_exercise,,Listaa lempipuuhasi,exercise_1,,,,,,,
