@@ -1,22 +1,57 @@
 type,content,title,group,poll_id,areena_id,areena_caption,ims_id,image_caption,image_copyright,internal comment
-title,,Harjoituksen otsikko,,,,,,,,
+title,,Tuunaa arki innostavammaksi kutsumuskartan avulla,,,,,,,,
 main_image,,,,,,,39-12023456557642418a11,Pääkuva,,
-poll_section,,,,47-a694f976-6ac3-46a0-8789-18c8ac24ae36,,,,,,
-paragraph_section,"Omalta tuntuvassa elämässä on tarpeeksi niitä asioita, joita haluat tehdä tekemisen itsensä takia. Kutsumuskartta auttaa löytämään sinun uniikit kiinnostuksen kohteesi. Se paljastaa, kuka oikeasti olet.
+poll_section,,,,47-3a41be00-d7e7-43e8-bfa3-3ab22b9d564a,,,,,,
+paragraph_section,"Apulaisprofessori Frank Martela on tutkinut hyvän elämän ehtoja reilut kymmenen vuotta. Hän tietää tutkimustyönsä pohjalta, että kannattaa rakentaa oma elämä niiden asioiden ympärille, jotka itseä aidosti kiinnostavat ja innostavat.
+
+Joskus lempijutut kuitenkin unohtuvat arjen kiireissä, ne “vain jäävät”.  Kutsumuskartta auttaa muistamaan sinun uniikit kiinnostuksen kohteesi, ja löytämään uusia. Arjen tuunaamisen alkuun pääsee jo vartilla viikossa.
 
 Alla on kolmivaiheinen harjoitus, jonka avulla:
-* löydät isoja ja pieniä kutsumuksia
-* hahmotat, mistä sinun hyvä elämäsi koostuu
-* löydät unohtuneita mielipuuhia uudelleen
-* opit tuunaamaan arkeasi innostavammaksi
+* ![](./assets/img/1_icon.png) löydät isoja ja pieniä kutsumuksia
+* ![](./assets/img/2_icon.png) hahmotat, mistä sinun hyvä elämäsi koostuu
+* ![](./assets/img/3_icon.png) löydät unohtuneita mielipuuhia uudelleen
 
-Harjoitus perustuu työelämäprofessori Lauri Järvilehdon ja apulaisprofessori Frank Martelan kehittämiin metodeihin.",,,,,,,,,
+Harjoitus perustuu työelämäprofessori Lauri Järvilehdon ja apulaisprofessori Frank Martelan kehittämiin metodeihin.
+",,,,,,,,,
 title_section,,Harjoitus,,,,,,,,
-paragraph_section,"Listaa kaikki pienet ja isommat tekemiset, joista pidät tekemisen itsensä takia. Lempipuuhat, joiden parissa viihdyt, ja joita tekisit, vaikket saisi niistä rahaa tai muuta hyötyä. 
+paragraph_section,"Listaa alle kaikki pienet ja isommat tekemiset, joista pidät tekemisen itsensä takia. Lempipuuhat, joiden parissa viihdyt, ja joita tekisit, vaikket saisi niistä rahaa tai muuta hyötyä. 
 
-Käy läpi elämän eri osa-alueet ja pyri kirjoittamaan pitkä lista, mielellään kymmeniä asioita sisältävä. Ota mukaan työhön liittyvät ja vapaa-ajan mieluisat tekemiset. Ole tarkkana. Listaa vain asioita, joista ihan oikeasti tykkäät, ja unohda asiat, joita sinun pitäisi tehdä. Listaa myös asioita, joita et ole koskaan tehnyt, mutta haluaisit tehdä.
+Listaa myös asioita, joita et ole koskaan tehnyt, mutta haluaisit tehdä.
 
-Ole konkreettinen. Älä kirjoita “myyjän työ”, vaan kirjoita ylös niitä konkreettisia asioita, joiden tekemisestä kyseisessä työssä pidät, kuten “asiakkaan palveleminen”, “muotivaatteiden järjestely” tai “kassakoneen käyttäminen”.
+Käy läpi elämän eri osa-alueet ja pyri kirjoittamaan mahdollisimman pitkä lista. Ota mukaan työhön liittyvät ja vapaa-ajan mieluisat tekemiset. 
 
-Jos mielikuvituksesi ehtyy, voit poimia mieluisia tekemisiä apulistalta.",,,,,,,,,
+Etsi iloa! Listaa vain asioita, joista ihan oikeasti tykkäät. Unohda asiat, joita sinun pitäisi tehdä. 
+
+Ole konkreettinen. Älä kirjoita “myyjän työ”, vaan kirjoita ylös niitä konkreettisia asioita, joiden tekemisestä pidät, kuten “asiakaspalvelu”, “muotivaatteiden järjestely” tai “kassakoneen käyttäminen”. Näin oivallat, mitkä osatekijät kyseisessä työssä ovat innostavimpia.",,,,1-67038618,,,,,
 calling_exercise,,Listaa lempipuuhasi,exercise_1,,,,,,,
+poll_section,,,,47-da5a9ef2-0c23-4e91-8cf8-e6ca5ca7cc8a,,,,,,
+title_section,,Tuunaa elämäsi,,,,,,,,
+title_section,,Ruoki inspiraatiota,,,,,,,,
+paragraph_section,"Mieluisa tekeminen vaatii joskus niin paljon, että kynnys tuntuu korkealta. Keskity silloin innostuksen kasvattamiseen. Katso aiheeseen liittyviä videoita, lue kirjoja ja liity aiheeseen liittyviin verkkoyhteisöihin.
+
+Käytä vähäiset resurssisi fiilistelyyn. Sitten kun arjen realiteetit antavat myöten, olet hyvin valmistautunut varsinaiseen tekemiseen. 
+
+Inspiraation lähteitä löydät esimerkiksi Youtubesta ja Pinterestistä.",,,,,,,,,
+title_section,,Tee suunnitelma,,,,,,,,
+paragraph_section,"Frank Martela kannustaa laatimaan suunnitelman. Se parantaa todennäköisyyttä, että alat lisätä mielenkiintoisia juttuja arkeesi. Sen sijaan, että vain mietit, että “asiaa X pitäisi tehdä enemmän”, ota hetkinen aikaa ja pohdiskele seuraavia asioita:
+
+1) Miksi haluan tehdä asiaa X?
+2) Mikä tällä hetkellä estää minua tekemästä asiaa X?
+3) Miten alan tehdä enemmän asiaa X?
+    * Milloin teen sitä?
+    * Miten ja missä teen sitä?
+    * Millä muistikikoilla saan sitä tehtyä?
+
+Muistikikkoja on monenlaisia: 
+* varaa tekemiselle aikaa kalenterista
+* laita puhelimeen muistutuksia
+* liimaile muistilappuja ympäri kotia ja työpaikalle
+* verkostoidu samasta asiasta innostuneiden kanssa ",,,,,,,,,
+title_section,Pilko puuha tekoälyn avulla,,,,,,,,,
+paragraph_section,"Tekoälytyökalut, kuten esimerkiksi ChatGPT tai Goblin Tools Magic ToDo, voivat auttaa hahmottamaan, millaisista osasista lempipuuha koostuu. 
+
+Toimiva prompti eli kehote voi olla vaikka tällainen: Haluaisin alkaa harrastaa “x”. En ole koskaan kokeillut sitä, enkä tiedä mistä aloittaisin. Voisitko laatia minulle ensiaskeleet tämän uuden asian kokeilemiseen. Aloita aivan pienestä teosta ja etene vähitellen.",,,,,,,,,
+paragraph_section,"Joskus on parasta jättää joku lempipuuhista odottamaan parempaa aikaa, mutta never say never – jonakin päivänä mahdottomalta tuntuva voi löytää tilaa elämästä. 
+
+Frank Martela neuvookin ajattelemaan elämää jaksoissa. ",,,,1-68321994,,,,,
+paragraph_section,Linkkejä?,,,,,,,,,

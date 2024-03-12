@@ -179,10 +179,27 @@ function Course({ parameters }) {
                 return <h1 key={uuidv4()}>{values[2]}</h1>;
               case 'main_image':
                 return <div key={uuidv4()} className="main_image_container"><img src={`https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_3936/w_1300/dpr_2/v1700043657/${values[7]}.jpg`} alt={values[8]} /></div>;
+              case 'full_main_image':
+                return <div key={uuidv4()} className="main_image_container full"><img src={`https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_3936/w_1300/dpr_2/v1700043657/${values[7]}.jpg`} alt={values[8]} /></div>;
               case 'subtitle':
                 return <p key={uuidv4()} className="subtitle ydd-lead font-bold text-lg owl:text-xl">{values[2]}</p>;
               case 'paragraph_section':
-                return <div className="content" key={uuidv4()}><Markdown>{values[1]}</Markdown></div>;
+                return (
+                  <div className="content" key={uuidv4()}>
+                    {/* Video */}
+                    {values[5] && (
+                    <figure className="areena_container">
+                      <div className="areena_player_container" data-id={values[5]} />
+                      <figcaption className="text-xs pt-8">
+                        {values[6] && <span className="caption text-gray-70">{values[6]}</span>}
+                        {' '}
+                        <a href={`https://areena.yle.fi/${values[5]}`} className="text-gray-70">Toista Yle Areenassa</a>
+                      </figcaption>
+                    </figure>
+                    )}
+                    <Markdown>{values[1]}</Markdown>
+                  </div>
+                );
               case 'title_section':
                 return <h2 className="" key={uuidv4()}>{values[2]}</h2>;
               case 'calling_exercise':

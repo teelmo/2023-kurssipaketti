@@ -64,7 +64,8 @@ function CourseCalling({ values }) {
               {
                 phase > 0 && (
                   <div className="rank_container">
-                    <h4>Pisteytä tämä puuhasi</h4>
+                    <h4>Arvioi nykytilanteesi</h4>
+                    <p>Nyt olet listannut mielipuuhiasi. Arvioi tämän hetkistä tilannetta – miten usein teet kutakin lempipuuhaa nykyisin.</p>
                     {
                     ['En pääse tekemään juuri lainkaan tällä hetkellä (1p)', 'Pääsen tekemään jonkin verran, mutta haluaisin tehdä enemmän (2p)', 'Pääsen tällä hetkellä tekemään juuri niin paljon kuin haluan (3p)'].map((value, i) => (
                       <div key={uuidv4()}>
@@ -87,10 +88,9 @@ function CourseCalling({ values }) {
         phase > 1 && (
           <div>
             <h3>VISUALISOINTI TULOKSISTA!</h3>
-            <p>Nyt näet paremmin, mihin haluaisit aikasi käyttää.Oma kutsumuskarttasi paljastaa, mitkä tekemisen muodot ovat sinulle niin innostavia, että olet valmis tekemään niitä tuntikausia, päivästä ja vuodesta toiseen.</p>
-            <p>Voit alkaa suunnata tarmosi siihen, että työssäsi ja vapaa-aikana on enemmän näitä juuri sinulle tärkeitä asioita. Suurin muutos tapahtuu, kun lisäät arkeesi niitä juttuja, joille annoit vain yhden pisteen. </p>
-            <p>Joitakin asioita et pysty toteuttamaan. Anna niiden jäädä mielen pohjalle kutkuttamaan. Voit edistää niitä todella pienin askelin, esimerkiksi vain katsomalla Youtubesta aiheeseen liittyvän videon.</p>
-            <p>Never say never, jonakin päivänä mahdottomalta tuntuva voikin onnistua. Frank Martela neuvoo ajattelemaan elämää jaksoissa. </p>
+            <p>Nyt näet paremmin, mihin haluaisit aikaasi käyttää. Voit alkaa suunnata tarmosi siihen, että työssäsi ja vapaa-aikana on enemmän näitä juuri sinulle tärkeitä asioita.</p>
+            <p>Suurin muutos tapahtuu, kun lisäät arkeesi niitä juttuja, joita et tällä hetkellä tee, tai joita teet hyvin vähän.</p>
+            <p>Joitakin asioita et pysty heti toteuttamaan täysillä. Aloita silloin mikroskooppisen pienellä ensiaskeleella. Olisiko mahdollista omistaa viisitoista minuuttia viikossa kaipaamallesi lempipuuhalle?</p>
           </div>
         )
       }

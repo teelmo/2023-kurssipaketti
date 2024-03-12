@@ -2,6 +2,23 @@
 @import 'tehtava_overrides.less';
 @import 'https://tehtava-ui.apps-test.yle.fi/static/css/embed.bfff28e3.css';
 
+@font-face {
+  font-family: Yle Next Heavy;
+  src: url('./../assets/font/YleNext-Heavy.otf');
+}
+@font-face {
+  font-family: Yle Next Regular;
+  src: url('./../assets/font/YleNext-Regular.otf');
+}
+@font-face {
+  font-family: Yle Next Bold;
+  src: url('./../assets/font/YleNext-Bold.otf');
+}
+@font-face {
+  font-family: Yle Next Heavy;
+  src: url('./../assets/font/YleNext-Heavy.otf');
+}
+
 .app-root-2023-kurssipaketti {
   padding: 20px 0;
   .background_video {
@@ -55,8 +72,9 @@
     h1 {
       box-sizing: border-box;
       color: #000;
-      font-size: 46px;
-      line-height: 50px;
+      font-family: Yle Next Heavy;
+      font-size: 65pt;
+      line-height: 65pt;
       margin: auto auto 40px auto;
       max-width: 1220px;
       padding: 0 20px;
@@ -71,15 +89,20 @@
       margin: auto auto 20px auto;
       max-width: 590px;
       padding: 0 20px;
+      &.full {
+        max-width: 100%;
+        width: 100%;
+      }
       img {
         width: 100%
       }
     }
     >h2 {
       color: #000;
+      font-family: Yle Next Heavy;
+      font-size: 40pt;
       margin: 40px auto 20px auto;
       max-width: 550px;
-      font-size: 26px;
       text-align: center;
       @media all and (max-width: 590px) {
         margin: auto 20px 20px 20px;
@@ -96,7 +119,7 @@
       }
     }
     .content {
-      background-color: #fff;
+      background-color: #f5f6f8;
       color: #222;
       margin: auto auto 20px auto;
       max-width: 550px;
@@ -114,8 +137,10 @@
         padding: 0 20px;
       }
       p {
+        font-family: Yle Next Regular;
         margin: 20px 0 20px 0;
         padding: 0 20px;
+        font-size: 19pt;
         &:last-child {
           margin-bottom: 1px;
         }
@@ -130,6 +155,8 @@
       }
       ol,
       ul {
+        font-family: Yle Next Regular;
+        font-size: 19pt;
         margin: 0 0 20px 38px;
         padding: 0;
         li {
@@ -139,6 +166,23 @@
           &:marker {
             color: #222;
             font-weight: bold;
+          }
+        }
+      }
+      ul:has(img) {
+        font-family: Yle Next Bold;
+        font-size: 20pt;
+        list-style: none;
+        vertical-align: middle;
+        li {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 20px;
+          img {
+            height: 60px;
+            vertical-align: middle;
+            width: 60px;
+            margin-right: 10px;
           }
         }
       }
