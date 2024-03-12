@@ -87,7 +87,8 @@ function CourseCalling({ values }) {
       {
         phase > 1 && (
           <div>
-            <h3>VISUALISOINTI TULOKSISTA!</h3>
+            <div>Sanapilvi+lista</div>
+            <h3>Tuunaa elämäsi!</h3>
             <p>Nyt näet paremmin, mihin haluaisit aikaasi käyttää. Voit alkaa suunnata tarmosi siihen, että työssäsi ja vapaa-aikana on enemmän näitä juuri sinulle tärkeitä asioita.</p>
             <p>Suurin muutos tapahtuu, kun lisäät arkeesi niitä juttuja, joita et tällä hetkellä tee, tai joita teet hyvin vähän.</p>
             <p>Joitakin asioita et pysty heti toteuttamaan täysillä. Aloita silloin mikroskooppisen pienellä ensiaskeleella. Olisiko mahdollista omistaa viisitoista minuuttia viikossa kaipaamallesi lempipuuhalle?</p>
