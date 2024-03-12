@@ -54,7 +54,7 @@ function CourseCalling({ values }) {
           data && data.map((el, index) => (
             <div className="input_field_container" key={`input_field_container_${el}`}>
               <label htmlFor={`text_label_${index}`}>
-                <span className="label">
+                <span className="number">
                   {index + 1}
                   .
                   {' '}
@@ -83,7 +83,7 @@ function CourseCalling({ values }) {
           ))
         }
       </div>
-      <button type="button" onClick={() => increasePhase()}>Valmista tuli</button>
+      <button type="button" onClick={() => increasePhase()} className="ready">Valmista tuli</button>
       {
         phase > 1 && (
           <div>
