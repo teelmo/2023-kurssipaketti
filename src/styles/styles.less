@@ -73,8 +73,8 @@
       box-sizing: border-box;
       color: #000;
       font-family: Yle Next Heavy;
-      font-size: 65pt;
-      line-height: 65pt;
+      font-size: 32px;
+      line-height: 36px;
       margin: auto auto 40px auto;
       max-width: 1220px;
       padding: 0 20px;
@@ -100,7 +100,7 @@
     >h2 {
       color: #000;
       font-family: Yle Next Heavy;
-      font-size: 40pt;
+      font-size: 24px;
       margin: 40px auto 20px auto;
       max-width: 550px;
       text-align: center;
@@ -119,7 +119,6 @@
       }
     }
     .content {
-      background-color: #f5f6f8;
       color: #222;
       margin: auto auto 20px auto;
       max-width: 550px;
@@ -138,9 +137,9 @@
       }
       p {
         font-family: Yle Next Regular;
+        font-size: 18px;
         margin: 20px 0 20px 0;
         padding: 0 20px;
-        font-size: 19pt;
         &:last-child {
           margin-bottom: 1px;
         }
@@ -156,7 +155,7 @@
       ol,
       ul {
         font-family: Yle Next Regular;
-        font-size: 19pt;
+        font-size: 18px;
         margin: 0 0 20px 38px;
         padding: 0;
         li {
@@ -171,47 +170,98 @@
       }
       ul:has(img) {
         font-family: Yle Next Bold;
-        font-size: 20pt;
+        font-size: 18px;
         list-style: none;
         vertical-align: middle;
         li {
+          align-items: center;
           display: flex;
           flex-direction: row;
           margin-bottom: 20px;
           img {
             height: 60px;
+            margin-right: 10px;
             vertical-align: middle;
             width: 60px;
-            margin-right: 10px;
           }
         }
       }
     }
     .exercise_container {
+      background-color: #f5f6f8;
       margin: auto auto 20px auto;
-      max-width: 550px;
+      .exercise_content {
+        box-sizing: border-box;
+        margin: auto auto;
+        max-width: 550px;
+        padding: 20px;
+      }
       @media all and (max-width: 590px) {
         margin: auto 20px 20px 20px;
       }
       h3 {
         font-family: Yle Next Bold;
-        font-size: 20pt;
+        font-size: 24px;
       }
       h4 {
         font-family: Yle Next Bold;
-        font-size: 19pt;
+        font-size: 18px;
+        margin: 0 0 5px 0;
       }
-      button.ready {
-        background-color: #4e4e96;
-        border: 0;
-        color: #fff;
-        font-family: Yle Next Regular;
-        font-size: 19pt;
-        padding: 7px 20px;
+      p {
+        margin: 0 0 20px 0;
+      }
+      .result_container {
+        .result_row {
+          font-family: Yle Next Regular;
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+      }
+      .word_cloud_container {
+        h3 {
+          margin: 0 0 10px 0;
+          text-align: center;
+        }
+        .word_cloud {
+          background-color: #fff;
+          padding: 20px;
+          text-align: center;
+          .rank_value {
+            display: inline-block;
+            font-family: Yle Next Regular;
+            font-size: 18px;
+            position: relative;
+            &.rank_0_value {
+              color: #4e4e96;
+            }
+            &.rank_1_value {
+              color: #333;
+            }
+          }
+        }
+      }
+      .button_container {
+        margin: auto auto;
+        text-align: center;
+        button.ready {
+          background-color: #4e4e96;
+          border-radius: 10px;
+          border: 0;
+          color: #fff;
+          cursor: pointer;
+          font-family: Yle Next Regular;
+          font-size: 18px;
+          padding: 7px 20px;
+          &:disabled {
+            background-color: #ccc;
+            cursor: default;
+          }
+        }
       }
       p {
         font-family: Yle Next Regular;
-        font-size: 19pt;
+        font-size: 18px;
       }
       .input_container {
         .input_field_container {
@@ -220,7 +270,7 @@
           label {
             align-items: center;
             display: flex;
-            font-size: 19pt;
+            font-size: 18px;
             span {
               margin-right: 5px;
             }
@@ -232,14 +282,34 @@
               border: 1px solid #ccc;
               display: flex;
               font-family: Yle Next Regular;
-              font-size: 19pt;
+              font-size: 18px;
+              padding: 5px 10px;
               width: 100%;
+            }
+          }
+          .rank_container {
+            font-family: Yle Next Regular;
+            div {
+              margin-bottom: 10px;
+              label {
+                cursor: pointer;
+                input {
+                  display: inline-block;
+                  margin-right: 5px;
+                }
+              }
             }
           }
           h4 {
             margin: 10px 0 10px 0;
+            .value {
+              font-family: Yle Next Regular;
+            }
           }
         }
+      }
+      .result_container {
+        margin: 40px 0;
       }
       .exercise_toggler {
         text-align: center;
