@@ -10,8 +10,12 @@ import { v4 as uuidv4 } from 'uuid';
 // Import modules.
 import WordCloud from './WordCloud.jsx';
 
+// Import helpers.
+import helperList from '../helpers/List.js';
+
 function CourseCalling({ values }) {
   // Data states.
+  const [helperListValue, setHelperListValue] = useState();
   const [data, setData] = useState([{
     value: ''
   }]);
@@ -48,13 +52,25 @@ function CourseCalling({ values }) {
     setData(input_fields);
   };
 
+  const populateInputChange = (event) => {
+    const input_fields = [...data];
+    setHelperListValue(event.target.value);
+    input_fields[input_fields.length - 1].value = event.target.value;
+    input_fields.push({
+      index: input_fields.length,
+      value: ''
+    });
+    setData(input_fields);
+    setButtonIsDisabled(false);
+  };
+
   const handleRankChange = (event, index) => {
     const input_fields = [...data];
     input_fields[index].rank = event.target.value;
     setData(input_fields);
     let value_for_test = false;
     input_fields.forEach(el => {
-      if (el.rank === undefined) {
+      if (el.rank === undefined && el.value !== '') {
         value_for_test = true;
       }
     });
@@ -66,6 +82,17 @@ function CourseCalling({ values }) {
       <div className="exercise_content">
         <h3>{values[2].split(';')[0]}</h3>
         {values[2].split(';')[1] && <h4>{values[2].split(';')[1]}</h4>}
+        {
+          phase === 0 && (
+            <select className="helper_list" onChange={(event) => populateInputChange(event)} value={helperListValue}>
+              <option disabled selected>Inspiraatiota voit napata apulistalta</option>
+              <option disabled>– – – – –</option>
+              {
+                helperList.map(el => (<option value={el} key={uuidv4()}>{el}</option>))
+              }
+            </select>
+          )
+        }
         <div className="input_container">
           {
             data && data.map((el, index) => (
@@ -81,7 +108,7 @@ function CourseCalling({ values }) {
                   </label>
                 )}
                 {
-                  phase > 0 && (
+                  (phase > 0 && data[index].value) && (
                     <div className="rank_container">
                       <h4>
                         <span className="number">
