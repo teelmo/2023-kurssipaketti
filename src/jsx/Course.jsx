@@ -197,7 +197,6 @@ function Course({ parameters }) {
                       <figcaption className="text-xs pt-8">
                         {values[6] && <span className="caption text-gray-70">{values[6]}</span>}
                         {' '}
-                        <a href={`https://areena.yle.fi/${values[5]}`} className="text-gray-70">Toista Yle Areenassa</a>
                       </figcaption>
                     </figure>
                     )}
@@ -211,8 +210,8 @@ function Course({ parameters }) {
               case 'exercise':
                 return (
                   <div className="exercise_container" key={uuidv4()}>
-                    <div className="exercise_content">
-                      <div className="exercise_toggler">
+                    <div className="exercise_content with_bg">
+                      <div className="exercise_toggler exercise_withbg">
                         <button type="button" className={`exercise_button_${values[3]} with_arrow exercise_button_${course}`} onClick={() => slideToggle(appRef, values[3])}>
                           <h3>{values[2].split(';')[0]}</h3>
                           {values[2].split(';')[1] && <h4>{values[2].split(';')[1]}</h4>}
@@ -228,7 +227,6 @@ function Course({ parameters }) {
                           <figcaption className="text-xs pt-8">
                             {values[6] && <span className="caption text-gray-70">{values[6]}</span>}
                             {' '}
-                            <a href={`https://areena.yle.fi/${values[5]}`} className="text-gray-70">Toista Yle Areenassa</a>
                           </figcaption>
                         </figure>
                         )}

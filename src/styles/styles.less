@@ -72,7 +72,7 @@
     h1 {
       box-sizing: border-box;
       font-family: Yle Next Heavy;
-      font-size: 32px;
+      font-size: 36px;
       line-height: 36px;
       margin: auto auto 40px auto;
       max-width: 1220px;
@@ -98,7 +98,7 @@
     }
     >h2 {
       font-family: Yle Next Heavy;
-      font-size: 24px;
+      font-size: 30px;
       margin: 40px auto 20px auto;
       max-width: 550px;
       text-align: center;
@@ -137,7 +137,7 @@
       }
       p {
         font-family: Yle Next Regular;
-        font-size: 18px;
+        font-size: 16px;
         margin: 20px 0 20px 0;
         padding: 0 20px;
         &:last-child {
@@ -158,7 +158,7 @@
       ol,
       ul {
         font-family: Yle Next Regular;
-        font-size: 18px;
+        font-size: 16px;
         margin: 0 0 20px 38px;
         padding: 0;
         li {
@@ -173,7 +173,7 @@
       }
       ul:has(img) {
         font-family: Yle Next Bold;
-        font-size: 18px;
+        font-size: 16px;
         list-style: none;
         vertical-align: middle;
         li {
@@ -197,13 +197,21 @@
         margin: auto auto;
         max-width: 550px;
         padding: 20px;
+        .exercise_withbg {
+          button {
+            background-color: #e1e1f0;
+            &:hover {
+              opacity: 0.7;              
+            }
+          }
+        }
       }
       @media all and (max-width: 590px) {
         margin: auto 20px 20px 20px;
       }
       h3 {
         font-family: Yle Next Bold;
-        font-size: 24px;
+        font-size: 30px;
       }
       h4 {
         font-family: Yle Next Bold;
@@ -216,7 +224,7 @@
       .result_container {
         .result_row {
           font-family: Yle Next Regular;
-          font-size: 18px;
+          font-size: 16px;
           margin-bottom: 20px;
         }
       }
@@ -232,7 +240,7 @@
           .rank_value {
             display: inline-block;
             font-family: Yle Next Regular;
-            font-size: 18px;
+            font-size: 16px;
             position: relative;
             &.rank_0_value {
               color: #4e4e96;
@@ -247,6 +255,7 @@
         font-size: 16px;
         font-family: Yle Next Regular;
         margin-bottom: 20px;
+        width: 100%;
       }
       .button_container {
         margin: auto auto;
@@ -258,7 +267,7 @@
           color: #fff;
           cursor: pointer;
           font-family: Yle Next Regular;
-          font-size: 18px;
+          font-size: 16px;
           padding: 7px 20px;
           &:disabled {
             background-color: #ccc;
@@ -269,7 +278,7 @@
       div,
       p {
         font-family: Yle Next Regular;
-        font-size: 18px;
+        font-size: 16px;
       }
       .input_container {
         .input_field_container {
@@ -278,7 +287,7 @@
           label {
             align-items: center;
             display: flex;
-            font-size: 18px;
+            font-size: 16px;
             span {
               margin-right: 5px;
             }
@@ -287,10 +296,11 @@
             }
             input[type=text] {
               background-color: #fff;
-              border: 1px solid #ccc;
+              border-radius: 5px;
+              border: 2px solid #a8b1e2;
               display: flex;
               font-family: Yle Next Regular;
-              font-size: 18px;
+              font-size: 16px;
               padding: 5px 10px;
               width: 100%;
             }
@@ -403,13 +413,13 @@
           }
           h3 {
             color: #222;
-            font-size: 18px;
+            font-size: 22px;
             font-weight: 600;
             margin: auto auto auto auto;
           }
           h4 {
             color: #222;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 400;
             margin: 10px auto auto auto;
           }
