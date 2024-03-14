@@ -15,7 +15,7 @@ import helperList from '../helpers/List.js';
 
 function CourseCalling({ values }) {
   // Data states.
-  const [helperListValue, setHelperListValue] = useState();
+  const [helperListValue, setHelperListValue] = useState('default');
   const [data, setData] = useState([{
     value: ''
   }]);
@@ -85,7 +85,7 @@ function CourseCalling({ values }) {
         {
           phase === 0 && (
             <select className="helper_list" onChange={(event) => populateInputChange(event)} value={helperListValue}>
-              <option disabled selected>Inspiraatiota voit napata apulistalta</option>
+              <option disabled value="default">Inspiraatiota voit napata apulistalta</option>
               <option disabled>– – – – –</option>
               {
                 helperList.map(el => (<option value={el} key={uuidv4()}>{el}</option>))

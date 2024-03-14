@@ -155,10 +155,14 @@ function Course({ parameters }) {
 
   return (
     <div className={`app ${(darkMode) ? 'dark' : 'light'}`} ref={appRef}>
-      <video autoPlay muted loop className="background_video" playsInline>
-        <source src={`${base_url}/assets/vid/bg_video_${course}.mp4`} type="video/mp4" />
-        <source src={`${base_url}/assets/vid/bg_video_${course}.webm`} type="video/webm" />
-      </video>
+      {
+        course !== 'kutsumuskartta' && (
+          <video autoPlay muted loop className="background_video" playsInline>
+            <source src={`${base_url}/assets/vid/bg_video_${course}.mp4`} type="video/mp4" />
+            <source src={`${base_url}/assets/vid/bg_video_${course}.webm`} type="video/webm" />
+          </video>
+        )
+      }
       <div className={`content_container content_container_${course}`}>
         {
           data && data.slice(1).map((values) => {
