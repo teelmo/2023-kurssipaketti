@@ -112,7 +112,7 @@ function Course({ parameters }) {
         if (window.ylePlayer !== 'undefined') {
           appRef.current.querySelectorAll('.areena_player_container').forEach((el) => {
             const props = {
-              aspectRatio: '1:1',
+              aspectRatio: (course === 'kutsumuskartta') ? '16:9' : '1:1',
               autoplay: false,
               id: el.dataset.id,
               webKitPlaysInline: true
@@ -133,7 +133,7 @@ function Course({ parameters }) {
         document.body.removeChild(script);
       }
     };
-  }, [data]);
+  }, [course, data]);
 
   const closeButton = (ref, group) => {
     slideToggle(ref, group);
@@ -187,6 +187,21 @@ function Course({ parameters }) {
                 return <div key={uuidv4()} className="main_image_container full"><img src={`https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_3936/w_1300/dpr_2/v1700043657/${values[7]}.jpg`} alt={values[8]} /></div>;
               case 'subtitle':
                 return <p key={uuidv4()} className="subtitle ydd-lead font-bold text-lg owl:text-xl">{values[2]}</p>;
+              case 'areena_section':
+                return (
+                  <div className="content" key={uuidv4()}>
+                    {/* Video */}
+                    {values[5] && (
+                    <figure className="areena_container">
+                      <div className="areena_player_container" data-id={values[5]} />
+                      <figcaption className="text-xs pt-8">
+                        {values[6] && <span className="caption text-gray-70">{values[6]}</span>}
+                        {' '}
+                      </figcaption>
+                    </figure>
+                    )}
+                  </div>
+                );
               case 'paragraph_section':
                 return (
                   <div className="content" key={uuidv4()}>
@@ -210,7 +225,7 @@ function Course({ parameters }) {
               case 'exercise':
                 return (
                   <div className="exercise_container" key={uuidv4()}>
-                    <div className="exercise_content with_bg">
+                    <div className={course === 'kutsumuskartta' ? 'exercise_content with_bg' : 'exercise_content'}>
                       <div className="exercise_toggler exercise_withbg">
                         <button type="button" className={`exercise_button_${values[3]} with_arrow exercise_button_${course}`} onClick={() => slideToggle(appRef, values[3])}>
                           <h3>{values[2].split(';')[0]}</h3>
