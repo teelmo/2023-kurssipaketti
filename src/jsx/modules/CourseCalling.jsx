@@ -1,7 +1,6 @@
 import React, {
   useState, useRef/* , useCallback */
 } from 'react';
-import PropTypes from 'prop-types';
 import '../../styles/styles.less';
 
 // https://www.npmjs.com/package/uuid
@@ -13,7 +12,7 @@ import WordCloud from './WordCloud.jsx';
 // Import helpers.
 import helperList from '../helpers/List.js';
 
-function CourseCalling({ values }) {
+function CourseCalling() {
   // Data states.
   const [helperListValue, setHelperListValue] = useState('default');
   const [data, setData] = useState([{
@@ -23,7 +22,7 @@ function CourseCalling({ values }) {
   const [buttonIsDisabled, setButtonIsDisabled] = useState(true);
   const appRef = useRef(null);
 
-  const choices = ['En pääse tekemään juuri lainkaan tällä hetkellä', 'Pääsen tekemään jonkin verran, mutta haluaisin tehdä enemmän', 'Pääsen tällä hetkellä tekemään juuri niin paljon kuin haluan'];
+  const choices = ['En tee (juuri) lainkaan', 'Teen jonkin verran, mutta haluaisin tehdä enemmän', 'Teen jo niin paljon kuin haluan'];
 
   const increasePhase = () => {
     setButtonIsDisabled(true);
@@ -80,8 +79,16 @@ function CourseCalling({ values }) {
   return (
     <div className="exercise_container" ref={appRef} key="course_calling" style={{ backgroundColor: '#f5f6f8' }}>
       <div className="exercise_content">
-        <h3>{values[2].split(';')[0]}</h3>
-        {values[2].split(';')[1] && <h4>{values[2].split(';')[1]}</h4>}
+        {
+          phase === 0 && (
+            <h3>Listaa lempipuuhasi</h3>
+          )
+        }
+        {
+          phase === 1 && (
+            <h3>Arvioi nykytilanteesi</h3>
+          )
+        }
         {
           phase === 0 && (
             <select className="helper_list" onChange={(event) => populateInputChange(event)} value={helperListValue}>
@@ -116,21 +123,20 @@ function CourseCalling({ values }) {
                           .
                           {' '}
                         </span>
-                        Arvioi nykytilanteesi:
-                        {' '}
-                        <span className="value">{data[index].value}</span>
+                        {data[index].value}
+                        <span className="value" />
                       </h4>
                       <p>Miten usein tätä lempipuuhaa nykyisin.</p>
                       {
-                      choices.map((value, i) => (
-                        <div key={uuidv4()} className="row">
-                          <label htmlFor={`rank_label_${index}_${i}`}>
-                            <input type="radio" name={`question_index_${index}`} checked={value === data[index].rank} value={value} id={`rank_label_${index}_${i}`} onChange={(event) => handleRankChange(event, index)} />
-                            <span className="label">{value}</span>
-                          </label>
-                        </div>
-                      ))
-                    }
+                        choices.map((value, i) => (
+                          <div key={uuidv4()} className="row">
+                            <label htmlFor={`rank_label_${index}_${i}`}>
+                              <input type="radio" name={`question_index_${index}`} checked={value === data[index].rank} value={value} id={`rank_label_${index}_${i}`} onChange={(event) => handleRankChange(event, index)} />
+                              <span className="label">{value}</span>
+                            </label>
+                          </div>
+                        ))
+                      }
                     </div>
                   )
                 }
@@ -208,13 +214,5 @@ function CourseCalling({ values }) {
     </div>
   );
 }
-
-CourseCalling.propTypes = {
-  /* eslint-disable-next-line react/forbid-prop-types */
-  values: PropTypes.array.isRequired
-};
-
-CourseCalling.defaultProps = {
-};
 
 export default CourseCalling;
