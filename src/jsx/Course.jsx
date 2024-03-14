@@ -207,42 +207,44 @@ function Course({ parameters }) {
               case 'exercise':
                 return (
                   <div className="exercise_container" key={uuidv4()}>
-                    <div className="exercise_toggler">
-                      <button type="button" className={`exercise_button_${values[3]} with_arrow exercise_button_${course}`} onClick={() => slideToggle(appRef, values[3])}>
-                        <h3>{values[2].split(';')[0]}</h3>
-                        {values[2].split(';')[1] && <h4>{values[2].split(';')[1]}</h4>}
-                      </button>
-                    </div>
-                    <div className={`exercise_description exercise_description_${values[3]}`}>
-                      {/* Text */}
-                      <Markdown key={uuidv4()}>{values[1]}</Markdown>
-                      {/* Video */}
-                      {values[5] && (
-                      <figure className="areena_container">
-                        <div className="areena_player_container" data-id={values[5]} />
-                        <figcaption className="text-xs pt-8">
-                          {values[6] && <span className="caption text-gray-70">{values[6]}</span>}
-                          {' '}
-                          <a href={`https://areena.yle.fi/${values[5]}`} className="text-gray-70">Toista Yle Areenassa</a>
-                        </figcaption>
-                      </figure>
-                      )}
-                      {/* Image */}
-                      {values[7] && (
-                        <div className="image_container">
-                          <figure>
-                            <img src={`https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_4240/w_500/dpr_2/v1698983690/${values[7]}.jpg`} alt={values[7]} />
-                            <figcaption className="text-xs pt-8">
-                              {values[8] && <div className="caption text-gray-70">{values[8]}</div>}
-                              {values[9] && <div className="copyright text-gray-60">{values[9]}</div>}
-                            </figcaption>
-                          </figure>
-                        </div>
-                      )}
-                      {/* Poll */}
-                      <div className={`js-ydd-yle-tehtava ydd-yle-tehtava ydd-yle-tehtava--exam poll poll_${values[4]}`} data-id={values[4]}>{values[4]}</div>
-                      {/* Close */}
-                      <div className="exercise_toggler"><button type="button" onClick={() => closeButton(appRef, values[3])}>Sulje harjoitus</button></div>
+                    <div className="exercise_content">
+                      <div className="exercise_toggler">
+                        <button type="button" className={`exercise_button_${values[3]} with_arrow exercise_button_${course}`} onClick={() => slideToggle(appRef, values[3])}>
+                          <h3>{values[2].split(';')[0]}</h3>
+                          {values[2].split(';')[1] && <h4>{values[2].split(';')[1]}</h4>}
+                        </button>
+                      </div>
+                      <div className={`exercise_description exercise_description_${values[3]}`}>
+                        {/* Text */}
+                        <Markdown key={uuidv4()}>{values[1]}</Markdown>
+                        {/* Video */}
+                        {values[5] && (
+                        <figure className="areena_container">
+                          <div className="areena_player_container" data-id={values[5]} />
+                          <figcaption className="text-xs pt-8">
+                            {values[6] && <span className="caption text-gray-70">{values[6]}</span>}
+                            {' '}
+                            <a href={`https://areena.yle.fi/${values[5]}`} className="text-gray-70">Toista Yle Areenassa</a>
+                          </figcaption>
+                        </figure>
+                        )}
+                        {/* Image */}
+                        {values[7] && (
+                          <div className="image_container">
+                            <figure>
+                              <img src={`https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_4240/w_500/dpr_2/v1698983690/${values[7]}.jpg`} alt={values[7]} />
+                              <figcaption className="text-xs pt-8">
+                                {values[8] && <div className="caption text-gray-70">{values[8]}</div>}
+                                {values[9] && <div className="copyright text-gray-60">{values[9]}</div>}
+                              </figcaption>
+                            </figure>
+                          </div>
+                        )}
+                        {/* Poll */}
+                        <div className={`js-ydd-yle-tehtava ydd-yle-tehtava ydd-yle-tehtava--exam poll poll_${values[4]}`} data-id={values[4]}>{values[4]}</div>
+                        {/* Close */}
+                        <div className="exercise_toggler"><button type="button" onClick={() => closeButton(appRef, values[3])}>Sulje harjoitus</button></div>
+                      </div>
                     </div>
                   </div>
                 );

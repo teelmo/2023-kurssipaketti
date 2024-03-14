@@ -78,7 +78,7 @@ function CourseCalling({ values }) {
   };
 
   return (
-    <div className="exercise_container" ref={appRef} key="course_calling">
+    <div className="exercise_container" ref={appRef} key="course_calling" style={{ backgroundColor: '#f5f6f8' }}>
       <div className="exercise_content">
         <h3>{values[2].split(';')[0]}</h3>
         {values[2].split(';')[1] && <h4>{values[2].split(';')[1]}</h4>}
