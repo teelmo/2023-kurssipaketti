@@ -83,6 +83,34 @@
         line-height: 34px;
       }
     }
+    .main_video_container {
+      position: relative;
+      &.dark {
+        &:after {
+          background-image: url('./../assets/img/wave_black.png');
+        }
+      }
+      &:after {
+        background-image: url('./../assets/img/wave_white.png');
+        background-size: 100% 100%;
+        bottom: -1px;
+        content: '';
+        display: block;
+        height: 30px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+      }
+      video {
+        box-sizing: border-box;
+        display: block;
+        margin: auto auto 20px auto;
+        max-width: 100%;
+        padding: 0 20px;
+        width: 100%;
+      }
+    }
     .main_image_container {
       box-sizing: border-box;
       margin: auto auto 20px auto;
@@ -211,11 +239,14 @@
       h3 {
         font-family: Yle Next Bold;
         font-size: 30px;
+        margin: 0 0 5px 0;
+        text-align: center;
       }
       h4 {
         font-family: Yle Next Bold;
         font-size: 18px;
-        margin: 0 0 5px 0;
+        margin: 0 0 20px 0;
+        text-align: center;
       }
       p {
         margin: 0 0 20px 0;
@@ -253,14 +284,14 @@
       .helper_list {
         appearance: none;
         background-color: #4e4e96;
-        background-image: linear-gradient(45deg, transparent 50%, #fff 50%), linear-gradient(135deg, #fff 50%, transparent 50%), linear-gradient(to right, #fff, #fff);
-        background-position: calc(100% - 20px) calc(1em + 6px), calc(100% - 15px) calc(1em + 6px), calc(100% - 2.5em) 0.7em;
+        background-image: url('./../assets/img/arrow.png');
+        background-position: 97% 50%;
         background-repeat: no-repeat;
-        background-size: 5px 5px, 5px 5px, 1px 1.5em;
+        background-size: 20px;
         color: #fff;
         font-family: Yle Next Regular;
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         padding: 15px 10px;
         width: 100%;
         &:-moz-focusring {
@@ -273,13 +304,13 @@
         text-align: center;
         button.ready {
           background-color: #4e4e96;
-          border-radius: 10px;
+          border-radius: 40px;
           border: 0;
           color: #fff;
           cursor: pointer;
           font-family: Yle Next Regular;
           font-size: 16px;
-          padding: 7px 20px;
+          padding: 15px 30px;
           &:disabled {
             background-color: #ccc;
             cursor: default;
@@ -293,7 +324,6 @@
       }
       .input_container {
         .input_field_container {
-          margin-bottom: 20px;
           padding-bottom: 20px;
           label {
             align-items: center;
@@ -304,6 +334,7 @@
             }
             .number {
               font-family: Yle Next Bold;
+              font-size: 22px;
             }
             input[type=text] {
               background-color: #fff;
@@ -312,7 +343,7 @@
               display: flex;
               font-family: Yle Next Regular;
               font-size: 16px;
-              padding: 5px 10px;
+              padding: 10px 10px;
               width: 100%;
             }
           }

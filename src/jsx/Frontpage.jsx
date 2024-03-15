@@ -13,6 +13,19 @@ function Frontpage() {
     <div className="app" ref={appRef}>
       <div className="course_selection_container">
         <div className="course_selection_video_container">
+          <a href="https://aihe.yle.fi/aihe/a/20-10006474">
+            <h2>Kutsumuskartta</h2>
+            <video autoPlay muted loop className="course_selection_video dark" playsInline poster={`${base_url}/assets/img/link_video_keskittyminen_darkmode.jpg`}>
+              <source src={`${base_url}/assets/vid/kutsumuskartta.mp4`} type="video/mp4" />
+              <source src={`${base_url}/assets/vid/kutsumuskartta.webm`} type="video/webm" />
+            </video>
+            <video autoPlay muted loop className="course_selection_video light" playsInline poster={`${base_url}/assets/img/link_video_keskittyminen.jpg`}>
+              <source src={`${base_url}/assets/vid/kutsumuskartta.mp4`} type="video/mp4" />
+              <source src={`${base_url}/assets/vid/kutsumuskartta.webm`} type="video/webm" />
+            </video>
+          </a>
+        </div>
+        <div className="course_selection_video_container">
           <a href="https://aihe.yle.fi/aihe/a/20-10005783">
             <h2>Keskittyminen</h2>
             <video autoPlay muted loop className="course_selection_video dark" playsInline poster={`${base_url}/assets/img/link_video_keskittyminen_darkmode.jpg`}>

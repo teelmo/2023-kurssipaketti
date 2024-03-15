@@ -181,6 +181,15 @@ function Course({ parameters }) {
             switch (values[0]) {
               case 'title':
                 return <h1 key={uuidv4()}>{values[2]}</h1>;
+              case 'main_video':
+                return (
+                  <div className={`main_video_container ${(darkMode) ? 'dark' : 'light'}`}>
+                    <video key={uuidv4()} autoPlay muted loop playsInline>
+                      <source src={`${base_url}/assets/vid/${values[5]}.mp4`} type="video/mp4" />
+                      <source src={`${base_url}/assets/vid/${values[5]}.webm`} type="video/webm" />
+                    </video>
+                  </div>
+                );
               case 'main_image':
                 return <div key={uuidv4()} className="main_image_container"><img src={`https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_3936/w_1300/dpr_2/v1700043657/${values[7]}.jpg`} alt={values[8]} /></div>;
               case 'full_main_image':

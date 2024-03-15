@@ -86,20 +86,13 @@ function CourseCalling() {
         }
         {
           phase === 1 && (
-            <h3>Arvioi nykytilanteesi</h3>
+            <>
+              <h3>Arvioi nykytilanteesi</h3>
+              <h4>Miten usein teet lempipuuhiasi?</h4>
+            </>
           )
         }
-        {
-          phase === 0 && (
-            <select className="helper_list" onChange={(event) => populateInputChange(event)} value={helperListValue}>
-              <option disabled value="default">Inspiraatiota voit napata apulistalta</option>
-              <option disabled>– – – – –</option>
-              {
-                helperList.map(el => (<option value={el} key={uuidv4()}>{el}</option>))
-              }
-            </select>
-          )
-        }
+
         <div className="input_container">
           {
             data && data.map((el, index) => (
@@ -126,7 +119,6 @@ function CourseCalling() {
                         {data[index].value}
                         <span className="value" />
                       </h4>
-                      <p>Miten usein tätä lempipuuhaa nykyisin.</p>
                       {
                         choices.map((value, i) => (
                           <div key={uuidv4()} className="row">
@@ -144,6 +136,17 @@ function CourseCalling() {
             ))
           }
         </div>
+        {
+          phase === 0 && (
+            <select className="helper_list" onChange={(event) => populateInputChange(event)} value={helperListValue}>
+              <option disabled value="default">Inspiraatiota voit napata apulistalta</option>
+              <option disabled>– – – – –</option>
+              {
+                helperList.map(el => (<option value={el} key={uuidv4()}>{el}</option>))
+              }
+            </select>
+          )
+        }
         <div className="button_container">
           <button type="button" onClick={() => increasePhase()} className="ready" disabled={buttonIsDisabled}>Valmista tuli</button>
         </div>
@@ -151,23 +154,23 @@ function CourseCalling() {
           phase > 1 && (
             <div>
               <div className="result_container">
-                {data.filter(el => el.rank === choices[0]).length > 0 && (
+                {data.filter(el => el.rank === choices[2]).length > 0 && (
                   <div>
-                    <h4>Asiat joita et tee mutta tahtoisit</h4>
-                    <p>Näihin panostamalla saat eniten hyötyä</p>
+                    <h4>Näitä koet tekeväsi tarpeeksi</h4>
+                    <p>Näistä saat iloa tällä hetkellä. Pidä niistä kiinni.</p>
                     <ul>
                       {
-                        data.filter(el => el.rank === choices[0]).map(el => (
-                          <li className="result_row" key={uuidv4()}>{el.value}</li>
-                        ))
-                      }
+                      data.filter(el => el.rank === choices[2]).map(el => (
+                        <li className="result_row" key={uuidv4()}>{el.value}</li>
+                      ))
+                    }
                     </ul>
                   </div>
                 )}
                 {data.filter(el => el.rank === choices[1]).length > 0 && (
                   <div>
-                    <h4>Asiat joita et teet liian vähän siihen miten tahtoisit</h4>
-                    <p>Näihin panostamalla saat paljon hyötyä</p>
+                    <h4>Näitä teet jonkin verra</h4>
+                    <p>Voisitko tehdä nykyistä enemmän?</p>
                     <ul>
                       {
                       data.filter(el => el.rank === choices[1]).map(el => (
@@ -177,16 +180,16 @@ function CourseCalling() {
                     </ul>
                   </div>
                 )}
-                {data.filter(el => el.rank === choices[2]).length > 0 && (
+                {data.filter(el => el.rank === choices[0]).length > 0 && (
                   <div>
-                    <h4>Asiat jotka ovat kunnossa</h4>
-                    <p>Älä unohda näitä</p>
+                    <h4>Näitä teet liian vähän</h4>
+                    <p>Suurin muutos kohti innostavampaa arkea tapahtuu, kun lisäät näitä elämääsi.</p>
                     <ul>
                       {
-                      data.filter(el => el.rank === choices[2]).map(el => (
-                        <li className="result_row" key={uuidv4()}>{el.value}</li>
-                      ))
-                    }
+                        data.filter(el => el.rank === choices[0]).map(el => (
+                          <li className="result_row" key={uuidv4()}>{el.value}</li>
+                        ))
+                      }
                     </ul>
                   </div>
                 )}
