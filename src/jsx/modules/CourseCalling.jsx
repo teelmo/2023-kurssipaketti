@@ -139,7 +139,7 @@ function CourseCalling() {
         {
           phase === 0 && (
             <select className="helper_list" onChange={(event) => populateInputChange(event)} value={helperListValue}>
-              <option disabled value="default">Inspiraatiota voit napata apulistalta</option>
+              <option disabled value="default">Nappaa inspiraatiota apulistalta</option>
               <option disabled>– – – – –</option>
               {
                 helperList.map(el => (<option value={el} key={uuidv4()}>{el}</option>))
@@ -169,7 +169,7 @@ function CourseCalling() {
                 )}
                 {data.filter(el => el.rank === choices[1]).length > 0 && (
                   <div>
-                    <h4>Näitä teet jonkin verra</h4>
+                    <h4>Näitä teet jonkin verran</h4>
                     <p>Voisitko tehdä nykyistä enemmän?</p>
                     <ul>
                       {

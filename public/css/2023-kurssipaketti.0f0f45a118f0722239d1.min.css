@@ -20,6 +20,9 @@
 .js-ydd-comments-plugin > div {
   padding-top: 20px;
 }
+#block-yddrasil-content .yo-widget {
+  margin-bottom: 0;
+}
 #block-yddrasil-content .yo-fragment__text {
   margin-bottom: 20px;
 }
@@ -288,6 +291,9 @@
   font-family: Yle Next Regular;
   font-size: 16px;
   margin-bottom: 20px;
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .word_cloud_container {
+  margin: 20px auto;
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .word_cloud_container h3 {
   margin: 0 0 10px 0;

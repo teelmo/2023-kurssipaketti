@@ -183,8 +183,8 @@ function Course({ parameters }) {
                 return <h1 key={uuidv4()}>{values[2]}</h1>;
               case 'main_video':
                 return (
-                  <div className={`main_video_container ${(darkMode) ? 'dark' : 'light'}`}>
-                    <video key={uuidv4()} autoPlay muted loop playsInline>
+                  <div key={uuidv4()} className={`main_video_container ${(darkMode) ? 'dark' : 'light'}`}>
+                    <video autoPlay muted loop playsInline>
                       <source src={`${base_url}/assets/vid/${values[5]}.mp4`} type="video/mp4" />
                       <source src={`${base_url}/assets/vid/${values[5]}.webm`} type="video/webm" />
                     </video>
@@ -234,8 +234,8 @@ function Course({ parameters }) {
               case 'exercise':
                 return (
                   <div className="exercise_container" key={uuidv4()}>
-                    <div className={course === 'kutsumuskartta' ? 'exercise_content with_bg' : 'exercise_content'}>
-                      <div className="exercise_toggler exercise_withbg">
+                    <div className="exercise_content">
+                      <div className={course === 'kutsumuskartta' ? 'exercise_toggler exercise_withbg' : 'exercise_toggler'}>
                         <button type="button" className={`exercise_button_${values[3]} with_arrow exercise_button_${course}`} onClick={() => slideToggle(appRef, values[3])}>
                           <h3>{values[2].split(';')[0]}</h3>
                           {values[2].split(';')[1] && <h4>{values[2].split(';')[1]}</h4>}
