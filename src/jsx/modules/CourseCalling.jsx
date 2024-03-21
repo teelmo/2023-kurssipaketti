@@ -1,5 +1,5 @@
 import React, {
-  useState, useRef/* , useCallback */
+  useState, useRef, useEffect/* , useCallback */
 } from 'react';
 import '../../styles/styles.less';
 
@@ -75,6 +75,20 @@ function CourseCalling() {
     });
     setButtonIsDisabled(value_for_test);
   };
+
+  const resultsRef = useRef();
+
+  const scrollToElement = () => {
+    const { current } = resultsRef;
+    if (current !== null) {
+      current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  useEffect(() => {
+    if (phase === 2) {
+      scrollToElement();
+    }
+  }, [phase]);
 
   return (
     <div className="exercise_container" ref={appRef} key="course_calling" style={{ backgroundColor: 'rgba(225, 225, 240, 0.7)' }}>
@@ -153,7 +167,7 @@ function CourseCalling() {
         {
           phase > 1 && (
             <div>
-              <div className="result_container">
+              <div className="result_container" ref={resultsRef}>
                 {data.filter(el => el.rank === choices[2]).length > 0 && (
                   <div>
                     <h4>Näitä koet tekeväsi tarpeeksi</h4>
@@ -207,7 +221,7 @@ function CourseCalling() {
                 }
               </div>
               <h3>Tuunaa elämäsi!</h3>
-              <p>Nyt näet paremmin, mihin haluaisit aikaasi käyttää. Voit alkaa suunnata tarmosi siihen, että työssäsi ja vapaa-aikana on enemmän näitä juuri sinulle tärkeitä asioita.</p>
+              <p>Tämä harjoituksen tarkoituksena on herättää pohtimaan mitkä asiat aidosti tuottavat iloa juuri sinulle. Nyt voit alkaa suunnata tarmosi siihen, että työssäsi ja vapaa-aikana on enemmän näitä juuri sinulle tärkeitä asioita.</p>
               <p>Suurin muutos tapahtuu, kun lisäät arkeesi niitä juttuja, joita et tällä hetkellä tee, tai joita teet hyvin vähän.</p>
               <p>Joitakin asioita et pysty heti toteuttamaan täysillä. Aloita silloin mikroskooppisen pienellä ensiaskeleella. Olisiko mahdollista omistaa viisitoista minuuttia viikossa kaipaamallesi lempipuuhalle?</p>
             </div>
