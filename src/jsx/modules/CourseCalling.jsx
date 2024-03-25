@@ -221,7 +221,7 @@ function CourseCalling() {
                 }
               </div>
               <h3>Tuunaa elämäsi!</h3>
-              <p>Tämä harjoituksen tarkoituksena on herättää pohtimaan mitkä asiat aidosti tuottavat iloa juuri sinulle. Nyt voit alkaa suunnata tarmosi siihen, että työssäsi ja vapaa-aikana on enemmän näitä juuri sinulle tärkeitä asioita.</p>
+              <p>Tämän harjoituksen tarkoituksena on herättää pohtimaan, mitkä asiat aidosti tuottavat iloa juuri sinulle. Nyt voit alkaa suunnata tarmosi siihen, että työssäsi ja vapaa-aikana on enemmän näitä sinulle tärkeitä asioita.</p>
               <p>Suurin muutos tapahtuu, kun lisäät arkeesi niitä juttuja, joita et tällä hetkellä tee, tai joita teet hyvin vähän.</p>
               <p>Joitakin asioita et pysty heti toteuttamaan täysillä. Aloita silloin mikroskooppisen pienellä ensiaskeleella. Olisiko mahdollista omistaa viisitoista minuuttia viikossa kaipaamallesi lempipuuhalle?</p>
             </div>

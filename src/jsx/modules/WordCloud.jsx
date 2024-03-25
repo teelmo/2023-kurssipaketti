@@ -25,7 +25,7 @@ function WordCloud({ rank_0, rank_1 }) {
   return (
     <div>
       <h3>Tuunaa arkea näillä tekemisillä</h3>
-      <p>Nappaa tästä kuva, jotta muistat mitä asioita kaipaat lisää.</p>
+      <p>Suurin muutos tapahtuu, kun lisäät arkeesi juttuja, joita teet tällä hetkellä vähän tai et lainkaan. Pystyisitkö lisäämään näitä tai vaikka yhtä näistä elämääsi - edes hiukan? Nappaa talteen alla oleva kuva, jotta muistat, mitä asioita haluat tavoitella.</p>
       <div className="word_cloud">
         {
           data && data.map(el => <div key={uuidv4()}>{el}</div>)
