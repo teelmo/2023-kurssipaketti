@@ -212,9 +212,9 @@ function Course({ parameters }) {
                     {/* Video */}
                     {values[5] && (
                     <figure className="areena_container">
-                      <div className="areena_player_container" data-id={values[5]}>Areena sisältöä ladataan…</div>
-                      <figcaption className="text-xs pt-8">
-                        {values[6] && <span className="caption text-gray-70">{values[6]}</span>}
+                      <div className="areena_player_container" data-id={values[5]} />
+                      <figcaption className="">
+                        {values[6] && <span className="caption">{values[6]}</span>}
                         {' '}
                       </figcaption>
                     </figure>
@@ -228,8 +228,8 @@ function Course({ parameters }) {
                     {values[5] && (
                     <figure className="areena_container">
                       <div className="areena_player_container" data-id={values[5]} />
-                      <figcaption className="text-xs pt-8">
-                        {values[6] && <span className="caption text-gray-70">{values[6]}</span>}
+                      <figcaption className="">
+                        {values[6] && <span className="caption">{values[6]}</span>}
                         {' '}
                       </figcaption>
                     </figure>
@@ -257,9 +257,9 @@ function Course({ parameters }) {
                       <div className={`exercise_description exercise_description_${values[3]}`}>
                         {values[5] && values[12].split(';')[0] === 'video_top' && (
                         <figure className="areena_container">
-                          <div className="areena_player_container" data-id={values[5].split(';')[0]}>Areena sisältöä ladataan…</div>
-                          <figcaption className="text-xs pt-8">
-                            {values[6] && <span className="caption text-gray-70">{values[6].split(';')[0]}</span>}
+                          <div className="areena_player_container" data-id={values[5].split(';')[0]} />
+                          <figcaption className="">
+                            {values[6] && <span className="caption">{values[6].split(';')[0]}</span>}
                             {' '}
                           </figcaption>
                         </figure>
@@ -269,9 +269,9 @@ function Course({ parameters }) {
                         {/* Audio */}
                         {values[5] && values[12].split(';')[1] === 'audio' && (
                         <figure className="areena_container areena_container">
-                          <div className="areena_player_container_audio" data-id={values[5].split(';')[1]}>Areena sisältöä ladataan…</div>
-                          <figcaption className="text-xs pt-8">
-                            {values[6] && <span className="caption text-gray-70">{values[6].split(';')[1]}</span>}
+                          <div className="areena_player_container_audio" data-id={values[5].split(';')[1]} />
+                          <figcaption className="">
+                            {values[6] && <span className="caption">{values[6].split(';')[1]}</span>}
                             {' '}
                           </figcaption>
                         </figure>
@@ -279,9 +279,9 @@ function Course({ parameters }) {
                         {/* Areena */}
                         {values[5] && values[12] === '' && (
                         <figure className="areena_container">
-                          <div className="areena_player_container" data-id={values[5]}>Areena sisältöä ladataan…</div>
-                          <figcaption className="text-xs pt-8">
-                            {values[6] && <span className="caption text-gray-70">{values[6]}</span>}
+                          <div className="areena_player_container" data-id={values[5]} />
+                          <figcaption className="">
+                            {values[6] && <span className="caption">{values[6]}</span>}
                             {' '}
                           </figcaption>
                         </figure>
@@ -291,8 +291,8 @@ function Course({ parameters }) {
                           <div className="image_container">
                             <figure>
                               <img src={`https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_4240/w_500/dpr_2/v1698983690/${values[7]}.jpg`} alt={values[7]} />
-                              <figcaption className="text-xs pt-8">
-                                {values[8] && <div className="caption text-gray-70">{values[8]}</div>}
+                              <figcaption className="">
+                                {values[8] && <div className="caption">{values[8]}</div>}
                                 {values[9] && <div className="copyright text-gray-60">{values[9]}</div>}
                               </figcaption>
                             </figure>
