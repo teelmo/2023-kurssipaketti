@@ -1,19 +1,20 @@
-type,content,title,group,poll_id,areena_id,areena_caption,ims_id,image_caption,image_copyright,internal comment
-title,,Tuunaa arki innostavammaksi kutsumuskartan avulla,,,,,,,,
-main_video,,,,,kutsumuskartta,,39-12023456557642418a11,Pääkuva,,
-poll_section,,,,47-3a41be00-d7e7-43e8-bfa3-3ab22b9d564a,,,,,,
+type,content,title,group,poll_id,areena_id,areena_caption,ims_id,image_caption,image_copyright,background,extra,areena_extra,footer,internal comment
+main_video,,,,,kutsumuskartta,,39-12023456557642418a11,Pääkuva,,,,,,
+title,,Tuunaa arki innostavammaksi kutsumuskartan avulla,,,,,,,,,,,,
+poll_section,,,,47-3a41be00-d7e7-43e8-bfa3-3ab22b9d564a,,,,,,,,,,
 paragraph_section,"Apulaisprofessori Frank Martela on tutkinut hyvän elämän ehtoja reilut kymmenen vuotta. Hän tietää tutkimustyönsä pohjalta, että kannattaa rakentaa oma elämä niiden asioiden ympärille, jotka itseä aidosti kiinnostavat ja innostavat.
 
-Joskus lempijutut kuitenkin unohtuvat arjen kiireissä, ne “vain jäävät”.  Kutsumuskartta auttaa muistamaan sinun uniikit kiinnostuksen kohteesi, ja löytämään uusia. Arjen tuunaamisen alkuun pääsee jo vartilla viikossa.",,,,,,,,,
-areena_section,,,,,1-68321934,,,,,
+Joskus lempijutut kuitenkin unohtuvat arjen kiireissä, ne “vain jäävät”.  Kutsumuskartta auttaa muistamaan sinun uniikit kiinnostuksen kohteesi, ja löytämään uusia. Arjen tuunaamisen alkuun pääsee jo vartilla viikossa.",,,,,,,,,,,,,
+areena_section,,,,,1-68321934,,,,,,,,,
 paragraph_section,"Alla on kolmivaiheinen harjoitus, jonka avulla: 
 * ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/1_icon.png) löydät isoja ja pieniä kutsumuksia 
 * ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/2_icon.png) hahmotat, mistä sinun hyvä elämäsi koostuu 
 * ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/3_icon.png) löydät unohtuneita mielipuuhia uudelleen 
 
-Harjoitus perustuu työelämäprofessori Lauri Järvilehdon ja apulaisprofessori Frank Martelan kehittämiin metodeihin.",,,,,,,,,
-title_section,,Kutsumuskartta,,,,,,,,
-paragraph_section,"Ensimmäisessä vaiheessa listaa kaikki pienet ja isommat tekemiset, joista pidät tekemisen itsensä takia. Lempipuuhat, joiden parissa viihdyt, ja joita tekisit, vaikket saisi niistä rahaa tai muuta hyötyä. 
+Harjoitus perustuu työelämäprofessori Lauri Järvilehdon ja apulaisprofessori Frank Martelan kehittämiin metodeihin.",,,,,,,,,,,,,
+paragraph_section,"### Kutsumuskartta
+
+Ensimmäisessä vaiheessa listaa kaikki pienet ja isommat tekemiset, joista pidät tekemisen itsensä takia. Lempipuuhat, joiden parissa viihdyt, ja joita tekisit, vaikket saisi niistä rahaa tai muuta hyötyä. 
 
 Listaa myös asioita, joita et ole koskaan tehnyt, mutta haluaisit tehdä.
 
@@ -25,15 +26,15 @@ Ole konkreettinen. Älä kirjoita “myyjän työ”, vaan kirjoita ylös niitä
 
 Jos omat ideat loppuvat, voit poimia puuhia myös inspiroivasta apulistasta.
 
-Ensimmäisen vaiheen lopuksi klikkaa ""valmista tuli"", ja pääset toiseen vaiheeseen. Siellä arvioit, miten usein teet listaamiasi lempijuttuja. Kolmannessa vaiheessa näet oman kutsumuskarttasi, ja saat käytännöllisiä vinkkejä elämän tuunaamisen avuksi.",,,,,,,,,
-calling_exercise,,,exercise_1,,,,,,,
-poll_section,,,,47-da5a9ef2-0c23-4e91-8cf8-e6ca5ca7cc8a,,,,,,
-paragraph_section,"Seuraavat vinkit antavat työkaluja siihen, millaisilla pienillä askelilla lempipuuhia voi lähteä lisäämään arkeen.",,,,,,,,,
+Ensimmäisen vaiheen lopuksi klikkaa ""valmista tuli"", ja pääset toiseen vaiheeseen. Siellä arvioit, miten usein teet listaamiasi lempijuttuja. Kolmannessa vaiheessa näet oman kutsumuskarttasi, ja saat käytännöllisiä vinkkejä elämän tuunaamisen avuksi.",,exercise_1,,,,,,,true,calling_exercise,,,
+,,,,,,,,,,,,,,
+poll_section,,,,47-da5a9ef2-0c23-4e91-8cf8-e6ca5ca7cc8a,,,,,,,,,,
+paragraph_section,"Seuraavat vinkit antavat työkaluja siihen, millaisilla pienillä askelilla lempipuuhia voi lähteä lisäämään arkeen.",,,,,,,,,,,,,
 exercise,"Mieluisa tekeminen vaatii joskus niin paljon, että kynnys tuntuu korkealta. Keskity silloin innostuksen kasvattamiseen. Katso aiheeseen liittyviä videoita, lue kirjoja ja liity aiheeseen liittyviin verkkoyhteisöihin.
 
 Käytä vähäiset resurssisi fiilistelyyn. Omista edes vartti viikossa jollekin lempipuuhalle. Näin toimien olet valmistautunut varsinaiseen tekemiseen, kun arjen realiteetit vihdoin antavat myöten.
 
-Inspiraation lähteitä löydät esimerkiksi Youtubesta ja Pinterestistä.",Vinkki kiireiselle;anna vartti inspiraatiolle,exercise_2,,,,,,,
+Inspiraation lähteitä löydät esimerkiksi Youtubesta ja Pinterestistä.",Vinkki kiireiselle;anna vartti inspiraatiolle,exercise_2,,,,,,,,kutsumuskartta_kiireiselle,,,
 exercise,"Frank Martela kannustaa laatimaan suunnitelman. Se parantaa todennäköisyyttä, että alat lisätä mielenkiintoisia juttuja arkeesi. Sen sijaan, että vain mietit, että “asiaa X pitäisi tehdä enemmän”, ota hetkinen aikaa ja pohdiskele seuraavia asioita:
 
 1) Miksi haluan tehdä asiaa X?
@@ -47,25 +48,25 @@ Muistikikkoja on monenlaisia:
 * varaa tekemiselle aikaa kalenterista
 * laita puhelimeen muistutuksia
 * liimaile muistilappuja ympäri kotia ja työpaikalle
-* verkostoidu samasta asiasta innostuneiden kanssa",Vinkki unohtelijalle;suunnittele ja aikatauluta,exercise_3,,,,,,,
+* verkostoidu samasta asiasta innostuneiden kanssa",Vinkki unohtelijalle;suunnittele ja aikatauluta,exercise_3,,,,,,,,kutsumuskartta_unohtelijalle,,,
 exercise,"Tekoälytyökalut, kuten esimerkiksi ChatGPT tai Goblin Tools Magic ToDo, voivat auttaa hahmottamaan, millaisista osasista lempipuuha koostuu. 
 
-Toimiva prompti eli kehote voi olla vaikka tällainen: Haluaisin alkaa harrastaa “x”. En ole koskaan kokeillut sitä, enkä tiedä mistä aloittaisin. Voisitko laatia minulle ensiaskeleet tämän uuden asian kokeilemiseen. Aloita aivan pienestä teosta ja etene vähitellen.",Vinkki uuden aloittajalle;käytä tekoälyä,exercise_4,,,,,,,
+Toimiva prompti eli kehote voi olla vaikka tällainen: Haluaisin alkaa harrastaa “x”. En ole koskaan kokeillut sitä, enkä tiedä mistä aloittaisin. Voisitko laatia minulle ensiaskeleet tämän uuden asian kokeilemiseen. Aloita aivan pienestä teosta ja etene vähitellen.",Vinkki uuden aloittajalle;käytä tekoälyä,exercise_4,,,,,,,,kutsumuskartta_aloittajalle,,,
 paragraph_section,"Joskus on parasta jättää joku lempipuuhista odottamaan parempaa aikaa, mutta never say never – jonakin päivänä mahdottomalta tuntuva voi löytää tilaa elämästä. 
 
-Frank Martela neuvookin ajattelemaan elämää jaksoissa.",,,,,,,,,
-areena_section,,,,,1-68321994,,,,,
-title_section,,Miten tästä eteenpäin?,,,,,,,,
-paragraph_section,"Nyt, kun olet tehnyt oman kutsumuskarttasi, tunnet itsesi paremmin. Tällä videolla Frank Martela neuvoo, miten otat oivallukset käyttöön ja onnistut omalta tuntuvan elämän rakentamisessa.",,,,,,,,,
-areena_section,,,,,1-67448183,,,,,
-title_section,,Anna palautetta,,,,,,,,
-paragraph_section,"Haluaisimme kuulla, mitä pidit harjoituskokonaisuudesta. Anna meille palautetta [tällä lomakkeella](https://docs.google.com/forms/d/e/1FAIpQLScdXazZpd4tNxSmQxszoinajcOeONtd5nND0p03eHNHDJMFTA/viewform?usp=sf_link) (siirryt google formsiin).",,,,,,,,,
-title_section,,Lisää harjoituksia,,,,,,,,
+Frank Martela neuvookin ajattelemaan elämää jaksoissa.",,,,,,,,,,,,,
+areena_section,,,,,1-68321994,,,,,,,,,
+title_section,,Miten tästä eteenpäin?,,,,,,,,,,,,
+paragraph_section,"Nyt, kun olet tehnyt oman kutsumuskarttasi, tunnet itsesi paremmin. Tällä videolla Frank Martela neuvoo, miten otat oivallukset käyttöön ja onnistut omalta tuntuvan elämän rakentamisessa.",,,,,,,,,,,,,
+areena_section,,,,,1-67448183,,,,,,,,,
+title_section,,Anna palautetta,,,,,,,,,,,,
+paragraph_section,"Haluaisimme kuulla, mitä pidit harjoituskokonaisuudesta. Anna meille palautetta [tällä lomakkeella](https://docs.google.com/forms/d/e/1FAIpQLScdXazZpd4tNxSmQxszoinajcOeONtd5nND0p03eHNHDJMFTA/viewform?usp=sf_link) (siirryt google formsiin).",,,,,,,,,,,,,
+title_section,,Lisää harjoituksia,,,,,,,,,,,,
 paragraph_section,"Haluatko oppia rentouttamaan itsesi tai kaipaatko toimivia muistitekniikoita arkeesi? [Lisää harjoituksia löydät täältä](https://yle.fi/aihe/a/20-10005632).
 
-",,,,,,,,,
-title_section,,Jaa oivalluksesi,,,,,,,,
-paragraph_section,"Nousiko mieleen havainto, jonka haluat jakaa muille harjoituksen tehneille? Haluatko kertoa, mitä lempipuuhia listasit? Osallistu keskusteluun alla. Sovelluksessa keskusteluosio on sivun ylälaidassa.",,,,,,,,,
+",,,,,,,,,,,,,
+title_section,,Jaa oivalluksesi,,,,,,,,,,,,
+paragraph_section,"Nousiko mieleen havainto, jonka haluat jakaa muille harjoituksen tehneille? Haluatko kertoa, mitä lempipuuhia listasit? Osallistu keskusteluun alla. Sovelluksessa keskusteluosio on sivun ylälaidassa.",,,,,,,,,,,,,
 paragraph_section,"**Tekijät:**\
 Toimittaja: Eve Mantu\
 Videot: Tommi Parkkinen\
@@ -73,4 +74,4 @@ Visuaalisuus: Annukka Palmén-Väisänen, Niko Sveins\
 Koodaus: Teemo Tebest\
 Tuottaja: Anna-Leena Lappalainen
 
-**Julkaistu:** 16.3.2024",,,,,,,,,
+**Julkaistu:** 16.3.2024",,,,,,,,,,,,,

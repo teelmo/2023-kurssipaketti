@@ -124,6 +124,19 @@ function Course({ parameters }) {
               });
             }
           });
+          appRef.current.querySelectorAll('.areena_player_container_audio').forEach((el) => {
+            const props = {
+              autoplay: false,
+              id: el.dataset.id,
+              webKitPlaysInline: true
+            };
+            // https://github.com/Yleisradio/player-static/wiki/Player-embed-instructions
+            if (window.ylePlayer && window.location.href.includes('yle')) {
+              window.ylePlayer.render({
+                element: el, props
+              });
+            }
+          });
         }
       };
       document.body.appendChild(script);
@@ -155,14 +168,6 @@ function Course({ parameters }) {
 
   return (
     <div className={`app ${(darkMode) ? 'dark' : 'light'}`} ref={appRef}>
-      {
-        course !== 'kutsumuskartta' && (
-          <video autoPlay muted loop className="background_video" playsInline>
-            <source src={`${base_url}/assets/vid/bg_video_${course}.mp4`} type="video/mp4" />
-            <source src={`${base_url}/assets/vid/bg_video_${course}.webm`} type="video/webm" />
-          </video>
-        )
-      }
       <div className={`content_container content_container_${course}`}>
         {
           data && data.slice(1).map((values) => {
@@ -176,11 +181,14 @@ function Course({ parameters }) {
             6: areena_caption
             7: ims_id
             8: image_caption
-            9: image_copyrighht
+            9: image_copyright
+            10: background
+            11: extra
+            12: areena_extra
+            13: footer
+            14: internal_comment
             */
             switch (values[0]) {
-              case 'title':
-                return <h1 key={uuidv4()}>{values[2]}</h1>;
               case 'main_video':
                 return (
                   <div key={uuidv4()} className={`main_video_container ${(darkMode) ? 'dark' : 'light'}`}>
@@ -194,6 +202,8 @@ function Course({ parameters }) {
                 return <div key={uuidv4()} className="main_image_container"><img src={`https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_3936/w_1300/dpr_2/v1700043657/${values[7]}.jpg`} alt={values[8]} /></div>;
               case 'full_main_image':
                 return <div key={uuidv4()} className="main_image_container full"><img src={`https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_3936/w_1300/dpr_2/v1700043657/${values[7]}.jpg`} alt={values[8]} /></div>;
+              case 'title':
+                return <h1 key={uuidv4()}>{values[2]}</h1>;
               case 'subtitle':
                 return <p key={uuidv4()} className="subtitle ydd-lead font-bold text-lg owl:text-xl">{values[2]}</p>;
               case 'areena_section':
@@ -202,7 +212,7 @@ function Course({ parameters }) {
                     {/* Video */}
                     {values[5] && (
                     <figure className="areena_container">
-                      <div className="areena_player_container" data-id={values[5]} />
+                      <div className="areena_player_container" data-id={values[5]}>Areena sisältöä ladataan…</div>
                       <figcaption className="text-xs pt-8">
                         {values[6] && <span className="caption text-gray-70">{values[6]}</span>}
                         {' '}
@@ -213,7 +223,7 @@ function Course({ parameters }) {
                 );
               case 'paragraph_section':
                 return (
-                  <div className="content" key={uuidv4()}>
+                  <div className={values[10] === 'true' ? `content content_${course} content_withbg` : `content content_${course}`} key={uuidv4()}>
                     {/* Video */}
                     {values[5] && (
                     <figure className="areena_container">
@@ -225,29 +235,51 @@ function Course({ parameters }) {
                     </figure>
                     )}
                     <Markdown>{values[1]}</Markdown>
+                    {
+                      values[11] === 'calling_exercise' && (
+                      <CourseCalling values={values} key={uuidv4()} />
+                      )
+                    }
                   </div>
                 );
               case 'title_section':
                 return <h2 className="" key={uuidv4()}>{values[2]}</h2>;
-              case 'calling_exercise':
-                return <CourseCalling values={values} key={uuidv4()} />;
               case 'exercise':
                 return (
                   <div className="exercise_container" key={uuidv4()}>
                     <div className="exercise_content">
                       <div className={course === 'kutsumuskartta' ? 'exercise_toggler exercise_withbg' : 'exercise_toggler'}>
-                        <button type="button" className={`exercise_button_${values[3]} with_arrow exercise_button_${course}`} onClick={() => slideToggle(appRef, values[3])}>
+                        <button type="button" className={`exercise_button_${values[3]} with_arrow exercise_button_${course} exercise_button_${values[11]}`} onClick={() => slideToggle(appRef, values[3])}>
                           <h3>{values[2].split(';')[0]}</h3>
                           {values[2].split(';')[1] && <h4>{values[2].split(';')[1]}</h4>}
                         </button>
                       </div>
                       <div className={`exercise_description exercise_description_${values[3]}`}>
+                        {values[5] && values[12].split(';')[0] === 'video_top' && (
+                        <figure className="areena_container">
+                          <div className="areena_player_container" data-id={values[5].split(';')[0]}>Areena sisältöä ladataan…</div>
+                          <figcaption className="text-xs pt-8">
+                            {values[6] && <span className="caption text-gray-70">{values[6].split(';')[0]}</span>}
+                            {' '}
+                          </figcaption>
+                        </figure>
+                        )}
                         {/* Text */}
                         <Markdown key={uuidv4()}>{values[1]}</Markdown>
-                        {/* Video */}
-                        {values[5] && (
+                        {/* Audio */}
+                        {values[5] && values[12].split(';')[1] === 'audio' && (
+                        <figure className="areena_container areena_container">
+                          <div className="areena_player_container_audio" data-id={values[5].split(';')[1]}>Areena sisältöä ladataan…</div>
+                          <figcaption className="text-xs pt-8">
+                            {values[6] && <span className="caption text-gray-70">{values[6].split(';')[1]}</span>}
+                            {' '}
+                          </figcaption>
+                        </figure>
+                        )}
+                        {/* Areena */}
+                        {values[5] && values[12] === '' && (
                         <figure className="areena_container">
-                          <div className="areena_player_container" data-id={values[5]} />
+                          <div className="areena_player_container" data-id={values[5]}>Areena sisältöä ladataan…</div>
                           <figcaption className="text-xs pt-8">
                             {values[6] && <span className="caption text-gray-70">{values[6]}</span>}
                             {' '}
@@ -268,8 +300,12 @@ function Course({ parameters }) {
                         )}
                         {/* Poll */}
                         <div className={`js-ydd-yle-tehtava ydd-yle-tehtava ydd-yle-tehtava--exam poll poll_${values[4]}`} data-id={values[4]}>{values[4]}</div>
+                        {/* Footer */}
+                        {
+                          values[13] && <Markdown key={uuidv4()}>{values[13]}</Markdown>
+                        }
                         {/* Close */}
-                        <div className="exercise_toggler"><button type="button" onClick={() => closeButton(appRef, values[3])}>Sulje harjoitus</button></div>
+                        <div className="exercise_toggler exercise_closer"><button type="button" onClick={() => closeButton(appRef, values[3])}>Sulje harjoitus</button></div>
                       </div>
                     </div>
                   </div>

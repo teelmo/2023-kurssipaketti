@@ -91,7 +91,7 @@ function CourseCalling() {
   }, [phase]);
 
   return (
-    <div className="exercise_container" ref={appRef} key="course_calling" style={{ backgroundColor: 'rgba(225, 225, 240, 0.7)' }}>
+    <div className="exercise_container" ref={appRef} key="course_calling">
       <div className="exercise_content">
         {
           phase === 0 && (
