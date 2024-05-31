@@ -33,7 +33,6 @@
     box-sizing: border-box;
     margin: auto auto;
     max-width: 688px;
-    padding: 0 20px;
     text-align: center;
     .course_selection_video_container {
       margin: auto auto 20px auto;
@@ -73,10 +72,9 @@
       box-sizing: border-box;
       font-family: Yle Next Heavy;
       font-size: 36px;
-      line-height: 36px;
-      margin: auto auto 40px auto;
-      max-width: 1220px;
-      padding: 0 20px;
+      line-height: 42px;
+      margin: auto auto;
+      max-width: 592px;
       text-align: center;
       @media all and (max-width: 590px) {
         font-size: 30px;
@@ -107,14 +105,12 @@
         display: block;
         margin: auto auto 20px auto;
         max-width: 100%;
-        padding: 0 20px;
         width: 100%;
       }
     }
     .main_image_container {
       box-sizing: border-box;
       margin: auto auto 20px auto;
-      padding: 0 20px;
       &.full {
         max-width: 100%;
         width: 100%;
@@ -138,7 +134,6 @@
       color: #fff;
       margin: 20px auto 40px auto;
       max-width: 592px;
-      padding: 0 20px;
       @media all and (max-width: 590px) {
         margin: auto 20px 20px 20px;
       }
@@ -153,11 +148,16 @@
       max-width: 592px;
       padding: 20px 0;
       &.content_withbg {
+        max-width: 100%;
+        div {
+          margin: auto auto;
+          max-width: 592px;
+        }
         &.content_kutsumuskartta {
-          background: rgb(172,224,243);
-          background: linear-gradient(180deg, rgba(172,224,243,1) 33%, rgba(167,181,248,1) 120%);
+          background: rgb(172, 224, 243);
+          background: linear-gradient(180deg, rgba(172, 224, 243, 1) 33%, rgba(167, 181, 248, 1) 120%);
           &:hover {
-            background: rgb(172,224,243);
+            background: rgb(172, 224, 243);
           }
         }
       }
@@ -174,16 +174,15 @@
         text-align: center;
       }
       h4 {
+        color: #000;
         font-family: Yle Next Bold;
         font-size: 22px;
         margin: 0 0 20px 0;
-        padding: 0 20px;
       }
       p {
         font-family: Yle Next Regular;
         font-size: 16px;
         margin: 0 0 20px 0;
-        padding: 0 20px;
         &:last-child {
           margin-bottom: 1px;
         }
@@ -237,7 +236,6 @@
         box-sizing: border-box;
         margin: auto auto;
         max-width: 592px;
-        padding: 20px;
         .exercise_withbg {
           button {
             background-color: #e1e1f0;
@@ -254,9 +252,11 @@
         font-family: Yle Next Bold;
         font-size: 30px;
         margin: 0 0 5px 0;
+        color: #000;
         text-align: center;
       }
       h4 {
+        color: #000;
         font-family: Yle Next Bold;
         font-size: 18px;
         margin: 0 0 20px 0;
@@ -406,12 +406,11 @@
           box-sizing: border-box;
           cursor: pointer;
           display: flex;
-          display: inline-block;
           flex-direction: column;
           justify-content: center;
-          min-height: 70px;
+          min-height: 80px;
           outline: none;
-          padding: 10px 60px 10px 120px;
+          padding: 10px 60px 10px 140px;
           position: relative;
           vertical-align: middle;
           width: 100%;
@@ -428,24 +427,24 @@
             left: 10px;
             top: 0;
             position: absolute;
-            width: 100px;
+            width: 114px;
             @media all and (max-width: 550px) {
               display: none;
             }
           }
           // https://cssgradient.io/
           &.exercise_button_erokurssi {
-            background: rgb(233,231,246);
-            background: linear-gradient(180deg, rgba(233,231,246,1) 33%, rgba(199,192,226,1) 120%);
+            background: rgb(233, 231, 246);
+            background: linear-gradient(180deg, rgba(233, 231, 246, 1) 33%, rgba(199, 192, 226, 1) 120%);
             &:hover {
-              background: rgb(233,231,246);
+              background: rgb(233, 231, 246);
             }
           }
           &.exercise_button_kutsumuskartta {
-            background: rgb(172,224,243);
-            background: linear-gradient(180deg, rgba(172,224,243,1) 33%, rgba(167,181,248,1) 120%);
+            background: rgb(172, 224, 243);
+            background: linear-gradient(180deg, rgba(172, 224, 243, 1) 33%, rgba(167, 181, 248, 1) 120%);
             &:hover {
-              background: rgb(172,224,243);
+              background: rgb(172, 224, 243);
             }
             position: relative;
             &.exercise_button_kutsumuskartta_unohtelijalle {
@@ -465,29 +464,29 @@
             }
           }
           &.exercise_button_keskittyminen {
-            background: rgb(158,217,250);
-            background: linear-gradient(180deg, rgba(158,217,250,1) 33%, rgba(226,250,160,1) 120%);
+            background: rgb(158, 217, 250);
+            background: linear-gradient(180deg, rgba(158, 217, 250, 1) 33%, rgba(226, 250, 160, 1) 120%);
             &:hover {
-              background: rgb(158,217,250);
+              background: rgb(158, 217, 250);
             }
           }
           &.exercise_button_muisti {
-            background-color: rgb(255,212,113);
-            background: linear-gradient(180deg, rgba(255,212,113,1) 33%, rgba(245,140,73,1) 120%);
+            background-color: rgb(255, 212, 113);
+            background: linear-gradient(180deg, rgba(255, 212, 113, 1) 33%, rgba(245, 140, 73, 1) 120%);
             &:hover {
-              background: rgb(255,212,113);
+              background: rgb(255, 212, 113);
             }
           }
           &.exercise_button_rentoutuminen {
-            background: rgb(216,200,255);
-            background: linear-gradient(180deg, rgba(216,200,255,1) 33%, rgba(180,135,228,1) 120%);
+            background: rgb(216, 200, 255);
+            background: linear-gradient(180deg, rgba(216, 200, 255, 1) 33%, rgba(180, 135, 228, 1) 120%);
             &:hover {
-              background: rgb(216,200,255);
+              background: rgb(216, 200, 255);
             }
           }
           &.with_arrow {
             &:after {
-              color: #9a9a9a;
+              color: #000;
               content: '❯';
               font-size: 20px;
               line-height: 20px;
@@ -502,7 +501,7 @@
             }
             &:hover {
               &:after {
-                color: #9a9a9a;
+                color: #000;
                 right: 15px;
                 transition-duration: 0.5s;
                 transition-property: right, transform;
@@ -574,9 +573,16 @@
         figure.areena_container {
           margin: 0 0 20px 0;
           padding: 0;
+          text-align: left;
+          .audio_image {
+            text-align: left;
+            img {
+              max-width: 150px;
+            }
+          }
           figcaption {
+            text-align: left;
             color: #666;
-            margin-top: -20px;
             .caption {
               font-size: 12px;
             }
@@ -631,7 +637,6 @@
       box-sizing: border-box;
       margin: auto auto 20px auto;
       max-width: 592px;
-      padding: 20px;
       @media all and (max-width: 590px) {
         margin: auto 20px 20px 20px;
       }

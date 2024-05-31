@@ -128,7 +128,8 @@ function Course({ parameters }) {
             const props = {
               autoplay: false,
               id: el.dataset.id,
-              webKitPlaysInline: true
+              webKitPlaysInline: true,
+              yleAudioPlayer: true
             };
             // https://github.com/Yleisradio/player-static/wiki/Player-embed-instructions
             if (window.ylePlayer && window.location.href.includes('yle')) {
@@ -203,7 +204,7 @@ function Course({ parameters }) {
               case 'full_main_image':
                 return <div key={uuidv4()} className="main_image_container full"><img src={`https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_3936/w_1300/dpr_2/v1700043657/${values[7]}.jpg`} alt={values[8]} /></div>;
               case 'title':
-                return <h1 key={uuidv4()}>{values[2]}</h1>;
+                return <div className="content" key={uuidv4()}><h1 key={uuidv4()}>{values[2]}</h1></div>;
               case 'subtitle':
                 return <p key={uuidv4()} className="subtitle ydd-lead font-bold text-lg owl:text-xl">{values[2]}</p>;
               case 'areena_section':
@@ -224,22 +225,24 @@ function Course({ parameters }) {
               case 'paragraph_section':
                 return (
                   <div className={values[10] === 'true' ? `content content_${course} content_withbg` : `content content_${course}`} key={uuidv4()}>
-                    {/* Video */}
-                    {values[5] && (
-                    <figure className="areena_container">
-                      <div className="areena_player_container" data-id={values[5]} />
-                      <figcaption className="">
-                        {values[6] && <span className="caption">{values[6]}</span>}
-                        {' '}
-                      </figcaption>
-                    </figure>
-                    )}
-                    <Markdown>{values[1]}</Markdown>
-                    {
-                      values[11] === 'calling_exercise' && (
-                      <CourseCalling values={values} key={uuidv4()} />
-                      )
-                    }
+                    <div>
+                      {/* Video */}
+                      {values[5] && (
+                      <figure className="areena_container">
+                        <div className="areena_player_container" data-id={values[5]} />
+                        <figcaption className="">
+                          {values[6] && <span className="caption">{values[6]}</span>}
+                          {' '}
+                        </figcaption>
+                      </figure>
+                      )}
+                      <Markdown>{values[1]}</Markdown>
+                      {
+                        values[11] === 'calling_exercise' && (
+                        <CourseCalling values={values} key={uuidv4()} />
+                        )
+                      }
+                    </div>
                   </div>
                 );
               case 'title_section':
@@ -269,6 +272,7 @@ function Course({ parameters }) {
                         {/* Audio */}
                         {values[5] && values[12].split(';')[1] === 'audio' && (
                         <figure className="areena_container areena_container">
+                          <div className="audio_image"><img src={`${base_url}/assets/img/erokurssi_podcast.png`} alt="Podcast" /></div>
                           <div className="areena_player_container_audio" data-id={values[5].split(';')[1]} />
                           <figcaption className="">
                             {values[6] && <span className="caption">{values[6].split(';')[1]}</span>}
@@ -299,7 +303,9 @@ function Course({ parameters }) {
                           </div>
                         )}
                         {/* Poll */}
-                        <div className={`js-ydd-yle-tehtava ydd-yle-tehtava ydd-yle-tehtava--exam poll poll_${values[4]}`} data-id={values[4]}>{values[4]}</div>
+                        <div className="poll_container">
+                          <div className={`js-ydd-yle-tehtava ydd-yle-tehtava ydd-yle-tehtava--exam poll poll_${values[4]}`} data-id={values[4]}>{values[4]}</div>
+                        </div>
                         {/* Footer */}
                         {
                           values[13] && <Markdown key={uuidv4()}>{values[13]}</Markdown>
