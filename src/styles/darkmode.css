@@ -13,3 +13,13 @@
   color: #fff;
 }
 
+/* frontpage updated */
+#app-root-2023-kurssipaketti #frontpage-updated .gradient img {
+  display: none;
+}
+
+#app-root-2023-kurssipaketti  {
+  --fpupdatedbg: #1f2123;
+  --fpupdatedcolor: #fff;
+}
+/* frontpage updated loppuu */

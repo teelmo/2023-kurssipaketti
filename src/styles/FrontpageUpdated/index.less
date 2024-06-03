@@ -1,0 +1,303 @@
+@font-face {
+  font-family: "Yle Next";
+  src: url("https://design-system.cdn.yle.fi/fonts/yle-next/1.0.0/YleNextVar.woff2") format("woff2-variations"),
+    url("https://design-system.cdn.yle.fi/fonts/yle-next/1.0.0/YleNextVar.woff") format("woff-variations");
+  font-weight: 300 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yle Next";
+  src: url("https://design-system.cdn.yle.fi/fonts/yle-next/1.0.0/YleNextVar-Italic.woff2") format("woff2-variations"),
+    url("https://design-system.cdn.yle.fi/fonts/yle-next/1.0.0/YleNextVar-Italic.woff") format("woff-variations");
+  font-weight: 300 900;
+  font-style: italic;
+}
+
+:root {
+   --fpupdatedbg: white;
+   --fpupdatedcolor: black;
+}
+
+#app-root-2023-kurssipaketti {
+
+
+ 
+  #frontpage-updated {
+    color: var(--fpupdatedcolor);
+    background: var(--fpupdatedbg);
+
+    font-family: "Yle Next", sans-serif;
+    --rentoutuminen: linear-gradient(0deg,
+        rgba(180, 135, 228, 1) 0%,
+        rgba(216, 200, 255, 1) 60%);
+    --muistiteknikat: linear-gradient(0deg,
+        rgba(245, 140, 73, 1) 0%,
+        rgba(255, 212, 113, 1) 60%);
+    --keskittyminen: linear-gradient(0deg,
+        rgba(226, 250, 160, 1) 0%,
+        rgba(158, 217, 250, 1) 60%);
+    --kutsumuskartta: linear-gradient(0deg,
+        rgba(167, 181, 248, 1) 0%,
+        rgba(172, 224, 243, 1) 60%);
+    --kutsumuskartta: linear-gradient(0deg,
+        rgba(167, 181, 248, 1) 0%,
+        rgba(172, 224, 243, 1) 60%);
+    --erokoulu: linear-gradient(0deg,
+        rgba(199, 192, 226, 1) 0%,
+        rgba(216, 200, 255, 1) 60%);
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+
+    .gradient {
+      position: absolute;
+      height: 40vh;
+      width: 100%;
+
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    article * {
+      margin: 0;
+    }
+
+    aside {
+      background: #f5f8ff;
+      padding: var(--gap);
+    }
+
+    .wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: clamp(1rem, 10cqi, 3rem);
+    }
+
+    p {
+      letter-spacing: 0;
+      margin-bottom: 24px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    h3 {
+      font-size: 1.8em;
+      margin-bottom: 24px;
+      line-height: 1.24;
+      font-weight: 600;
+    } 
+
+    h1 {
+      font-size: unset;
+      margin: 0;
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: 2.3em;
+      font-weight: 800;
+      margin: 0;
+    }
+
+
+    .wrapper-container {
+      container: wrapper / inline-size;
+    }
+
+    .wrapper {
+      --gap: clamp(1rem, 5cqi, 2rem);
+      display: grid;
+      gap: var(--gap);
+    }
+
+    #kurssi-buttons {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    @container wrapper (min-width: 1250px) {
+      .wrapper {
+        grid-template-columns: 4fr;
+      }
+    }
+
+    .grid-container {
+      container: layout / inline-size;
+    }
+
+    .grid {
+      display: grid;
+      gap: var(--gap);
+      margin-top: var(--gap);
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: var(--gap);
+    }
+
+    @container layout (inline-size > 800px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      li.article-container:not([data-wide="true"]) article {
+        grid-template-rows: 1fr 1fr min-content;
+  }
+
+      .article-container[data-wide="true"] {
+        grid-column: span 3;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "tekstit kuva"
+          "napit napit";
+        height: fit-content;
+
+       picture {
+        place-self: center;
+       }
+       picture img {
+          
+          height: 100%;
+          max-height: 30vh;
+          width: auto;
+          object-fit: contain;
+          place-self: center;
+
+        }
+
+        .hero-tekstit {
+          grid-area: tekstit;
+          gap: 5px;
+          display: grid;
+          height: fit-content;
+        }
+
+        .tag-wrapper {}
+
+        h1 {}
+
+        .ingressi {}
+
+        #kurssi-buttons {
+          grid-column: span 2;
+        }
+
+      }
+    }
+
+    @container layout (inline-size > 1000px) {
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .article-container:first-child {
+        grid-column: span 4;
+      }
+
+      .article-container:nth-child(2),
+      .article-container:nth-child(3) {
+        grid-column: span 2;
+      }
+    }
+
+    .article-container {
+      container: article / inline-size;
+    }
+
+    article {
+      display: grid;
+      gap: calc(var(--gap) * 0.6);
+      text-align: center;
+      
+      border-radius: 6px;
+      height: 100%;
+      
+      img {
+        object-fit: cover;
+        max-height: 40vh;
+      }
+
+      div {
+        padding: calc(var(--gap)) calc(var(--gap));
+        padding-bottom: 0;
+
+      }
+
+      button {
+        margin: calc(var(--gap)) calc(var(--gap));
+      }
+    }
+
+
+
+    @container article (inline-size > 800px) {
+      article[data-wide="true"] {
+        grid-template-columns: 3fr 2fr;
+        gap: var(--gap);
+        row-gap: 0;
+        text-align: left;
+        padding: 0;
+
+        div {
+          display: grid;
+          order: 1;
+          padding: calc(var(--gap)) calc(var(--gap))
+        }
+
+        picture {
+          order: 2;
+        }
+
+        picture img{
+          place-self: center;
+          width: 100%;
+          height: 100%;
+          max-height: unset;
+          object-fit: cover;     
+        }
+
+        /* this hack is needed because this image is circled --> cannot be cropped */
+        picture[data-image="39-12924056655bf4eb0c91"] img {
+          object-fit: contain;
+        }
+
+        h3 {}
+
+        p {
+          letter-spacing: 0;
+          margin-bottom: 24px;
+          font-size: 18px;
+          line-height: 27px;
+        }
+
+        a {}
+
+      }
+    }
+  }
+}

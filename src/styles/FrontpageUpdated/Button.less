@@ -1,0 +1,44 @@
+:root {
+	--fpbuttoncolor: black;
+	--fpbuttonbgcolor: #fff;
+	--fpbuttonbordercolor: #131415;
+	--fpbuttonhoverbgcolor: rgba(0, 0, 0, 0.7);
+	--fpbuttonhoverborder: transparent;
+	--fpbuttonhovercolor: white;
+
+}
+
+#app-root-2023-kurssipaketti #frontpage-updated .fp_button {
+	display: inline-flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+	width: auto;
+	font-weight: 700;
+	outline: none;
+	line-height: 1.5;
+	font-family: 'Yle Next', 'Open Sans', sans-serif;
+	text-decoration: none;
+	text-align: center;
+	padding: 4px 8px;
+	min-height: 32px;
+	border: 2px solid transparent;
+	cursor: pointer;
+	-webkit-font-smoothing: antialiased;
+	padding-left: 10px;
+	padding-right: 10px;
+	min-height: 32px;
+	min-width: 32px;
+	font-size: 12px;
+	border-color: #131415;
+	border-color: var(--fpbuttonbordercolor);
+	color: var(--fpbuttoncolor);
+	background-color: var(--fpbuttonbgcolor);
+
+	&:hover {
+		color: var(--fpbuttonhovercolor);
+		background-color: var(--fpbuttonhoverbgcolor);
+        	border-color: var(--fpbuttonhoverborder);
+	}
+}
