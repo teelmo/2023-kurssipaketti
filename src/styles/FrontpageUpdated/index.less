@@ -15,14 +15,14 @@
 }
 
 :root {
-   --fpupdatedbg: white;
-   --fpupdatedcolor: black;
+  --fpupdatedbg: white;
+  --fpupdatedcolor: black;
 }
 
 #app-root-2023-kurssipaketti {
 
 
- 
+
   #frontpage-updated {
     color: var(--fpupdatedcolor);
     background: var(--fpupdatedbg);
@@ -85,7 +85,7 @@
     .wrapper {
       max-width: 1000px;
       margin: 0 auto;
-      padding: clamp(1rem, 10cqi, 3rem);
+      padding: 10px;
     }
 
     p {
@@ -100,7 +100,7 @@
       margin-bottom: 24px;
       line-height: 1.24;
       font-weight: 600;
-    } 
+    }
 
     h1 {
       font-size: unset;
@@ -149,12 +149,19 @@
     .grid {
       display: grid;
       gap: var(--gap);
+      gap: 10px;
       margin-top: var(--gap);
     }
 
     .hero-grid {
       display: grid;
       gap: var(--gap);
+      padding-bottom: var(--gap);
+    }
+
+    /* this hack is needed because this image is circled --> cannot be cropped */
+    picture[data-image="39-12924056655bf4eb0c91"] img {
+      object-fit: contain !important;
     }
 
     @container layout (inline-size > 800px) {
@@ -164,7 +171,7 @@
 
       li.article-container:not([data-wide="true"]) article {
         grid-template-rows: 1fr 1fr min-content;
-  }
+      }
 
       .article-container[data-wide="true"] {
         grid-column: span 3;
@@ -176,12 +183,14 @@
           "tekstit kuva"
           "napit napit";
         height: fit-content;
+        padding-bottom: 0;
 
-       picture {
-        place-self: center;
-       }
-       picture img {
-          
+        picture {
+          place-self: center;
+        }
+
+        picture img {
+
           height: 100%;
           max-height: 30vh;
           width: auto;
@@ -207,21 +216,12 @@
           grid-column: span 2;
         }
 
-      }
-    }
-
-    @container layout (inline-size > 1000px) {
-      .grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      .article-container:first-child {
-        grid-column: span 4;
-      }
-
-      .article-container:nth-child(2),
-      .article-container:nth-child(3) {
-        grid-column: span 2;
+        .fp_button {
+          padding-left: 16px;
+          padding-right: 16px;
+          font-size: 18px;
+          font-weight: 600;
+        }
       }
     }
 
@@ -233,10 +233,10 @@
       display: grid;
       gap: calc(var(--gap) * 0.6);
       text-align: center;
-      
+
       border-radius: 6px;
       height: 100%;
-      
+
       img {
         object-fit: cover;
         max-height: 40vh;
@@ -248,8 +248,12 @@
 
       }
 
-      button {
-        margin: calc(var(--gap)) calc(var(--gap));
+      button.fp_button {
+        margin: calc(var(--gap) * 2) 0;
+        margin-top: 0;
+        font-size: 18px;
+        padding-left: 18px;
+        padding-right: 18px;
       }
     }
 
@@ -269,22 +273,23 @@
           padding: calc(var(--gap)) calc(var(--gap))
         }
 
+        h3 {
+          font-size: 2.4em;
+        }
+
         picture {
           order: 2;
         }
 
-        picture img{
+        picture img {
           place-self: center;
           width: 100%;
           height: 100%;
           max-height: unset;
-          object-fit: cover;     
+          object-fit: cover;
         }
 
-        /* this hack is needed because this image is circled --> cannot be cropped */
-        picture[data-image="39-12924056655bf4eb0c91"] img {
-          object-fit: contain;
-        }
+
 
         h3 {}
 
@@ -295,8 +300,11 @@
           line-height: 27px;
         }
 
-        a {}
-
+       
+        .fp_button {
+          margin-top: calc(var(--gap));
+          margin-bottom: 0;
+        }
       }
     }
   }
