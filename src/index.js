@@ -24,6 +24,8 @@ const eventHandlers = {
     const root = createRoot(container);
     if (parameters.course === 'frontpage') {
       root.render(<Frontpage />);
+    } else if (parameters.course === 'frontpageupdated') {
+      root.render(<FrontpageUpdated />);
     } else {
       root.render(<Course parameters={parameters} />);
     }
