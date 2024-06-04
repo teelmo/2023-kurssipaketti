@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client';
 
 import Course from './jsx/Course.jsx';
 import Frontpage from './jsx/Frontpage.jsx';
+import FrontpageUpdated from './jsx/FrontpageUpdated/FrontpageUpdated.jsx';
 
 const appName = '2023-kurssipaketti';
 const ROOT_SELECTOR = `#app-root-${appName}`;
@@ -44,6 +45,8 @@ if (process.env.NODE_ENV === 'production' && window.yleVisualisation) {
   const root = createRoot(document.querySelector(ROOT_SELECTOR));
   if (parameters.course === 'frontpage') {
     root.render(<Frontpage />);
+  } else if (parameters.course === 'frontpageupdated') {
+    root.render(<FrontpageUpdated />);
   } else {
     root.render(<Course parameters={parameters} />);
   }
@@ -57,8 +60,8 @@ if (process.env.NODE_ENV === 'production' && window.yleVisualisation) {
       element.setAttribute('data-yle-vis-processed', appName);
       // Distribute each Yddrasil parameter set to the closest React component
       const parent = element.closest('[data-yle-external-content-parameters]')
-        || element.parentElement
-        || document.body;
+            || element.parentElement
+            || document.body;
 
       const services = {
         getParameters() {
@@ -76,8 +79,8 @@ if (process.env.NODE_ENV === 'production' && window.yleVisualisation) {
         }
         if (
           typeof parameters === 'object'
-          && parameters !== null
-          && !Array.isArray(parameters)
+              && parameters !== null
+              && !Array.isArray(parameters)
         ) {
           services.getParameters = () => parameters;
         }
