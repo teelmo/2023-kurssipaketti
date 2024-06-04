@@ -20,7 +20,6 @@
 }
 
 .app-root-2023-kurssipaketti {
-  padding: 20px 0;
   .background_video {
     bottom: 0;
     min-height: 100%;
@@ -71,35 +70,32 @@
     h1 {
       box-sizing: border-box;
       font-family: Yle Next Heavy;
-      font-size: 36px;
-      line-height: 42px;
-      margin: auto auto;
+      font-size: 28px;
+      line-height: 36px;
+      padding: 0 20px;
+      margin: 40px auto 40px auto;
       max-width: 592px;
       text-align: center;
-      @media all and (max-width: 590px) {
-        font-size: 30px;
-        line-height: 34px;
-      }
     }
     .main_video_container {
       position: relative;
-      &.dark {
-        &:after {
-          background-image: url('./../assets/img/wave_black.png');
-        }
-      }
-      &:after {
-        background-image: url('./../assets/img/wave_white.png');
-        background-size: 100% 100%;
-        bottom: -1px;
-        content: '';
-        display: block;
-        height: 30px;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        z-index: 2;
-      }
+      // &.dark {
+      //   &:after {
+      //     background-image: url('./../assets/img/wave_black.png');
+      //   }
+      // }
+      // &:after {
+      //   background-image: url('./../assets/img/wave_white.png');
+      //   background-size: 100% 100%;
+      //   bottom: -1px;
+      //   content: '';
+      //   display: block;
+      //   height: 30px;
+      //   left: 0;
+      //   position: absolute;
+      //   width: 100%;
+      //   z-index: 2;
+      // }
       video {
         box-sizing: border-box;
         display: block;
@@ -125,18 +121,12 @@
       margin: 40px auto 20px auto;
       max-width: 592px;
       text-align: center;
-      @media all and (max-width: 590px) {
-        margin: auto 20px 20px 20px;
-      }
     }
     p.subtitle {
       box-sizing: border-box;
       color: #fff;
-      margin: 20px auto 40px auto;
+      margin: 20px auto 20px auto;
       max-width: 592px;
-      @media all and (max-width: 590px) {
-        margin: auto 20px 20px 20px;
-      }
     }
     strong {
       font-family: Yle Next Bold;
@@ -146,7 +136,7 @@
       color: #222;
       margin: auto auto 20px auto;
       max-width: 592px;
-      padding: 20px 0;
+      padding: 20px 20px;
       &.content_withbg {
         max-width: 100%;
         div {
@@ -163,9 +153,6 @@
       }
       &:last-child {
         line-height: 22px;
-      }
-      @media all and (max-width: 590px) {
-        margin: auto 20px 20px 20px;
       }
       h3 {
         font-family: Yle Next Bold;
@@ -199,7 +186,7 @@
       ul {
         font-family: Yle Next Regular;
         font-size: 16px;
-        margin: 0 0 20px 38px;
+        margin: 0 0 20px 18px;
         padding: 0;
         li {
           color: #222;
@@ -244,9 +231,6 @@
             }
           }
         }
-      }
-      @media all and (max-width: 590px) {
-        margin: auto 20px 20px 20px;
       }
       h3 {
         font-family: Yle Next Bold;
@@ -415,10 +399,7 @@
           vertical-align: middle;
           width: 100%;
           @media all and (max-width: 550px) {
-            padding: 10px 60px 10px 10px;
-          }
-          @media all and (max-width: 590px) {
-            // padding: 20px 20px 20px 20px;
+            padding: 10px 60px 10px 20px;
           }
           &:before {
             content: '';
@@ -521,15 +502,19 @@
           }
           h3 {
             color: #222;
-            font-size: 22px;
+            font-family: Yle Next Bold;
+            font-size: 20px;
             font-weight: 600;
-            margin: 0;
+            line-height: 24px;
+            margin: 0 0 10px 0;
             text-align: left;
           }
           h4 {
             color: #222;
+            font-family: Yle Next Regular;
             font-size: 16px;
             font-weight: 400;
+            line-height: 20px;
             margin: 0;
             text-align: left;
           }
@@ -635,11 +620,7 @@
     .poll_container {
       background-color: #fff;
       box-sizing: border-box;
-      margin: auto auto 20px auto;
       max-width: 592px;
-      @media all and (max-width: 590px) {
-        margin: auto 20px 20px 20px;
-      }
       ul {
         margin: 20px 0 20px 38px;
         padding: 0;
