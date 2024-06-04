@@ -643,3 +643,272 @@
   white-space: nowrap;
 }
 
+:root {
+  --fpupdatedbg: white;
+  --fpupdatedcolor: black;
+  --fparticlecolor: black;
+}
+#app-root-2023-kurssipaketti #frontpage-updated {
+  color: var(--fpupdatedcolor);
+  background: var(--fpupdatedbg);
+  font-family: "Yle Next", sans-serif;
+}
+#app-root-2023-kurssipaketti #frontpage-updated *,
+#app-root-2023-kurssipaketti #frontpage-updated *::before,
+#app-root-2023-kurssipaketti #frontpage-updated *::after {
+  box-sizing: border-box;
+}
+#app-root-2023-kurssipaketti #frontpage-updated .gradient {
+  position: absolute;
+  height: 40vh;
+  width: 100%;
+}
+#app-root-2023-kurssipaketti #frontpage-updated img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#app-root-2023-kurssipaketti #frontpage-updated ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#app-root-2023-kurssipaketti #frontpage-updated article * {
+  margin: 0;
+  color: var(--fparticlecolor);
+}
+#app-root-2023-kurssipaketti #frontpage-updated .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+#app-root-2023-kurssipaketti #frontpage-updated p {
+  letter-spacing: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 27px;
+}
+#app-root-2023-kurssipaketti #frontpage-updated h3 {
+  font-size: 1.8em;
+  margin-bottom: 24px;
+  line-height: 1.24;
+  font-weight: 600;
+}
+#app-root-2023-kurssipaketti #frontpage-updated h1 {
+  font-size: unset;
+  margin: 0;
+  font-weight: 800;
+}
+#app-root-2023-kurssipaketti #frontpage-updated h2 {
+  font-size: 2.3em;
+  font-weight: 800;
+  margin: 0;
+}
+#app-root-2023-kurssipaketti #frontpage-updated .wrapper-container {
+  container: wrapper / inline-size;
+}
+#app-root-2023-kurssipaketti #frontpage-updated .wrapper {
+  --gap: clamp(1rem, 5cqi, 2rem);
+  display: grid;
+  gap: var(--gap);
+}
+#app-root-2023-kurssipaketti #frontpage-updated #kurssi-buttons {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+@container wrapper (min-width: 1250px) {
+  #app-root-2023-kurssipaketti #frontpage-updated .wrapper {
+    grid-template-columns: 4fr;
+  }
+}
+#app-root-2023-kurssipaketti #frontpage-updated .grid-container {
+  container: layout / inline-size;
+}
+#app-root-2023-kurssipaketti #frontpage-updated .grid {
+  display: grid;
+  gap: var(--gap);
+  gap: 10px;
+  margin-top: var(--gap);
+}
+#app-root-2023-kurssipaketti #frontpage-updated .hero-grid {
+  display: grid;
+  gap: var(--gap);
+  padding-bottom: var(--gap);
+}
+#app-root-2023-kurssipaketti #frontpage-updated picture[data-image="39-12924056655bf4eb0c91"] img {
+  object-fit: contain !important;
+}
+@container layout (inline-size > 800px) {
+  #app-root-2023-kurssipaketti #frontpage-updated .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated li.article-container:not([data-wide="true"]) article {
+    grid-template-rows: 1fr 1fr min-content;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated .article-container[data-wide="true"] {
+    grid-column: span 3;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "tekstit kuva" "napit napit";
+    height: fit-content;
+    padding-bottom: 0;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated .hero-grid picture {
+    place-self: center;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated .hero-grid picture img {
+    height: 100%;
+    max-height: 30vh;
+    width: auto;
+    object-fit: contain;
+    place-self: center;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated .hero-grid .hero-tekstit {
+    grid-area: tekstit;
+    gap: 5px;
+    display: grid;
+    height: fit-content;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated .hero-grid #kurssi-buttons {
+    grid-column: span 2;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated .hero-grid .fp_button {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+#app-root-2023-kurssipaketti #frontpage-updated .article-container {
+  container: article / inline-size;
+}
+#app-root-2023-kurssipaketti #frontpage-updated article {
+  display: grid;
+  gap: calc(var(--gap) * 0.6);
+  text-align: center;
+  border-radius: 6px;
+  height: 100%;
+}
+#app-root-2023-kurssipaketti #frontpage-updated article img {
+  object-fit: cover;
+  max-height: 40vh;
+}
+#app-root-2023-kurssipaketti #frontpage-updated article div {
+  padding: calc(var(--gap)) calc(var(--gap));
+  padding-bottom: 0;
+}
+#app-root-2023-kurssipaketti #frontpage-updated article button.fp_button {
+  margin: calc(var(--gap) * 2) 0;
+  margin-top: 0;
+  font-size: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+@container article (inline-size > 800px) {
+  #app-root-2023-kurssipaketti #frontpage-updated article[data-wide="true"] {
+    grid-template-columns: 3fr 2fr;
+    gap: var(--gap);
+    row-gap: 0;
+    text-align: left;
+    padding: 0;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated article[data-wide="true"] div {
+    display: grid;
+    order: 1;
+    padding: calc(var(--gap)) calc(var(--gap));
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated article[data-wide="true"] h3 {
+    font-size: 2.4em;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated article[data-wide="true"] picture {
+    order: 2;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated article[data-wide="true"] picture img {
+    place-self: center;
+    width: 100%;
+    height: 100%;
+    max-height: unset;
+    object-fit: cover;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated article[data-wide="true"] p {
+    letter-spacing: 0;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated article[data-wide="true"] .fp_button {
+    margin-top: calc(var(--gap));
+    margin-bottom: 0;
+  }
+}
+
+#app-root-2023-kurssipaketti #frontpage-updated .tag {
+  display: inline-block;
+  background-color: yellow;
+  color: black;
+  font-family: "Yle Next", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 3px 8px;
+  max-height: 24px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  position: relative;
+}
+
+:root {
+  --fpbuttoncolor: black;
+  --fpbuttonbgcolor: #fff;
+  --fpbuttonbordercolor: #131415;
+  --fpbuttonhoverbgcolor: rgba(0, 0, 0, 0.7);
+  --fpbuttonhoverborder: transparent;
+  --fpbuttonhovercolor: white;
+}
+#app-root-2023-kurssipaketti #frontpage-updated .fp_button {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  width: auto;
+  font-weight: 700;
+  outline: none;
+  line-height: 1.5;
+  font-family: 'Yle Next', 'Open Sans', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  padding: 4px 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  min-height: 32px;
+  min-width: 32px;
+  border-color: #131415;
+  border-color: var(--fpbuttonbordercolor);
+  color: var(--fpbuttoncolor);
+  background-color: var(--fpbuttonbgcolor);
+  font-weight: normal;
+  font-size: 16px;
+  font-weight: 600;
+}
+#app-root-2023-kurssipaketti #frontpage-updated .fp_button:hover {
+  color: var(--fpbuttonhovercolor);
+  background-color: var(--fpbuttonhoverbgcolor);
+  border-color: var(--fpbuttonhoverborder);
+}
+
