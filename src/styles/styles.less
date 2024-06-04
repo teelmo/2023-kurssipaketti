@@ -192,6 +192,12 @@
           color: #222;
           margin: 0 0 5px 0;
           padding: 0;
+          a {
+            color: #000;
+            &:hover {
+              text-decoration: none;
+            }
+          }
           &:marker {
             color: #222;
             font-weight: bold;
@@ -394,7 +400,7 @@
           justify-content: center;
           min-height: 80px;
           outline: none;
-          padding: 10px 60px 10px 140px;
+          padding: 10px 45px 10px 130px;
           position: relative;
           vertical-align: middle;
           width: 100%;
@@ -407,7 +413,7 @@
             background-size: 100% 80px;
             content: '';
             height: 100%;
-            left: 10px;
+            left: 5px;
             position: absolute;
             top: 0;
             width: 114px;
@@ -432,14 +438,14 @@
                 background-image: url('./../assets/img/erokurssi_2_ero_havettaa.png');
               }
             }
-            &.exercise_button_erokurssi_3_viha_ja_kaikki_muu {
+            &.exercise_button_erokurssi_3_raha {
               &:before {
-                background-image: url('./../assets/img/erokurssi_3_viha_ja_kaikki_muu.png');
+                background-image: url('./../assets/img/erokurssi_3_raha.png');
               }
             }
-            &.exercise_button_erokurssi_4_uskottomuus {
+            &.exercise_button_erokurssi_4_yleisimmat_eron_syyt {
               &:before {
-                background-image: url('./../assets/img/erokurssi_4_uskottomuus.png');
+                background-image: url('./../assets/img/erokurssi_4_yleisimmat_eron_syyt.png');
               }
             }
             &.exercise_button_erokurssi_5_ero_ja_vanhemmuus {
@@ -447,24 +453,24 @@
                 background-image: url('./../assets/img/erokurssi_5_ero_ja_vanhemmuus.png');
               }
             }
-            &.exercise_button_erokurssi_6_raha {
+            &.exercise_button_erokurssi_6_uskottomuus {
               &:before {
-                background-image: url('./../assets/img/erokurssi_6_raha.png');
+                background-image: url('./../assets/img/erokurssi_6_uskottomuus.png');
               }
             }
-            &.exercise_button_erokurssi_7_yleisimmat_eron_syyt {
+            &.exercise_button_erokurssi_7_viha_ja_kaikki_muu {
               &:before {
-                background-image: url('./../assets/img/erokurssi_7_yleisimmat_eron_syyt.png');
+                background-image: url('./../assets/img/erokurssi_7_viha_ja_kaikki_muu.png');
               }
             }
-            &.exercise_button_erokurssi_8_erohuuma {
+            &.exercise_button_erokurssi_8_tarpeet {
               &:before {
-                background-image: url('./../assets/img/erokurssi_8_erohuuma.png');
+                background-image: url('./../assets/img/erokurssi_8_tarpeet.png');
               }
             }
-            &.exercise_button_erokurssi_9_tarpeet {
+            &.exercise_button_erokurssi_9_erohuuma {
               &:before {
-                background-image: url('./../assets/img/erokurssi_9_tarpeet.png');
+                background-image: url('./../assets/img/erokurssi_9_erohuuma.png');
               }
             }
             &.exercise_button_erokurssi_10_kun_erosta_on_kulunut_aikaa {

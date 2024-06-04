@@ -318,8 +318,8 @@ function Course({ parameters }) {
                 );
               case 'poll_section':
                 return (
-                  <div className="content">
-                    <div className="poll_container" key={uuidv4()}>
+                  <div className="content" key={uuidv4()}>
+                    <div className="poll_container">
                       <div className={`js-ydd-yle-tehtava ydd-yle-tehtava ydd-yle-tehtava--exam poll poll_${values[4]}`} data-id={values[4]}>{values[4]}</div>
                     </div>
                   </div>
@@ -340,11 +340,7 @@ function Course({ parameters }) {
 
 Course.propTypes = {
   /* eslint-disable-next-line react/forbid-prop-types */
-  parameters: PropTypes.object
-};
-
-Course.defaultProps = {
-  parameters: { course: 'muisti' }
+  parameters: PropTypes.object.isRequired,
 };
 
 export default Course;

@@ -1,6 +1,7 @@
 type,content,title,group,poll_id,areena_id,areena_caption,ims_id,image_caption,image_copyright,background,extra,areena_extra,footer,internal comment
 main_video,,,,,erokurssi,,39-129398266586dc43fa0f,,,,,,,
-title,,"Jos sun pitää erota, sitä ei tarvi tehdä yksin – täältä saat apua erotilanteeseen",,,,,,,,,,,,
+title,,"
+Hyvä ero on mahdollista tehdä myös yksin – opi itsestäsi näiden eroterapeutin harjoitusten avulla",,,,,,,,,,,,
 paragraph_section,"Ero. Sanaan liittyy valtava tunnekirjo: luopumisen tuskaa, yön läpi valvottavaa ahdistusta, kurkkua kuristavia muistoja. Pelkoa ja vihaa, mutta samalla orastavaa helpotusta ja kutkuttavaa toivoa uudesta, paremmasta elämästä. Tärkeintä, mitä voit tässä kohtaa tehdä, on pysähtyä itsesi äärelle. Tervetuloa mukaan Pieneen erokouluun!",,,,,,,,,,,,,
 poll_section,,,,47-4a0983ff-08a1-4a80-9fa2-d17b5210591d,,,,,,,,,,
 paragraph_section,"**“Miksi näistä asioista ei ole puhuttu aikaisemmin? Miksi näitä ei opeteta missään?”**
@@ -13,9 +14,9 @@ areena_section,,,,,1-70940343,Eroterapeutti Viivi Niinikangas,,,,,,,,
 
 Alla on teemoitettu yleisimpiä asioita, tunteita ja mietteitä, jotka tulevat erotilanteessa usein vastaan. Jokaisen teeman alla on eroterapeutti Viivi Niinikankaan videovinkit tilanteeseen. Lisäksi sinulle on tehtäviä omien tunteiden ja tarpeiden mylläämiseen sekä konkreettisten asioiden miettimiseen.",,,,,,,,,,,,,
 paragraph_section,"Harjoitusten avulla: 
-* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/1_icon.png) Saat työkaluja tunteiden käsittelyyn
-* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/2_icon.png) Tunnistat paremmin tarpeesi 
-* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/3_icon.png) Opit vetämään rajoja",,,,,,,,,,,,,
+* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/1_icon_erokurssi.png) Saat työkaluja tunteiden käsittelyyn
+* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/2_icon_erokurssi.png) Tunnistat paremmin tarpeesi 
+* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/3_icon_erokurssi.png) Opit vetämään rajoja",,,,,,,,,,,,,
 exercise,"*Videon sisältö tiivistettynä: Omista keskeneräisistä eroajatuksista voi olla hankala puhua kumppanille, koska seuraukset pelottavat. Mitä jos toinen lähteekin heti, mutta en itse olekaan vielä valmis? Siksi eropäätöstä voi huomaamattaan pitkittää omassa mielessään ihan liian kauan. Avoin keskustelu ja omista tarpeista kertominen suhteen jokaisessa vaiheessa on tärkeää. Silloin eropohdinta ei tule kummallekaan yllätyksenä.*
 
 #### Tehtävät:
@@ -30,7 +31,7 @@ Listaa konkreettisia pelkojasi ja pohdi, ovatko ne realistisia. Onko eron esteen
 
 #### Minitarina erosta: ""Tuntui, että oon hirveän itsekäs""
 
-Kuuntele tarina siitä kuinka Jenni harkitsi eroa.",Pitäisikö meidän erota?;Listaa plussat ja miinukset ja tee pelkolista,exercise_1,47-cbaca7ec-8e9e-41bd-91ab-bee07a886ac5,1-70940337;1-70940317,“Erosta puhuminen voi olla hankalaa”,,,,,,video_top;audio,"#### Mistä tietää pitäisikö erota
+Kuuntele Jennin tarina eropäätöksen tekemi",Pitäisikö meidän erota?;Listaa plussat ja miinukset ja tee pelkolista,exercise_1,47-cbaca7ec-8e9e-41bd-91ab-bee07a886ac5,1-70940337;1-70940317,“Erosta puhuminen voi olla hankalaa”,,,,,erokurssi_1_pitaisiko_meidan_erota,video_top;audio,"#### Mistä tietää pitäisikö erota
 
 Lisää Jennin ajatuksia voit kuunnella [Melkein kaikki erosta -podcastista](https://areena.yle.fi/podcastit/1-70717000). Jaksosta saat myös lisää oivalluksia, apua ja tukea. 
 
@@ -71,7 +72,7 @@ Kiinnitä huomio kauneuteen ja hyviin asioihin ympärilläsi. Valitse ympärille
 
 #### Minitarina erosta: ""Omat rajat ovat löytyneet häpeän kautta""
 
-Kuuntele Karin tarina eroon liittyvästä häpeästä.",Ero hävettää;Näin hoidat häpeääsi kirjoittamalla,exercise_2,47-bd7dbc52-f968-4672-bbdb-2ad47b448ff5,1-70940327;1-70940319,“Kohtaa häpeäsi”,,,,,,video_top;audio,"#### Miksi ero hävettää?
+Kuuntele Karin tarina eroon liittyvästä häpeästä.",Ero hävettää;Näin hoidat häpeääsi kirjoittamalla,exercise_2,47-bd7dbc52-f968-4672-bbdb-2ad47b448ff5,1-70940327;1-71027611,“Kohtaa häpeäsi”,,,,,erokurssi_2_ero_havettaa,video_top;audio,"#### Miksi ero hävettää?
 
 Lisää Karin ajatuksia voit kuunnella [Melkein kaikki erosta -podcastista](https://areena.yle.fi/podcastit/1-70720962). Jaksosta saat myös lisää oivalluksia, apua ja tukea. 
 
@@ -105,7 +106,7 @@ Olisi tärkeää huolehtia jatkossakin omista oikeuksista ja raha-asioista myös
 
 #### Minitarina erosta: ""Se olin aina minä, joka järjesti, selvitti ja maksoi""
 
-Kuuntele Katin tarina rahasta.",Miten raha-asiat hoidetaan?;Tee suunnitelma tulevaisuuden varalle,exercise_3,47-f9dd7d6c-99e7-4a84-a6a2-fb684f3d9bd6,1-70940329;1-70940311,“Hyvä erokeskustelu on paras keino estää rahariitoja”,,,,,,video_top;audio,"#### Miten raha-asiat hoidetaan erotessa?
+Kuuntele Katin tarina rahasta.",Miten raha-asiat hoidetaan?;Tee suunnitelma tulevaisuuden varalle,exercise_3,47-f9dd7d6c-99e7-4a84-a6a2-fb684f3d9bd6,1-70940329;1-70940311,“Hyvä erokeskustelu on paras keino estää rahariitoja”,,,,,erokurssi_3_raha,video_top;audio,"#### Miten raha-asiat hoidetaan erotessa?
 
 Lisää Katin ajatuksia voit kuunnella [Melkein kaikki erosta -podcastista](https://areena.yle.fi/podcastit/1-70720966). Jaksosta saat myös lisää oivalluksia, apua ja tukea.
 
@@ -126,7 +127,7 @@ Pohdi, millaisena haluat toisten ihmisten näkevän sinut. Otatko saman roolin k
 
 #### Minitarina erosta: ""Me miehetkin osattais avata se suu""
 
-Kuuntele Antin huomioita eron syistä.","Syyt eron taustalla;Pohdi, millaisena haluat muiden sinut näkevän",exercise_4,47-a25fc031-a900-4eff-925c-59ddf3b04c31,1-70940331;1-70940302,“Avoimuuden puute on yksi yleisin eron syy”,,,,,,video_top;audio,"#### Mistä syistä ihmiset eroavat?
+Kuuntele Antin huomioita eron syistä.","Syyt eron taustalla;Pohdi, millaisena haluat muiden sinut näkevän",exercise_4,47-a25fc031-a900-4eff-925c-59ddf3b04c31,1-70940331;1-70940302,“Avoimuuden puute on yksi yleisin eron syy”,,,,,erokurssi_4_yleisimmat_eron_syyt,video_top;audio,"#### Mistä syistä ihmiset eroavat?
 
 Lisää Antin ajatuksia voit kuunnella [Melkein kaikki erosta -podcastista?](https://areena.yle.fi/podcastit/1-70720970). Jaksosta saat myös lisää oivalluksia, apua ja tukea. 
 
@@ -179,7 +180,7 @@ Eron alussa elämä voi olla surullista, kaoottista ja vaikeaa. Vaikka alku tunt
 
 #### Minitarina erosta: ""Elämän realiteetti""
 
-Kuuntele Antin tarina erovanhemmuudesta.",Ero ja lapset;Mieti erotarina lapselle,exercise_5,47-960811c8-4307-43fa-90ae-69bf953c5ac7,1-70940341;1-70940309,"“Muista, vanhemman ja lapsen välinen rakkaus säilyy”",,,,,,video_top;audio,"#### Millaista vanhemmuus on eron jälkeen?
+Kuuntele Antin tarina erovanhemmuudesta.",Ero ja lapset;Mieti erotarina lapselle,exercise_5,47-960811c8-4307-43fa-90ae-69bf953c5ac7,1-70940341;1-70940309,"“Muista, vanhemman ja lapsen välinen rakkaus säilyy”",,,,,erokurssi_5_ero_ja_vanhemmuus,video_top;audio,"#### Millaista vanhemmuus on eron jälkeen?
 
 Lisää Antin ajatuksia voit kuunnella [Melkein kaikki erosta -podcastista?](https://areena.yle.fi/podcastit/1-70720974). Jaksosta saat myös lisää oivalluksia, apua ja tukea. 
 
@@ -206,7 +207,7 @@ exercise,"*Videon sisältö tiivistettynä: Pettäjä on väärin tehnyt hirviö
 
 #### Minitarina erosta: ""Mä saan olla vihainen tästä""
 
-Kuuntele Marikan tarina uskottomuudesta.",Miten selvitä uskottomuudesta?;Kysy itseltäsi nämä tärkeät kysymykset,exercise_6,47-f7843da1-4b4e-44fd-a72d-ebf934d3da3a,1-70940321;1-70940313,"“Vaikka toinen oli uskoton, sinä et ole viallinen”",,,,,,video_top;audio,"#### Miten pettämisestä pääsee yli?
+Kuuntele Marikan tarina uskottomuudesta.",Miten selvitä uskottomuudesta?;Kysy itseltäsi nämä tärkeät kysymykset,exercise_6,47-f7843da1-4b4e-44fd-a72d-ebf934d3da3a,1-70940321;1-70940313,"“Vaikka toinen oli uskoton, sinä et ole viallinen”",,,,,erokurssi_6_uskottomuus,video_top;audio,"#### Miten pettämisestä pääsee yli?
 
 Lisää Marikan ajatuksia voit kuunnella [Melkein kaikki erosta -podcastista](https://areena.yle.fi/podcastit/1-70720978). Jaksosta saat myös lisää oivalluksia, apua ja tukea.
 
@@ -227,7 +228,7 @@ Tunteista puhuminen vaikkapa hyvien ystävien kanssa on tärkeää. Avoimuus voi
 
 #### Minitarina erosta: ""Puhuminen auttoi hirveän paljon""
 
-Kuuntele Petrin tarina eroon liittyvistä tunteista.","Tunteet, joita ei voi väistää;Kirjoita vihalista ja herättele suru näillä vinkeillä",exercise_7,47-86e643c8-128a-4096-9c22-9bf267808bd1,1-70940335;1-70940307,“Opettele tunnistamaan tunteet”,,,,,,video_top;audio,"#### Mitä tunteita erossa pitää käydä läpi?
+Kuuntele Petrin tarina eroon liittyvistä tunteista.","Tunteet, joita ei voi väistää;Kirjoita vihalista ja herättele suru näillä vinkeillä",exercise_7,47-86e643c8-128a-4096-9c22-9bf267808bd1,1-70940335;1-70940307,“Opettele tunnistamaan tunteet”,,,,,erokurssi_7_viha_ja_kaikki_muu,video_top;audio,"#### Mitä tunteita erossa pitää käydä läpi?
 
 Lisää Petrin ajatuksia voit kuunnella [Melkein kaikki erosta -podcastista](https://areena.yle.fi/podcastit/1-70720982). Jaksosta saat myös lisää oivalluksia, apua ja tukea. 
 
@@ -258,7 +259,7 @@ Kysymysten avulla pääset omien tarpeidesi äärelle.
 
 #### Minitarina erosta: ""Omien tarpeiden tunnistaminen on tosi tärkeää""
 
-Kuuntele Saaran tarina tarpeista ja niiden sanoittamisesta.",Minä ja minun tarpeet;Tunnista ja pohdi tarpeitasi näiden kysymysten avulla,exercise_8,47-9bdfe4cd-43e2-4aca-872d-1f5a450de213,1-70940323;1-70940305,"“Mieti, mitä tarvitset parisuhteelta”",,,,,,video_top;audio,"#### Mitä erotessa pitäisi oppia itsestä?
+Kuuntele Saaran tarina tarpeista ja niiden sanoittamisesta.",Minä ja minun tarpeet;Tunnista ja pohdi tarpeitasi näiden kysymysten avulla,exercise_8,47-9bdfe4cd-43e2-4aca-872d-1f5a450de213,1-70940323;1-70940305,"“Mieti, mitä tarvitset parisuhteelta”",,,,,erokurssi_8_tarpeet,video_top;audio,"#### Mitä erotessa pitäisi oppia itsestä?
 
 Lisää Saaran ajatuksia voit kuunnella [Melkein kaikki erosta -podcastista](https://areena.yle.fi/podcastit/1-70720986). Jaksosta saat myös lisää oivalluksia, apua ja tukea. 
 
@@ -289,7 +290,7 @@ Tutustu rohkeasti uusiin ihmisiin. Mitä enemmän joudut kertomaan tarpeitasi ja
 
 #### Minitarina erosta: ""En suostu häpeämään itseäni""
 
-Kuuntele Miran tarina erohuumasta.",Huumaantunut erosta?;Pysähdy ja tutustu itseesi,exercise_9,47-fcf63025-6a6f-46b9-bdfc-e3c129d92ea7,1-70940339;1-70940187,“Uusi alku voi tuntua huumaavalta”,,,,,,video_top;audio,"#### Seksiä ja seikkailuja, sitäkö on eronneen elämä?
+Kuuntele Miran tarina erohuumasta.",Huumaantunut erosta?;Pysähdy ja tutustu itseesi,exercise_9,47-fcf63025-6a6f-46b9-bdfc-e3c129d92ea7,1-70940339;1-70940187,“Uusi alku voi tuntua huumaavalta”,,,,,erokurssi_9_erohuuma,video_top;audio,"#### Seksiä ja seikkailuja, sitäkö on eronneen elämä?
 
 Lisää Miran ajatuksia voit kuunnella [Melkein kaikki erosta -podcastista](https://areena.yle.fi/podcastit/1-70720990). Jaksosta saat myös lisää oivalluksia, apua ja tukea. 
 
@@ -320,7 +321,7 @@ Jos keskustelu ex-kumppanin kanssa on mahdollista, jutelkaa ainakin alla olevat 
 
 #### Minitarina erosta: ""En ehkä olisi tällainen ilman eroa""
 
-Kuuntele Jussin ajatuksia, kun erosta on jo aikaa.",Kun erosta on jo aikaa;Pohdi tulevaisuuttasi ,exercise_10,47-39d4b609-a3fc-4cd9-ad2e-1243ee18aae6,1-70940325;1-70940315,“Ero ei ole epäonnistuminen”,,,,,,video_top;audio,"#### Kuinka kauan kestää päästä yli erosta?
+Kuuntele Jussin ajatuksia, kun erosta on jo aikaa.",Kun erosta on jo aikaa;Pohdi tulevaisuuttasi ,exercise_10,47-39d4b609-a3fc-4cd9-ad2e-1243ee18aae6,1-70940325;1-70940315,“Ero ei ole epäonnistuminen”,,,,,erokurssi_10_kun_erosta_on_kulunut_aikaa,video_top;audio,"#### Kuinka kauan kestää päästä yli erosta?
 
 Lisää Jussin ajatuksia voit kuunnella [Melkein kaikki erosta -podcastista](https://areena.yle.fi/podcastit/1-70720997). Jaksosta saat myös lisää oivalluksia, apua ja tukea. 
 
@@ -377,7 +378,9 @@ Mikä sinua on auttanut eron hetkellä? Mitä olet oppinut itsestäsi eron myöt
 ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/erokurssi_podcast.png)\
 [Seuraa meitä myös somessa](https://www.instagram.com/ylemelkeinkaikkielamasta/).",,,,,,,,,,,,,
 title_section,,Tutustu muihin kurssisisältöihin!,,,,,,,,,,,,
-paragraph_section,Haluatko oppia paremmaksi keskittyjäksi? Etsitkö helppoja keinoja rentoutua? Kiinnostavatko muistitekniikat tai kutsumuskarttaharjoitus? Vai haluatko löytää apua eron pohtimiseen? [Ylen kurssisisällöt tarjoavat arkeen mahtuvia harjoitteita tavoitteidesi saavuttamiseen](https://yle.fi/aihe/a/20-10005632).,,,,,,,,,,,,,
+paragraph_section,Haluatko oppia paremmaksi keskittyjäksi? Etsitkö helppoja keinoja rentoutua? Kiinnostavatko muistitekniikat tai kutsumuskarttaharjoitus? Vai haluatko löytää apua eron pohtimiseen? [Ylen kurssisisällöt tarjoavat arkeen mahtuvia harjoitteita tavoitteidesi saavuttamiseen](https://yle.fi/a/74-20092077).,,,,,,,,,,,,,
+title_section,,Jaa oivalluksesi,,,,,,,,,,,,
+paragraph_section,"Nousiko mieleen havainto, jonka haluat jakaa muille harjoituksen tehneille? Haluatko kertoa, mitä lempipuuhia listasit? Osallistu keskusteluun alla. Sovelluksessa keskusteluosio on sivun ylälaidassa.",,,,,,,,,,,,,
 paragraph_section,"**Tekijät:**\
 Asiantuntija: eroterapeutti Viivi Niinikangas\
 Toimittajat: Reetta Arvila ja Mira Pelo\

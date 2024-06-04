@@ -204,6 +204,14 @@
   margin: 0 0 5px 0;
   padding: 0;
 }
+.app-root-2023-kurssipaketti .content_container .content ol li a,
+.app-root-2023-kurssipaketti .content_container .content ul li a {
+  color: #000;
+}
+.app-root-2023-kurssipaketti .content_container .content ol li a:hover,
+.app-root-2023-kurssipaketti .content_container .content ul li a:hover {
+  text-decoration: none;
+}
 .app-root-2023-kurssipaketti .content_container .content ol li:marker,
 .app-root-2023-kurssipaketti .content_container .content ul li:marker {
   color: #222;
@@ -398,7 +406,7 @@
   justify-content: center;
   min-height: 80px;
   outline: none;
-  padding: 10px 60px 10px 140px;
+  padding: 10px 45px 10px 130px;
   position: relative;
   vertical-align: middle;
   width: 100%;
@@ -409,12 +417,14 @@
   }
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button:before {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 80px;
   content: '';
-  background-size: 100% 100%;
   height: 100%;
-  left: 10px;
-  top: 0;
+  left: 5px;
   position: absolute;
+  top: 0;
   width: 114px;
 }
 @media all and (max-width: 550px) {
@@ -429,10 +439,39 @@
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_erokurssi:hover {
   background: #e9e7f6;
 }
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_erokurssi.exercise_button_erokurssi_1_pitaisiko_meidan_erota:before {
+  background-image: url('../assets/img/erokurssi_1_pitaisiko_meidan_erota.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_erokurssi.exercise_button_erokurssi_2_ero_havettaa:before {
+  background-image: url('../assets/img/erokurssi_2_ero_havettaa.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_erokurssi.exercise_button_erokurssi_3_raha:before {
+  background-image: url('../assets/img/erokurssi_3_raha.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_erokurssi.exercise_button_erokurssi_4_yleisimmat_eron_syyt:before {
+  background-image: url('../assets/img/erokurssi_4_yleisimmat_eron_syyt.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_erokurssi.exercise_button_erokurssi_5_ero_ja_vanhemmuus:before {
+  background-image: url('../assets/img/erokurssi_5_ero_ja_vanhemmuus.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_erokurssi.exercise_button_erokurssi_6_uskottomuus:before {
+  background-image: url('../assets/img/erokurssi_6_uskottomuus.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_erokurssi.exercise_button_erokurssi_7_viha_ja_kaikki_muu:before {
+  background-image: url('../assets/img/erokurssi_7_viha_ja_kaikki_muu.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_erokurssi.exercise_button_erokurssi_8_tarpeet:before {
+  background-image: url('../assets/img/erokurssi_8_tarpeet.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_erokurssi.exercise_button_erokurssi_9_erohuuma:before {
+  background-image: url('../assets/img/erokurssi_9_erohuuma.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_erokurssi.exercise_button_erokurssi_10_kun_erosta_on_kulunut_aikaa:before {
+  background-image: url('../assets/img/erokurssi_10_kun_erosta_on_kulunut_aikaa.png');
+}
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_kutsumuskartta {
-  background: #ace0f3;
   background: linear-gradient(180deg, #ace0f3 33%, #a7b5f8 120%);
-  position: relative;
+  background: #ace0f3;
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_kutsumuskartta:hover {
   background: #ace0f3;
@@ -541,6 +580,14 @@
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_description ul li {
   color: #222;
   margin: 0 0 5px 0;
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_description ol li a,
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_description ul li a {
+  color: #000;
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_description ol li a:hover,
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_description ul li a:hover {
+  text-decoration: none;
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_description ol li:marker,
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_description ul li:marker {
