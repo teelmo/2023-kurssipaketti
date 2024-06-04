@@ -45,9 +45,6 @@
   font-family: Yle Next Heavy;
   src: url('../assets/font/YleNext-Heavy.otf');
 }
-.app-root-2023-kurssipaketti {
-  padding: 20px 0;
-}
 .app-root-2023-kurssipaketti .background_video {
   bottom: 0;
   min-height: 100%;
@@ -98,35 +95,15 @@
 .app-root-2023-kurssipaketti .content_container h1 {
   box-sizing: border-box;
   font-family: Yle Next Heavy;
-  font-size: 36px;
-  line-height: 42px;
-  margin: auto auto;
+  font-size: 28px;
+  line-height: 36px;
+  padding: 0 20px;
+  margin: 40px auto 40px auto;
   max-width: 592px;
   text-align: center;
 }
-@media all and (max-width: 590px) {
-  .app-root-2023-kurssipaketti .content_container h1 {
-    font-size: 30px;
-    line-height: 34px;
-  }
-}
 .app-root-2023-kurssipaketti .content_container .main_video_container {
   position: relative;
-}
-.app-root-2023-kurssipaketti .content_container .main_video_container.dark:after {
-  background-image: url('../assets/img/wave_black.png');
-}
-.app-root-2023-kurssipaketti .content_container .main_video_container:after {
-  background-image: url('../assets/img/wave_white.png');
-  background-size: 100% 100%;
-  bottom: -1px;
-  content: '';
-  display: block;
-  height: 30px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  z-index: 2;
 }
 .app-root-2023-kurssipaketti .content_container .main_video_container video {
   box-sizing: border-box;
@@ -153,21 +130,11 @@
   max-width: 592px;
   text-align: center;
 }
-@media all and (max-width: 590px) {
-  .app-root-2023-kurssipaketti .content_container > h2 {
-    margin: auto 20px 20px 20px;
-  }
-}
 .app-root-2023-kurssipaketti .content_container p.subtitle {
   box-sizing: border-box;
   color: #fff;
-  margin: 20px auto 40px auto;
+  margin: 20px auto 20px auto;
   max-width: 592px;
-}
-@media all and (max-width: 590px) {
-  .app-root-2023-kurssipaketti .content_container p.subtitle {
-    margin: auto 20px 20px 20px;
-  }
 }
 .app-root-2023-kurssipaketti .content_container strong {
   font-family: Yle Next Bold;
@@ -177,7 +144,7 @@
   color: #222;
   margin: auto auto 20px auto;
   max-width: 592px;
-  padding: 20px 0;
+  padding: 20px 20px;
 }
 .app-root-2023-kurssipaketti .content_container .content.content_withbg {
   max-width: 100%;
@@ -195,11 +162,6 @@
 }
 .app-root-2023-kurssipaketti .content_container .content:last-child {
   line-height: 22px;
-}
-@media all and (max-width: 590px) {
-  .app-root-2023-kurssipaketti .content_container .content {
-    margin: auto 20px 20px 20px;
-  }
 }
 .app-root-2023-kurssipaketti .content_container .content h3 {
   font-family: Yle Next Bold;
@@ -233,7 +195,7 @@
 .app-root-2023-kurssipaketti .content_container .content ul {
   font-family: Yle Next Regular;
   font-size: 16px;
-  margin: 0 0 20px 38px;
+  margin: 0 0 20px 18px;
   padding: 0;
 }
 .app-root-2023-kurssipaketti .content_container .content ol li,
@@ -278,11 +240,6 @@
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_content .exercise_withbg button:hover {
   opacity: 0.7;
-}
-@media all and (max-width: 590px) {
-  .app-root-2023-kurssipaketti .content_container .exercise_container {
-    margin: auto 20px 20px 20px;
-  }
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container h3 {
   font-family: Yle Next Bold;
@@ -448,7 +405,7 @@
 }
 @media all and (max-width: 550px) {
   .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button {
-    padding: 10px 60px 10px 10px;
+    padding: 10px 60px 10px 20px;
   }
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button:before {
@@ -536,15 +493,19 @@
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button h3 {
   color: #222;
-  font-size: 22px;
+  font-family: Yle Next Bold;
+  font-size: 20px;
   font-weight: 600;
-  margin: 0;
+  line-height: 24px;
+  margin: 0 0 10px 0;
   text-align: left;
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button h4 {
   color: #222;
+  font-family: Yle Next Regular;
   font-size: 16px;
   font-weight: 400;
+  line-height: 20px;
   margin: 0;
   text-align: left;
 }
@@ -647,13 +608,7 @@
 .app-root-2023-kurssipaketti .content_container .poll_container {
   background-color: #fff;
   box-sizing: border-box;
-  margin: auto auto 20px auto;
   max-width: 592px;
-}
-@media all and (max-width: 590px) {
-  .app-root-2023-kurssipaketti .content_container .poll_container {
-    margin: auto 20px 20px 20px;
-  }
 }
 .app-root-2023-kurssipaketti .content_container .poll_container ul {
   margin: 20px 0 20px 38px;
