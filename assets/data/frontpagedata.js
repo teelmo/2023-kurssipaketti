@@ -10,7 +10,7 @@ Ero on sekamelska tunteita ja fiiliksiä, joista puhuminen ja joiden käsittelem
 
 Tervetuloa mukaan Pieneen erokouluun! Tämä on sinun mahdollisuutesi pysähtyä itsesi äärelle. 
     `,
-    link: 'https://yle.fi',
+    link: 'https://yle.fi/a/74-20090990',
     background: `linear-gradient(
       to bottom,
       #e9e7f6 50%,

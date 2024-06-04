@@ -1,22 +1,7 @@
-@font-face {
-  font-family: "Yle Next";
-  src: url("https://design-system.cdn.yle.fi/fonts/yle-next/1.0.0/YleNextVar.woff2") format("woff2-variations"),
-    url("https://design-system.cdn.yle.fi/fonts/yle-next/1.0.0/YleNextVar.woff") format("woff-variations");
-  font-weight: 300 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Yle Next";
-  src: url("https://design-system.cdn.yle.fi/fonts/yle-next/1.0.0/YleNextVar-Italic.woff2") format("woff2-variations"),
-    url("https://design-system.cdn.yle.fi/fonts/yle-next/1.0.0/YleNextVar-Italic.woff") format("woff-variations");
-  font-weight: 300 900;
-  font-style: italic;
-}
-
 :root {
   --fpupdatedbg: white;
   --fpupdatedcolor: black;
+  --fparticlecolor: black;
 }
 
 #app-root-2023-kurssipaketti {
@@ -28,25 +13,6 @@
     background: var(--fpupdatedbg);
 
     font-family: "Yle Next", sans-serif;
-    --rentoutuminen: linear-gradient(0deg,
-        rgba(180, 135, 228, 1) 0%,
-        rgba(216, 200, 255, 1) 60%);
-    --muistiteknikat: linear-gradient(0deg,
-        rgba(245, 140, 73, 1) 0%,
-        rgba(255, 212, 113, 1) 60%);
-    --keskittyminen: linear-gradient(0deg,
-        rgba(226, 250, 160, 1) 0%,
-        rgba(158, 217, 250, 1) 60%);
-    --kutsumuskartta: linear-gradient(0deg,
-        rgba(167, 181, 248, 1) 0%,
-        rgba(172, 224, 243, 1) 60%);
-    --kutsumuskartta: linear-gradient(0deg,
-        rgba(167, 181, 248, 1) 0%,
-        rgba(172, 224, 243, 1) 60%);
-    --erokoulu: linear-gradient(0deg,
-        rgba(199, 192, 226, 1) 0%,
-        rgba(216, 200, 255, 1) 60%);
-
     *,
     *::before,
     *::after {
@@ -75,12 +41,9 @@
 
     article * {
       margin: 0;
+      color: var(--fparticlecolor);
     }
-
-    aside {
-      background: #f5f8ff;
-      padding: var(--gap);
-    }
+ 
 
     .wrapper {
       max-width: 1000px;
@@ -159,7 +122,7 @@
       padding-bottom: var(--gap);
     }
 
-    /* this hack is needed because this image is circled --> cannot be cropped */
+    // this hack is needed because this image is circled --> cannot be cropped 
     picture[data-image="39-12924056655bf4eb0c91"] img {
       object-fit: contain !important;
     }
@@ -205,12 +168,6 @@
           display: grid;
           height: fit-content;
         }
-
-        .tag-wrapper {}
-
-        h1 {}
-
-        .ingressi {}
 
         #kurssi-buttons {
           grid-column: span 2;
