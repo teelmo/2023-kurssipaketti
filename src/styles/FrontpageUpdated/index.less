@@ -34,7 +34,7 @@
     }
 
     .hero-grid img {
-      max-height: 300px;
+      height: 300px;
     width: auto;
     margin: auto;
     }
@@ -78,9 +78,11 @@
     }
 
     h2 {
-      font-size: 2.3em;
+      font-size: 2em;
       font-weight: 800;
       margin: 0;
+      margin-bottom: 30px;
+      line-height: 1.3em;
     }
 
 
@@ -103,6 +105,12 @@
       list-style-type: none;
       padding: 0;
       margin: 0;
+    }
+
+    @container wrapper (min-width: 800px) {
+      .hero-grid h2 {
+        line-height: unset;
+      }
     }
 
     @container wrapper (min-width: 1250px) {
