@@ -18,7 +18,7 @@ function Card({ data }) {
   // write fetch function that gets a txt file, then saves it to a state
 
   useEffect(() => {
-    fetch(`https://lusi-dataviz.test.ylestatic.fi/2023-kurssipaketti/ims_images/alts/alt_${data.img}.txt`)
+    fetch(`https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/ims_images/alts/alt_${data.img}.txt`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -38,9 +38,9 @@ function Card({ data }) {
     <li className="article-container" data-wide={data.wide}>
       <article data-wide={data.wide} style={{ background: data.background }}>
         <picture data-image={data.img}>
-          <source type="image/avif" srcSet={`https://lusi-dataviz.test.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_${data.img}.avif`} />
-          <source type="image/webp" srcSet={`https://lusi-dataviz.test.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_${data.img}.webp`} />
-          <img src={`https://lusi-dataviz.test.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_${data.img}.jpg`} alt={alt} />
+          <source type="image/avif" srcSet={`https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_${data.img}.avif`} />
+          <source type="image/webp" srcSet={`https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_${data.img}.webp`} />
+          <img src={`https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_${data.img}.jpg`} alt={alt} />
         </picture>
         <div>
           <h3>{data.title}</h3>
