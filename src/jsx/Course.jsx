@@ -14,7 +14,7 @@ import Markdown from 'react-markdown';
 import scrollIntoView from 'scroll-into-view';
 
 // https://github.com/yle-interactive/wiki-site/blob/main/docs/comments-to-tailored-article.md
-// import { CommentsPlugin } from '@yleisradio/comments-plugin';
+import { CommentsPlugin } from '@yleisradio/comments-plugin';
 
 // Load helpers.
 import slideToggle from './helpers/slideToggle.js';
@@ -33,16 +33,17 @@ function Course({ parameters }) {
   const { course } = parameters;
 
   const darkMode = (window.getComputedStyle(document.querySelector('body')).getPropertyValue('background-color') === 'rgb(19, 20, 21)' || window.getComputedStyle(document.querySelector('body')).getPropertyValue('background-color') === 'rgb(0, 0, 0)' || window.getComputedStyle(document.querySelector('body')).getPropertyValue('background-color') === 'rgba(0, 0, 0, 0)');
-  // const articleIDs = {
-  //   keskittyminen: '20-10005783',
-  //   muisti: '20-10005782',
-  //   rentoutuminen: '20-10005785'
-  // };
-  // const commentsPluginProps = {
-  //   env: 'production',
-  //   theme: darkMode ? 'dark' : 'light',
-  //   topicId: articleIDs[course]
-  // };
+  const articleIDs = {
+    keskittyminen: '20-10005783',
+    muisti: '20-10005782',
+    rentoutuminen: '20-10005785',
+    erokurssi: '74-20090990'
+  };
+  const commentsPluginProps = {
+    env: 'production',
+    theme: darkMode ? 'dark' : 'light',
+    topicId: articleIDs[course]
+  };
 
   // Fetch data.
   const fetchData = useCallback(() => {
@@ -330,9 +331,13 @@ function Course({ parameters }) {
           })
         }
       </div>
-      {/* <div className="comments_container">
-        <CommentsPlugin {...commentsPluginProps} />
-      </div> */}
+      <div className="comment_container" />
+      {course === 'erokurssi' && (
+        <div className="comments_container">
+          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+          <CommentsPlugin {...commentsPluginProps} />
+        </div>
+      )}
       <noscript>Your browser does not support JavaScript!</noscript>
     </div>
   );
