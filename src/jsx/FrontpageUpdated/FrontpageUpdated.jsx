@@ -68,7 +68,7 @@ function FrontpageUpdated() {
               ))}
             </ul>
           </main>
-          <p style={{ textAlign: 'center' }}>Muokattu 8.12. Poistettu wa-yhteisön linkki, koska yhteisön toiminta loppui.</p>
+          <p style={{ textAlign: 'center' }} />
         </div>
       </div>
     </div>
