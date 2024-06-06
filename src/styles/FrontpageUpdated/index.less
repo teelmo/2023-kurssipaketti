@@ -13,6 +13,7 @@
     background: var(--fpupdatedbg);
 
     font-family: "Yle Next", sans-serif;
+
     *,
     *::before,
     *::after {
@@ -35,8 +36,8 @@
 
     .hero-grid img {
       height: 300px;
-    width: auto;
-    margin: auto;
+      width: auto;
+      margin: auto;
     }
 
     ul {
@@ -49,12 +50,12 @@
       margin: 0;
       color: var(--fparticlecolor);
     }
- 
+
 
     .wrapper {
-      max-width: 1000px;
+      max-width: 1080px;
       margin: 0 auto;
-      padding: 15px;
+      padding: 15px 16px;
     }
 
     p {
@@ -62,6 +63,14 @@
       margin-bottom: 24px;
       font-size: 18px;
       line-height: 27px;
+    }
+
+    li.article-container:not([data-wide='true']) p {
+      font-size: 16px;
+    }
+
+    li.article-container:not([data-wide='true']) h3 {
+      font-size: 1.4em;
     }
 
     h3 {
@@ -108,15 +117,13 @@
     }
 
     @container wrapper (min-width: 800px) {
-      .hero-grid h2 {
-        line-height: unset;
-      }
-    }
 
-    @container wrapper (min-width: 1250px) {
       .wrapper {
-        grid-template-columns: 4fr;
+        padding-left: 24px;
+        padding-right: 24px;
       }
+
+
     }
 
     .grid-container {
@@ -141,13 +148,20 @@
       object-fit: contain !important;
     }
 
-    @container layout (inline-size > 800px) {
+    @container layout (800px < inline-size < 1000px) {
+      .hero-grid img {
+        max-height: max(300px, 30vh) !important;
+      }
+
+    }
+
+    @container layout (inline-size > 850px) {
       .grid {
         grid-template-columns: repeat(3, 1fr);
       }
 
       li.article-container:not([data-wide="true"]) article {
-        grid-template-rows: 1fr 1fr min-content;
+        grid-template-rows: 250px 210px min-content;
       }
 
       .article-container[data-wide="true"] {
@@ -161,6 +175,12 @@
           "napit napit";
         height: fit-content;
         padding-bottom: 0;
+
+
+        h2 {
+          line-height: 1.2em;
+          font-size: 2.8em;
+        }
 
         picture {
           place-self: center;
@@ -181,6 +201,7 @@
           gap: 5px;
           display: grid;
           height: fit-content;
+          padding-top: 55px;
         }
 
         #kurssi-buttons {
@@ -188,9 +209,8 @@
         }
 
         .fp_button {
-          padding-left: 16px;
-          padding-right: 16px;
-          font-size: 18px;
+          padding: 10px 20px;
+          font-size: 15px;
           font-weight: 600;
         }
       }
@@ -211,6 +231,7 @@
       img {
         object-fit: cover;
         max-height: 40vh;
+        border-radius: 6px;
       }
 
       div {
@@ -222,9 +243,8 @@
       button.fp_button {
         margin: calc(var(--gap) * 2) 0;
         margin-top: 0;
-        font-size: 18px;
-        padding-left: 18px;
-        padding-right: 18px;
+        font-size: 15px;
+        padding: 10px 20px;
       }
     }
 
@@ -258,6 +278,7 @@
           height: 100%;
           max-height: unset;
           object-fit: cover;
+          border-radius: 6px;
         }
 
 
@@ -271,7 +292,7 @@
           line-height: 27px;
         }
 
-       
+
         .fp_button {
           margin-top: calc(var(--gap));
           margin-bottom: 0;
