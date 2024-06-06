@@ -344,7 +344,7 @@ function Course({ parameters }) {
 
 Course.propTypes = {
   /* eslint-disable-next-line react/forbid-prop-types */
-  parameters: PropTypes.object.isRequired,
+  parameters: PropTypes.object.isRequired
 };
 
 export default Course;
