@@ -28,7 +28,7 @@ Tervetuloa mukaan Pieneen erokouluun! Tämä on sinun mahdollisuutesi pysähtyä
       rgba(172, 224, 243, 1) 60%)`
   },
   {
-    img: '39-12924056655bf4eb0c91',
+    img: '39-129740866603b2f17dcf',
     title: 'Keskittyminen',
     text: 'Keskittymiskyky joutuu arjen viriketulvassa valtavalle koetukselle, mutta eipä hätää: sitä voi harjoitella!',
     link: 'https://aihe.yle.fi/aihe/a/20-10005783',
@@ -39,7 +39,7 @@ Tervetuloa mukaan Pieneen erokouluun! Tämä on sinun mahdollisuutesi pysähtyä
     )`,
   },
   {
-    img: '39-12924056655bf4eb0c91',
+    img: '39-129740766603b2f0d12d',
     title: 'Muistitekniikat',
     text: 'Muistiharjoituksilla opit pitämään ideat tallessa, palauttamaan mieleesi suuriakin kokonaisuuksia ja laajentamaan muistisi kapasiteettia.',
     link: 'https://aihe.yle.fi/aihe/a/20-10005782',
@@ -50,7 +50,7 @@ Tervetuloa mukaan Pieneen erokouluun! Tämä on sinun mahdollisuutesi pysähtyä
     )`
   },
   {
-    img: '39-12924056655bf4eb0c91',
+    img: '39-129740566603aaa159eb',
     title: 'Rentoutuminen',
     text: 'Vagushermon aktivoiminen saa ylikierroksilla käyvän kehon rentoutumaan ja levottoman mielen rauhoittumaan.',
     link: 'https://aihe.yle.fi/aihe/a/20-10005785',

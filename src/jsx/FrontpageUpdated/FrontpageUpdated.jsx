@@ -5,14 +5,17 @@ import CustomTag from './Tag.jsx';
 
 import courses from '../../../assets/data/frontpagedata';
 import Card from './Card.jsx';
-import bg from '../../../assets/img/frontpageupdated/bg_kurssikokonaisuus.png';
 import Button from './Button.jsx';
 
 function FrontpageUpdated() {
   return (
     <div id="frontpage-updated">
       <div className="gradient">
-        <img src={bg} alt="" />
+        <picture>
+          <source type="image/avif" srcSet="https://lusi-dataviz.test.ylestatic.fi/2023-kurssipaketti/ims_images/bg_kurssikokonaisuus.avif" />
+          <source type="image/webp" srcSet="https://lusi-dataviz.test.ylestatic.fi/2023-kurssipaketti/ims_images/bg_kurssikokonaisuus.webp" />
+          <img alt="" src="https://lusi-dataviz.test.ylestatic.fi/2023-kurssipaketti/ims_images/bg_kurssikokonaisuus.png" />
+        </picture>
       </div>
       <div className="wrapper-container">
         <div className="wrapper">
@@ -20,9 +23,9 @@ function FrontpageUpdated() {
           <main className="grid-container">
             <section className="hero-grid">
               <picture>
-                <source type="image/avif" srcSet="https://lusi-dataviz.test.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_39-12924056655bf4eb0c91.avif" />
-                <source type="image/webp" srcSet="https://lusi-dataviz.test.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_39-12924056655bf4eb0c91.webp" />
-                <img alt="ALTTEKSTI" src="https://lusi-dataviz.test.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_39-12924056655bf4eb0c91.jpg" />
+                <source type="image/avif" srcSet="https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_39-1297662666068c83e993.avif" />
+                <source type="image/webp" srcSet="https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_39-1297662666068c83e993.webp" />
+                <img alt="" src="https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_39-1297662666068c83e993.jpg" />
               </picture>
               <div className="hero-tekstit">
                 <div className="tag-wrapper">
