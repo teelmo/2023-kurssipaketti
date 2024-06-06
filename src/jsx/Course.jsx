@@ -331,7 +331,6 @@ function Course({ parameters }) {
           })
         }
       </div>
-      <div className="comment_container" />
       {course === 'erokurssi' && (
         <div className="comments_container">
           {/* eslint-disable-next-line react/jsx-props-no-spreading */}
