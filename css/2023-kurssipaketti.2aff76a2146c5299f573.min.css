@@ -731,18 +731,18 @@
   color: var(--fparticlecolor);
 }
 #app-root-2023-kurssipaketti #frontpage-updated .wrapper {
-  max-width: 1000px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 15px 16px;
 }
 #app-root-2023-kurssipaketti #frontpage-updated p {
   letter-spacing: 0;
   margin-bottom: 24px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
 }
 #app-root-2023-kurssipaketti #frontpage-updated h3 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   margin-bottom: 24px;
   line-height: 1.24;
   font-weight: 600;
@@ -778,13 +778,9 @@
   margin: 0;
 }
 @container wrapper (min-width: 800px) {
-  #app-root-2023-kurssipaketti #frontpage-updated .hero-grid h2 {
-    line-height: unset;
-  }
-}
-@container wrapper (min-width: 1250px) {
   #app-root-2023-kurssipaketti #frontpage-updated .wrapper {
-    grid-template-columns: 4fr;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 #app-root-2023-kurssipaketti #frontpage-updated .grid-container {
@@ -804,12 +800,26 @@
 #app-root-2023-kurssipaketti #frontpage-updated picture[data-image="39-12924056655bf4eb0c91"] img {
   object-fit: contain !important;
 }
-@container layout (inline-size > 800px) {
+@container layout (800px < inline-size < 1000px) {
+  #app-root-2023-kurssipaketti #frontpage-updated .hero-grid img {
+    max-height: max(300px, 30vh) !important;
+  }
+}
+@container layout (inline-size > 850px) {
   #app-root-2023-kurssipaketti #frontpage-updated .grid {
     grid-template-columns: repeat(3, 1fr);
   }
+  #app-root-2023-kurssipaketti #frontpage-updated p {
+    font-size: 18px;
+  }
   #app-root-2023-kurssipaketti #frontpage-updated li.article-container:not([data-wide="true"]) article {
-    grid-template-rows: 1fr 1fr min-content;
+    grid-template-rows: 250px 210px min-content;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated li.article-container:not([data-wide="true"]) article p {
+    font-size: 16px;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated li.article-container:not([data-wide="true"]) article h3 {
+    font-size: 1.4em;
   }
   #app-root-2023-kurssipaketti #frontpage-updated .article-container[data-wide="true"] {
     grid-column: span 3;
@@ -819,6 +829,10 @@
     grid-template-areas: "tekstit kuva" "napit napit";
     height: fit-content;
     padding-bottom: 0;
+  }
+  #app-root-2023-kurssipaketti #frontpage-updated .hero-grid h2 {
+    line-height: 1.2em;
+    font-size: 2.8em;
   }
   #app-root-2023-kurssipaketti #frontpage-updated .hero-grid picture {
     place-self: center;
@@ -835,14 +849,14 @@
     gap: 5px;
     display: grid;
     height: fit-content;
+    padding-top: 55px;
   }
   #app-root-2023-kurssipaketti #frontpage-updated .hero-grid #kurssi-buttons {
     grid-column: span 2;
   }
   #app-root-2023-kurssipaketti #frontpage-updated .hero-grid .fp_button {
-    padding-left: 16px;
-    padding-right: 16px;
-    font-size: 18px;
+    padding: 10px 20px;
+    font-size: 15px;
     font-weight: 600;
   }
 }
@@ -859,6 +873,7 @@
 #app-root-2023-kurssipaketti #frontpage-updated article img {
   object-fit: cover;
   max-height: 40vh;
+  border-radius: 6px;
 }
 #app-root-2023-kurssipaketti #frontpage-updated article div {
   padding: calc(var(--gap)) calc(var(--gap));
@@ -867,9 +882,8 @@
 #app-root-2023-kurssipaketti #frontpage-updated article button.fp_button {
   margin: calc(var(--gap) * 2) 0;
   margin-top: 0;
-  font-size: 18px;
-  padding-left: 18px;
-  padding-right: 18px;
+  font-size: 15px;
+  padding: 10px 20px;
 }
 @container article (inline-size > 800px) {
   #app-root-2023-kurssipaketti #frontpage-updated article[data-wide="true"] {
@@ -896,6 +910,7 @@
     height: 100%;
     max-height: unset;
     object-fit: cover;
+    border-radius: 6px;
   }
   #app-root-2023-kurssipaketti #frontpage-updated article[data-wide="true"] p {
     letter-spacing: 0;
@@ -911,7 +926,7 @@
 
 #app-root-2023-kurssipaketti #frontpage-updated .tag {
   display: inline-block;
-  background-color: yellow;
+  background-color: #f7ca62;
   color: black;
   font-family: "Yle Next", "Open Sans", sans-serif;
   font-weight: 700;
