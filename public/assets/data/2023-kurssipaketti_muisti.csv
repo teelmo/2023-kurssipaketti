@@ -5,9 +5,9 @@ paragraph_section,"#### Muistiharjoituksilla opit pitämään ideat tallessa, pa
 
 Alla on neljä harjoitusta, joiden avulla:
 
-* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/muistitekniikat_3_icon.png) rauhoitat muistettavien asioiden kaaosta päässäsi
-* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/muistitekniikat_1_icon.png) kehität työskentelyäsi ja ajatteluasi
-* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/muistitekniikat_2_icon.png) luovien oivallustesi määrä saattaa kasvaa
+* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/muistitekniikat_1_icon.png) rauhoitat muistettavien asioiden kaaosta päässäsi
+* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/muistitekniikat_2_icon.png) kehität työskentelyäsi ja ajatteluasi
+* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/muistitekniikat_3_icon.png) luovien oivallustesi määrä saattaa kasvaa
 
 Harjoitukset on kehitetty yhdessä työelämäprofessori **Lauri Järvilehdon** kanssa.
 
@@ -34,7 +34,7 @@ Näiden kahden niksin avulla opit painamaan nimet helpommin mieleesi.
 1. Kun uusi tuttavuus esittäytyy sinulle ja kertoo nimensä, toista nimi ääneen tervehtiessäsi häntä. Toistamalla nimen kertaat sitä itsellesi mielessäsi. Nimien, kuten minkä tahansa muunkin opittavan asian kertaaminen, voi synnyttää aivoissasi uusia hermoverkkoja. Näin muistijälki vahvistuu.
 2. Luo nimen ympärille jokin mielleyhtymä eli assosiaatio. Kun kuulet uuden ihmisen nimen, yritä keksiä mielessäsi jokin siihen liittyvä fakta, oivallus tai vaikkapa vitsi.
 
-Mitä hauskemman tai merkityksellisemmän mielleyhtymän keksit, sitä helpompaa sinun on palauttaa nimi mieleesi. Katso mallia alta:",Nimi mieleen;Paina nimet muistiin helpoilla nikseillä,exercise_1,47-06d2995c-7aa4-4490-93c4-7cd024c3e961,1-67038618,,,,,,,,,"Title sarakkeessa, erota otsikko ja väliotsikko puolipisteellä. Ei turhia välilyöntejä."
+Mitä hauskemman tai merkityksellisemmän mielleyhtymän keksit, sitä helpompaa sinun on palauttaa nimi mieleesi. Katso mallia alta:",Nimi mieleen;Paina nimet muistiin helpoilla nikseillä,exercise_1,47-06d2995c-7aa4-4490-93c4-7cd024c3e961,1-67038618,,,,,,muisti_1_nimi_mieleen,,,"Title sarakkeessa, erota otsikko ja väliotsikko puolipisteellä. Ei turhia välilyöntejä."
 exercise,"**Kesto:** 10–15 minuuttia
 
 Kun muistiasi kuormittaa hoitamattomien asioiden monenkirjava vyyhti, istu alas ja ota avuksi aihepiireittäin luodut, käsintehdyt listat.
@@ -43,7 +43,7 @@ Tämä harjoitus voi helpottaa myös tekemättömiin askareisiin liittyvää str
 
 1. Tarvitset harjoitusta varten A4-kokoisen paperin ja kynän. Kirjaa paperille kaikki mielessäsi pyörivät tehtävät, jotka sinun pitää muistaa tehdä.
 2. Sen jälkeen ryhmittele tehtävät allekkain erilaisiin sarakkeisiin sen mukaan, missä voit vaikuttaa niihin. Ryhmittele esimerkiksi kotona, töissä ja harrastuksissa hoidettavat tehtävät eri sarakkeisiin. Voit merkitä kuhunkin sarakkeeseen myös, vaatiiko tehtävän tekeminen esimerkiksi tietokonetta tai puhelinta.
-3. Voit viedä harjoituksen pidemmälle leikkaamalla paperista kunkin sarakkeen erilleen. Tämän jälkeen voit viedä kunkin listan ympäristöön, jossa voit konkreettisesti toteuttaa listalle kirjoitetun asian. Vie esimerkiksi työhuoneessa hoidettaviin tehtäviin liittyvä lista työhuoneeseen.",Muistikaaoksen kesytys;Pura tekemättömien asioiden vyyhti,exercise_2,47-4dd1b18e-daa3-4077-bddc-44e2ec094173,,,39-11950906543b300ee3e0,Esimerkki harjoituksessa tehdystä taulukosta.,Kuva: Jussi Meling,,,,,"Tehtävän kaikki tiedot tulee yhteen riviin, tiedot eri sarakkeisiin"
+3. Voit viedä harjoituksen pidemmälle leikkaamalla paperista kunkin sarakkeen erilleen. Tämän jälkeen voit viedä kunkin listan ympäristöön, jossa voit konkreettisesti toteuttaa listalle kirjoitetun asian. Vie esimerkiksi työhuoneessa hoidettaviin tehtäviin liittyvä lista työhuoneeseen.",Muistikaaoksen kesytys;Pura tekemättömien asioiden vyyhti,exercise_2,47-4dd1b18e-daa3-4077-bddc-44e2ec094173,,,39-11950906543b300ee3e0,Esimerkki harjoituksessa tehdystä taulukosta.,Kuva: Jussi Meling,,muisti_2_muistikaaoksen,,,"Tehtävän kaikki tiedot tulee yhteen riviin, tiedot eri sarakkeisiin"
 exercise,"**Kesto:** muutama minuutti
 
 Harjoituksen avulla pidät hyvät ideasi helposti tallessa ja pystyt palaamaan niihin vuosienkin jälkeen. Kättesi ulottuvilla on aina runsas ideavarasto moniin tarpeisiin.
@@ -55,7 +55,7 @@ Voit käyttää myös puhelimen muistiinpanotoimintoa tai tallettaa ideasi tieto
 1. Kanna mukanasi pientä muistivihkoa. Kun saat hyvän idean, pysähdy ja kirjoita se oitis muistivihkoon. Näin ideasi pysyvät tallessa, sillä toisin kuin usein kuvittelemme, loistavatkin aivoitukset voivat kadota tiedostamattoman mielemme syövereihin.
 2. Kun ideoita alkaa olla paljon, voit viedä harjoituksen entistä pidemmälle hyödyntämällä erilaisia digitaalisia muistiinpanosovelluksia. Kirjaa uudet ideat arkistoon viikoittain tai kuukausittain. Näin pääset nopeasti käsiksi vaikka kymmenen vuoden takaisiin ideoihisi.
 
-**Vinkki:** Saat arkistostasi vieläkin toimivamman, jos voit käyttää sovelluksissa erilaisia tunnisteita, kuten hashtageja. Jos merkitset esimerkiksi kaikki puutarhanhoitoon liittyvät ideat tunnisteella #puutarha, pystyt etsimään kaikki samaan teemaan liittyvät ideat arkistostasi pelkästään muistamalla niitä yhdistävän tunnisteen.",Ideapankki;Kirjaa ja järjestä parhaat väläykset,exercise_3,47-e4d881f5-fcc2-4c54-a558-854493b970ed,,,,,,,,,,"Tässä on kolmannen tehtävän tiedot, jos jotain tietoa ei ole, jätä se sarake tyhjäksi"
+**Vinkki:** Saat arkistostasi vieläkin toimivamman, jos voit käyttää sovelluksissa erilaisia tunnisteita, kuten hashtageja. Jos merkitset esimerkiksi kaikki puutarhanhoitoon liittyvät ideat tunnisteella #puutarha, pystyt etsimään kaikki samaan teemaan liittyvät ideat arkistostasi pelkästään muistamalla niitä yhdistävän tunnisteen.",Ideapankki;Kirjaa ja järjestä parhaat väläykset,exercise_3,47-e4d881f5-fcc2-4c54-a558-854493b970ed,,,,,,,muisti_3_ideapankki,,,"Tässä on kolmannen tehtävän tiedot, jos jotain tietoa ei ole, jätä se sarake tyhjäksi"
 exercise,"**Kesto:** 15–30 min
 
 Tämä harjoitus sopii tilanteisiin, kun sinun pitää opetella muistamaan asioita ulkoa. Opit, miten voit laajentaa muistin kapasiteettia ympäristöä hyödyntämällä.
@@ -66,7 +66,7 @@ Tämä harjoitus sopii tilanteisiin, kun sinun pitää opetella muistamaan asioi
 
 3. Harjoittele nyt asioiden muistamista ulkoa. Käy mielessäsi tilaa läpi ja testaa, pystytkö palauttamaan mieleesi muistilappuihin kirjoitetut asiat. Ajattele sijainti sijainnilta erilaisia kohtia, joihin kiinnitit muistilappuja. Mitä niissä luki? Jos et muista lappuihin kirjoitettuja asioita, käy lukemassa muistilaput läpi ja kokeile uudestaan.
 
-**Vinkki!** Toinen ympäristöä hyödyntävä muistitekniikka on jo antiikin aikana hyödynnetty muistipalatsi. Katso [Superihmiset-sarjan jaksosta](https://areena.yle.fi/1-63867762), miten rakennat mieleesi muistipalatsin.",Ympäristö oppimisen avuksi;Tee tilasta muistikartta,exercise_4,47-ea2f2072-f4f6-4167-8553-9bc240b13956,,,,,,,,,,Neljäs tehtävä
+**Vinkki!** Toinen ympäristöä hyödyntävä muistitekniikka on jo antiikin aikana hyödynnetty muistipalatsi. Katso [Superihmiset-sarjan jaksosta](https://areena.yle.fi/1-63867762), miten rakennat mieleesi muistipalatsin.",Ympäristö oppimisen avuksi;Tee tilasta muistikartta,exercise_4,47-ea2f2072-f4f6-4167-8553-9bc240b13956,,,,,,,muisti_4_ymparisto,,,Neljäs tehtävä
 title_section,,Laurin vinkit muistitreeneihin,,,,,,,,,,,,Tämä on otsikko ilman valkoista taustaa
 paragraph_section,"#### Mitä harjoituksia tehdessä on hyvä tietää?
 
@@ -97,7 +97,7 @@ paragraph_section,"Lauri Järvilehto avaa muisti- ja ajattelutaitoja myös [Täm
 
 Juontaja **Sean Ricks** saa apua hajamielisyyteensä muistamisen maailmanmestarilta [Superihmiset-sarjan jaksossa](https://areena.yle.fi/1-63867748) Yle Areenassa.",,,,,,,,,,,,,
 title_section,,Tutustu muihin kurssisisältöihin!,,,,,,,,,,,,
-paragraph_section,Haluatko oppia paremmaksi keskittyjäksi? Etsitkö helppoja keinoja rentoutua? Kiinnostavatko muistitekniikat tai kutsumuskarttaharjoitus? Vai haluatko löytää apua eron pohtimiseen? [Ylen kurssisisällöt tarjoavat arkeen mahtuvia harjoitteita tavoitteidesi saavuttamiseen](https://yle.fi/a/74-20092077).,,,,,,,,,,,,,
+paragraph_section,Haluatko oppia paremmaksi keskittyjäksi? Etsitkö helppoja keinoja rentoutua? Kiinnostavatko muistitekniikat tai kutsumuskarttaharjoitus? Vai haluatko löytää apua eron pohtimiseen? [Ylen kurssisisällöt tarjoavat arkeen mahtuvia harjoitteita tavoitteidesi saavuttamiseen](https://yle.fi/aihe/a/20-10005632).,,,,,,,,,,,,,
 paragraph_section,"**Tekijät:**\
 Toimittaja: Anna Horppu\
 Kuvat: Jussi Meling, Jade Lönnqvist\

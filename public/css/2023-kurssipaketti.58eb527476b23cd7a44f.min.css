@@ -488,10 +488,24 @@
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_keskittyminen {
   background: #9ed9fa;
   background: linear-gradient(180deg, #9ed9fa 33%, #e2faa0 120%);
-  padding: 10px 45px 10px 100px;
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_keskittyminen:hover {
   background: #9ed9fa;
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_keskittyminen.exercise_button_keskittyminen_1_lasna:before {
+  background-image: url('../assets/img/keskittyminen_1_lasna.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_keskittyminen.exercise_button_keskittyminen_2_aivojen_miniloma:before {
+  background-image: url('../assets/img/keskittyminen_2_aivojen_miniloma.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_keskittyminen.exercise_button_keskittyminen_3_aistikavely:before {
+  background-image: url('../assets/img/keskittyminen_3_aistikavely.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_keskittyminen.exercise_button_keskittyminen_4_lukuharjoitus:before {
+  background-image: url('../assets/img/keskittyminen_4_lukuharjoitus.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_keskittyminen.exercise_button_keskittyminen_5_keskittymistunti:before {
+  background-image: url('../assets/img/keskittyminen_5_keskittymistunti.png');
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_muisti {
   background-color: #ffd471;
@@ -500,12 +514,36 @@
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_muisti:hover {
   background: #ffd471;
 }
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_muisti.exercise_button_muisti_1_nimi_mieleen:before {
+  background-image: url('../assets/img/muisti_1_nimi_mieleen.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_muisti.exercise_button_muisti_2_muistikaaoksen:before {
+  background-image: url('../assets/img/muisti_2_muistikaaoksen.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_muisti.exercise_button_muisti_3_ideapankki:before {
+  background-image: url('../assets/img/muisti_3_ideapankki.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_muisti.exercise_button_muisti_4_ymparisto:before {
+  background-image: url('../assets/img/muisti_4_ymparisto.png');
+}
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_rentoutuminen {
   background: #d8c8ff;
   background: linear-gradient(180deg, #d8c8ff 33%, #b487e4 120%);
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_rentoutuminen:hover {
   background: #d8c8ff;
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_rentoutuminen.exercise_button_rentoutuminen_1_hellita:before {
+  background-image: url('../assets/img/rentoutuminen_1_hellita.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_rentoutuminen.exercise_button_rentoutuminen_2_hengittamalla:before {
+  background-image: url('../assets/img/rentoutuminen_2_hengittamalla.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_rentoutuminen.exercise_button_rentoutuminen_3_vartalonkierto:before {
+  background-image: url('../assets/img/rentoutuminen_3_vartalonkierto.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_rentoutuminen.exercise_button_rentoutuminen_4_armeliaat_sanat:before {
+  background-image: url('../assets/img/rentoutuminen_4_armeliaat_sanat.png');
 }
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.with_arrow:after {
   color: #000;
