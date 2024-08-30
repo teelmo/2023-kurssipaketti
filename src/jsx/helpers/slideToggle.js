@@ -1,4 +1,4 @@
-const slideToggle = (appRef, group) => {
+const slideToggle = (appRef, group, course) => {
   const container = appRef.current.querySelector(`.exercise_description_${group}`);
   const button_container = appRef.current.querySelector(`.exercise_button_${group}`);
   /** Slide down. */
@@ -21,6 +21,34 @@ const slideToggle = (appRef, group) => {
       container.style.height = height;
     }, 0);
     window.dispatchEvent(new Event('resize'));
+
+    container.querySelectorAll('.areena_player_container').forEach((el) => {
+      const props = {
+        aspectRatio: (course === 'kutsumuskartta') ? '16:9' : '1:1',
+        autoplay: false,
+        id: el.dataset.id
+      };
+      // https://github.com/Yleisradio/player-static/wiki/Player-embed-instructions
+      if (window.ylePlayer && window.location.href.includes('yle')) {
+        window.ylePlayer.render({
+          element: el, props
+        });
+      }
+    });
+    container.querySelectorAll('.areena_player_container_audio').forEach((el) => {
+      const props = {
+        autoplay: false,
+        id: el.dataset.id,
+        yleAudioPlayer: true
+      };
+      // https://github.com/Yleisradio/player-static/wiki/Player-embed-instructions
+      if (window.ylePlayer && window.location.href.includes('yle')) {
+        window.ylePlayer.render({
+          element: el, props
+        });
+      }
+    });
+
     /** Slide up. */
   } else {
     /** Set the height as 0px to trigger the slide up animation. */

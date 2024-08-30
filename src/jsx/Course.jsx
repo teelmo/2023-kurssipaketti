@@ -111,12 +111,11 @@ function Course({ parameters }) {
       script.async = true;
       script.onload = () => {
         if (window.ylePlayer !== 'undefined') {
-          appRef.current.querySelectorAll('.areena_player_container').forEach((el) => {
+          appRef.current.querySelectorAll('.content > .areena_container > .areena_player_container').forEach((el) => {
             const props = {
               aspectRatio: (course === 'kutsumuskartta') ? '16:9' : '1:1',
               autoplay: false,
-              id: el.dataset.id,
-              webKitPlaysInline: true
+              id: el.dataset.id
             };
             // https://github.com/Yleisradio/player-static/wiki/Player-embed-instructions
             if (window.ylePlayer && window.location.href.includes('yle')) {
@@ -125,11 +124,10 @@ function Course({ parameters }) {
               });
             }
           });
-          appRef.current.querySelectorAll('.areena_player_container_audio').forEach((el) => {
+          appRef.current.querySelectorAll('.content > .areena_container > .areena_player_container_audio').forEach((el) => {
             const props = {
               autoplay: false,
               id: el.dataset.id,
-              webKitPlaysInline: true,
               yleAudioPlayer: true
             };
             // https://github.com/Yleisradio/player-static/wiki/Player-embed-instructions
@@ -253,7 +251,7 @@ function Course({ parameters }) {
                   <div className="exercise_container" key={uuidv4()}>
                     <div className="exercise_content">
                       <div className={course === 'kutsumuskartta' ? 'exercise_toggler exercise_withbg' : 'exercise_toggler'}>
-                        <button type="button" className={`exercise_button_${values[3]} with_arrow exercise_button_${course} exercise_button_${values[11]}`} onClick={() => slideToggle(appRef, values[3])}>
+                        <button type="button" className={`exercise_button_${values[3]} with_arrow exercise_button_${course} exercise_button_${values[11]}`} onClick={() => slideToggle(appRef, values[3], course)}>
                           <h3>{values[2].split(';')[0]}</h3>
                           {values[2].split(';')[1] && <h4>{values[2].split(';')[1]}</h4>}
                         </button>
