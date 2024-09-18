@@ -4,8 +4,8 @@
     "js/2023-kurssipaketti.8d3e784cd65ae0beea39.min.js"
   ],
   "css": [
-    "css/2023-kurssipaketti.f814eedbd42dde2274ee.min.css",
-    "font/fonts.css"
+    "font/fonts.css",
+    "css/2023-kurssipaketti.f814eedbd42dde2274ee.min.css"
   ],
   "darkMode": true,
   "externalContent": true,
