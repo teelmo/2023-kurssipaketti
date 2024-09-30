@@ -151,6 +151,15 @@
             background: rgb(172, 224, 243);
           }
         }
+        &.content_kutsumuskartta {
+          .exercise_container {
+            .exercise_description {
+              figure.areena_container {
+                aspect-ratio: 16/9;
+              }
+            }
+          }
+        }
       }
       &:last-child {
         line-height: 22px;
@@ -230,6 +239,7 @@
         box-sizing: border-box;
         margin: auto auto;
         max-width: 592px;
+        padding-bottom: 20px;
         .exercise_withbg {
           button {
             background-color: #e1e1f0;
@@ -423,6 +433,10 @@
             }
           }
           // https://cssgradient.io/
+          &.exercise_button_sijoituskurssi {
+            background: rgb(233, 231, 246);
+            background: linear-gradient(180deg, rgba(233, 231, 246, 1) 33%, rgba(199, 192, 226, 1) 120%);
+          }
           &.exercise_button_erokurssi {
             background: rgb(233, 231, 246);
             background: linear-gradient(180deg, rgba(233, 231, 246, 1) 33%, rgba(199, 192, 226, 1) 120%);
@@ -687,6 +701,7 @@
         figure.areena_container {
           margin: 0 0 20px 0;
           padding: 0;
+          aspect-ratio: 1/1;
           text-align: left;
           .audio_image {
             text-align: left;
@@ -729,7 +744,6 @@
           }
         }
         .exercise_toggler {
-          margin-bottom: 20px;
           button {
             background-color: #fff;
             border: 2px solid #000;
@@ -749,6 +763,7 @@
     .poll_container {
       background-color: #fff;
       box-sizing: border-box;
+      margin-bottom: 20px;
       max-width: 592px;
       ul {
         margin: 20px 0 20px 38px;
