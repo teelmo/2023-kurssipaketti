@@ -1,5 +1,17 @@
 const courses = [
   {
+    img: '39-135651066fb8e3053fae',
+    title: 'Tee runo!',
+    text:
+`Haluaisitko oppia kirjoittamaan runon? 
+    
+Viiden helpon tehtävän avulla se onnistuu. Aluksi voit pelata runopeliä. Jatka seuraamalla artisti-runoilija Alvarin ohjeita, joista saat apua kirjoittamisen aloittamiseen. Saat harjoitella runon tekemistä mahdollisimman nopeasti tai tehdä koneapurin avulla haikun. Voit myös arpoa itsellesi kuvan, joka innostaa kirjoittamaan.`,
+    link: 'https:/yddrasil.yle.fi/a/74-20112671',
+    wide: true,
+    background: '#faf4d2'
+  },
+
+  {
     img: '39-12924056655bf4eb0c91',
     title: 'Pieni erokoulu',
     wide: true,

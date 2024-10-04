@@ -27,7 +27,7 @@ function FrontpageUpdated() {
                 <source type="image/webp" srcSet="https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_39-1297662666068c83e993.webp" />
                 <img alt="" src="https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/ims_images/1_1/1_1_1x_39-1297662666068c83e993.jpg" />
               </picture>
-              <div className="hero-tekstit">
+              <section className="hero-tekstit">
                 <div className="tag-wrapper">
                   <CustomTag>
                     <h1>Ylen kurssisisällöt</h1>
@@ -45,24 +45,22 @@ function FrontpageUpdated() {
                   </p>
 
                 </div>
-              </div>
-              <ul id="kurssi-buttons">
+              </section>
+              <ul id="kurssi-buttons" aria-label="Kurssin valintaan tarkoitetut pikanäppäimet">
                 {courses.map((e) => (
                   <li>
                     {/* eslint-disable */}
-                      <a href={e.link}>
                         <Button
                           link={e.link}
                           label={e.title}
                         />
-                      </a>
                       {/* eslint-enable */}
                   </li>
                 ))}
               </ul>
             </section>
 
-            <ul className="grid">
+            <ul className="grid" aria-label="Kurssiaiheet">
               {courses.map((e) => (
                 <Card data={e} />
               ))}
