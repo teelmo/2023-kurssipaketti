@@ -1,0 +1,14 @@
+{
+  "mainfile": "dataviz.html",
+  "js": [
+    "js/2023-kurssipaketti.b167d535cc42a7456598.min.js"
+  ],
+  "css": [
+    "font/fonts.css",
+    "css/2023-kurssipaketti.43c1ac143b5d99b30b8c.min.css"
+  ],
+  "darkMode": true,
+  "darkModeCss": [
+    "darkmode.css"
+  ]
+}
