@@ -6,7 +6,7 @@ const courses = [
 `Haluaisitko oppia kirjoittamaan runon? 
     
 Viiden helpon tehtävän avulla se onnistuu. Aluksi voit pelata runopeliä. Jatka seuraamalla artisti-runoilija Alvarin ohjeita, joista saat apua kirjoittamisen aloittamiseen. Saat harjoitella runon tekemistä mahdollisimman nopeasti tai tehdä koneapurin avulla haikun. Voit myös arpoa itsellesi kuvan, joka innostaa kirjoittamaan.`,
-    link: 'https:/yddrasil.yle.fi/a/74-20112671',
+    link: 'https://yle.fi/a/74-20112746',
     buttonLabel: 'Tutustu runotehtäviin',
     wide: true,
     background: '#faf4d2'
