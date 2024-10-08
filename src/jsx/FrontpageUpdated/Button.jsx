@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function Button({ link, label }) {
   return (
     <a href={link}>
-      <button type="button" aria-label={label} aria-disabled="false" className="fp_button">{label}</button>
+      <button type="button" className="fp_button">{label}</button>
     </a>
   );
 }

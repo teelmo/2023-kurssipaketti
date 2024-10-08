@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import Markdown from 'react-markdown';
 import Button from './Button.jsx';
 
-function ButtonRender({ link }) {
+function ButtonRender({ link, label }) {
   return (
     <Button
       link={link}
-      label="Tutustu kurssiin"
+      label={label || 'Tutustu kurssiin'}
     />
   );
 }
@@ -45,9 +45,9 @@ function Card({ data }) {
         <div>
           <h3>{data.title}</h3>
           <Markdown>{data.text}</Markdown>
-          {data.wide && <ButtonRender link={data.link} />}
+          {data.wide && <ButtonRender link={data.link} label={data.buttonLabel || 'Tutustu kurssiin'} />}
         </div>
-        {!data.wide && <ButtonRender link={data.link} />}
+        {!data.wide && <ButtonRender link={data.link} label={data.buttonLabel || 'Tutustu kurssiin'} />}
       </article>
     </li>
   );
@@ -60,13 +60,15 @@ Card.propTypes = {
     alt: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
+    buttonLabel: PropTypes.string,
     wide: PropTypes.bool,
     background: PropTypes.string,
   }).isRequired,
 };
 
 ButtonRender.propTypes = {
-  link: PropTypes.string.isRequired
+  link: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired
 };
 
 export default Card;
