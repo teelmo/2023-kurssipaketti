@@ -310,7 +310,7 @@ function Course({ parameters }) {
                           values[13] && <Markdown key={uuidv4()}>{values[13]}</Markdown>
                         }
                         {/* Close */}
-                        <div className="exercise_toggler exercise_closer"><button type="button" onClick={() => closeButton(appRef, values[3])}>Sulje harjoitus</button></div>
+                        <div className="exercise_toggler exercise_closer"><button type="button" onClick={() => closeButton(appRef, values[3])}>Sulje</button></div>
                       </div>
                     </div>
                   </div>
