@@ -1,44 +1,40 @@
 type,content,title,group,poll_id,areena_id,areena_caption,ims_id,image_caption,image_copyright,background,extra,areena_extra,footer,internal comment
-full_main_image,,,,,,,39-129740566603aaa159eb,,,,,,,
-title,Näin aloitat sijoittamisen,,,,,,,,,,,,,
-paragraph_section,"Oletko kiinnostunut sijoittamisesta?
+full_main_image,,,,,,,39-13783416733189c3b0f2,,,,,,,
+title,,Asiantuntija kehoittaa aloittamaan sijoittamisen heti – näillä ohjeilla pääset alkuun,,,,,,,,,,,,
+paragraph_section,"Suomalaiset sijoittavat entistä innokkaammin: Tilastokeskuksen mukaan lähes kolmanneksella suomalaisista on osakkeita tai rahastosijoituksia. 
 
-Jos vastauksesi on myöntävä kannattaa tutustua tämän kurssin sisältöön.",,,,,,,,,,,,,
+Aloittaminen saattaa kuitenkin tuntua vaikealta, jos sijoittamisen maailma on täysin tuntematon. Tämä kokonaisuus antaa eväitä ensiaskeleiden ottamiseen.",,,,,,,,,,,,,
 poll_section,,,,47-60b3b2a2-90f7-4979-9a99-0af4c44a12ee,,,,,,,,,,
-paragraph_section,"Sijoittaminen voi olla tehokas tapa kasvattaa taloudellista turvaa ja saavuttaa pitkän aikavälin tavoitteita. Kurssin avulla opit ymmärtämään markkinoiden toimintaa ja kehittämään strategioita, jotka sopivat juuri sinun tilanteeseesi. 
-
-Nuorten osakesäästäjien puheenjohtaja ja sijoittaja Maria Nurminen tarjoaa selkeitä ohjeita ja käytännön vinkkejä, jotka tekevät sijoittamisen aloittamisesta helpompaa ja vähemmän pelottavaa. Tutustumalla kurssiin saat arvokkaita työkaluja, jotka auttavat tekemään harkittuja sijoituspäätöksiä.
+paragraph_section,"Kurssilla Nuorten osakesäästäjien puheenjohtaja ja sijoittaja **Maria Nurminen** tarjoaa selkeitä ohjeita ja käytännön vinkkejä, jotka tekevät sijoittamisen aloittamisesta helpompaa ja vähemmän pelottavaa.
 
 Kuudessa eri videossa käydään läpi sijoittamisen perusteita ja sitä, miksi juuri nyt voisi olla hyvä hetki aloittaa sijoittaminen.
 
-* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/1_icon_erokurssi.png) Kasvattaa varallisuuttasi
-* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/1_icon_erokurssi.png) Hallitsemaan raha-asioitasi paremmin
-* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/1_icon_erokurssi.png) Vähentämään taloudellista stressiä
-* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/1_icon_erokurssi.png) Ymmärtämään markkinoiden toimintaa
-* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/1_icon_erokurssi.png) Saavuttamaan taloudellisia tavoitteita
+**Kurssi auttaa sinua:**
 
-Sijoittamiskurssi on kehitetty yhteistyössä Maria Nurmisen kanssa.
-
-Voit edetä omaan tahtiin ja tutustua perusteisiin rauhassa.
+* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/sijoituskurssi_1_kasvattaa_varallisuutta.png) Kasvattamaan varallisuuttasi
+* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/sijoituskurssi_2_hallitsemaan_raha-asioita.png) Hallitsemaan raha-asioitasi paremmin
+* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/sijoituskurssi_3_vahentamaaan_stressia.png) Vähentämään taloudellista stressiä
+* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/sijoituskurssi_4_ymmartamaan_markkinoita.png) Ymmärtämään markkinoiden toimintaa
+* ![](https://lusi-dataviz.ylestatic.fi/2023-kurssipaketti/assets/img/sijoituskurssi_5_taloudelliset_tavoitteet.png) Saavuttamaan taloudellisia tavoitteita
 
 Kurssin lopussa voit testata osaamistasi ja käydä antamassa palautetta.",,,,,,,,,,,,,
-areena_section,,,,,,,,,,,,,,
-paragraph_section,,,,,,,,,,,,,,
-exercise,"Sijoittaminen auttaa kasvattamaan taloudellista turvaa ja saavuttamaan pitkän aikavälin tavoitteita.
+exercise,"Tärkeintä sijoittamisessa on sen aloittaminen. Asiantuntija Maria Nurminen kertoo videolla, miksi sijoittaminen kannattaa aloittaa mieluummin tänään kuin huomenna.",Sijoittamisen aloittaminen;Tutustu sijoittamisen perusteisiin,exercise_1,,1-72033462,,,,,,,,"Sijoittaminen auttaa kasvattamaan taloudellista turvaa ja saavuttamaan pitkän aikavälin tavoitteita.
 
 Sijoittaminen mahdollistaa varallisuuden kasvun ja tarjoaa mahdollisuuden hyödyntää korkoa korolle -ilmiötä.
 
 Pääoma on rahaa, aika mahdollistaa tuottojen kasvun, ja tuotto on palkinto otetusta riskistä.
 
-Älä anna ajan tai tiedon puutteen estää sinua aloittamasta sijoittamista. Aloita pienestä ja lisää tietoa ja taitojasi vähitellen",Sijoittamisen aloittaminen;Tutustu sijoittamisen perusteisiin,exercise_1,,,,,,,,,,,
-exercise,"Ajan myötä saat tuottoa paitsi alkuperäiselle sijoitukselle myös aiemmin kertyneille tuotoille, mikä johtaa eksponentiaaliseen kasvuun.
+Älä anna ajan tai tiedon puutteen estää sinua aloittamasta sijoittamista. Aloita pienestä ja lisää tietoa ja taitojasi vähitellen.
+",
+exercise,"Asiantuntija kertoo videolla, kuinka nuorena aloitettu sijoittaminen hyödyntää korkoa korolle -ilmiötä ja kasvattaa varallisuutta pitkällä aikavälillä.",Nuorena aloittamisen hyödyt;Aloita sijoittaminen ajoissa,exercise_2,,1-72033460,,,,,,,,"Ajan myötä saat tuottoa paitsi alkuperäiselle sijoitukselle myös aiemmin kertyneille tuotoille, mikä johtaa eksponentiaaliseen kasvuun.
 
 Mitä aikaisemmin aloitat, sitä enemmän aika voi kasvattaa varallisuuttasi korkoa korolle -ilmiön ansiosta.
 
-Nuorena aloittaessasi sijoittaminen on pitkän aikavälin peliä. Sinulla on enemmän aikaa odottaa mahdollisten tappioiden kääntymistä voitoiksi.  
+Nuorena aloittaessasi sijoittaminen on pitkän aikavälin peliä. Sinulla on enemmän aikaa odottaa mahdollisten tappioiden kääntymistä voitoiksi.
 
-Sijoittaminen nuorena kehittää taitoja talouden hallinnassa, riskienhallinnassa ja pitkäjänteisessä suunnittelussa.",Nuorena aloittamisen hyödyt;Aloita sijoittaminen ajoissa,exercise_2,,,,,,,,,,,
-exercise,"Eri sijoituskohteet, kuten osakkeet, rahastot ja ETF:t, tarjoavat erilaisia mahdollisuuksia ja riskitasoja.
+Sijoittaminen nuorena kehittää taitoja talouden hallinnassa, riskienhallinnassa ja pitkäjänteisessä suunnittelussa.
+",
+exercise,Seuraavassa videossa käsitellään eri sijoituskohteiden mahdollisuuksia ja riskejä sekä hajauttamisen ja erilaisten sijoitustilien etuja.,Sijoitusvaihtoehdot;Löydä itsellesi paras vaihtoehto,exercise_3,,1-72033458,,,,,,,,"Eri sijoituskohteet, kuten osakkeet, rahastot ja ETF:t, tarjoavat erilaisia mahdollisuuksia ja riskitasoja.
 
 Osakkeet ovat suoria omistuksia yrityksistä, rahastot tarjoavat hajautusta, ja ETF:t yhdistävät molempien ominaisuuksia.
 
@@ -46,29 +42,30 @@ Korkeampi riski voi tuoda suurempia tuottomahdollisuuksia, mutta myös suurempia
 
 Hajauttamalla sijoituksia voit hallita ja tasapainottaa riskejä.
 
-Arvo-osuustili (AOT) ja osakesäästötili (OST) tarjoavat erilaisia etuja verotuksessa ja sijoitusten hallinnassa.",Sijoitusvaihtoehdot;Löydä itsellesi paras vaihtoehto,exercise_3,,,,,,,,,,,
-exercise,"Sijoitusten ajoittaminen voi vähentää markkinoiden lyhyen aikavälin heilahteluiden vaikutusta.
+Arvo-osuustili (AOT) ja osakesäästötili (OST) tarjoavat erilaisia etuja verotuksessa ja sijoitusten hallinnassa.",
+exercise,"Seuraavassa videossa käsitellään, kuinka sijoitusten ajoittaminen ja hajauttaminen eri omaisuusluokkiin ja alueille voivat vähentää riskejä ja parantaa pitkän aikavälin tuottoja.",Hajauttaminen;Pienennä sijoitusriskiä,exercise_4,,1-72033459,,,,,,,,"Sijoitusten ajoittaminen voi vähentää markkinoiden lyhyen aikavälin heilahteluiden vaikutusta.
 
 Säännöllinen sijoittaminen auttaa tasoittamaan hintavaihteluita ja parantaa pitkän aikavälin tuottoja.
 
 Sijoittamalla eri omaisuusluokkiin, kuten osakkeisiin, joukkovelkakirjoihin ja kiinteistöihin, voit tasapainottaa riskejä.
 
-Sijoittamalla eri alueille voit vähentää maakohtaisten tai alueellisten riskien vaikutusta sijoituksiisi.",Hajauttaminen;Pienennä sijoitusriskiä,exercise_4,,,,,,,,,,,
-exercise,"Tavoitteet voivat olla lyhyen tai pitkän aikavälin tavoitteita, kuten säästäminen asuntoon tai eläkkeelle.
+Sijoittamalla eri alueille voit vähentää maakohtaisten tai alueellisten riskien vaikutusta sijoituksiisi.",
+exercise,"Seuraavassa videossa käsitellään, kuinka tavoitteet ja riskinsietokyky vaikuttavat sijoitusstrategiaan sekä kuukausisijoittamisen hyötyjä.",Sijoitussuunnitelma;Määritä tavoitteesi ja strategiasi,exercise_5,,1-72033461,,,,,,,,"Tavoitteet voivat olla lyhyen tai pitkän aikavälin tavoitteita, kuten säästäminen asuntoon tai eläkkeelle. 
 
-Arvioi, kuinka paljon riskiä olet valmis ottamaan sijoituksissasi henkilökohtaisten tavoitteiden ja tilanteen perusteella.
+Arvioi ,kuinka paljon omat tavoitteesi ja tilanteesi sallivat riskinottoa.
 
-Ymmärrä, miten oma riskinsietokyky vaikuttaa sijoitusstrategiaasi ja valintoihisi.
+Ymmärrä, miten oma riskinsietokyky vaikuttaa sijoitusstrategiaasi ja valintoihisi. 
 
-Kuukausisijoittaminen tasoittaa markkinoiden heilahteluita ja auttaa kerryttämään varallisuutta pitkällä aikavälillä.",Sijoitussuunnitelma;Määritä tavoitteesi ja strategiasi,exercise_5,,,,,,,,,,,
+Kuukausisijoittaminen tasoittaa markkinoiden heilahteluita ja auttaa kerryttämään varallisuutta pitkällä aikavälillä.",
 exercise,"FOMO (Fear of Missing Out) laumakäyttäytyminen voivat johtaa huonoihin päätöksiin.
 
 Opettele pysymään rauhallisena ja rationaalisena markkinoiden heilahteluissa.
 
-Menestyksen avain on pitkäjänteinen ja johdonmukainen sijoittaminen, jossa keskitytään pitkän aikavälin tavoitteisiin.",Sijoittamisen psykologia;Vältä sijoittamisen yleisimmät sudenkuopat ,exercise_6,,,,,,,,,,,
-poll_section,,,,47-1c3dff4e-fc10-4087-9230-3bcd307c0bbc,,,,,,,,,,
+Menestyksen avain on pitkäjänteinen ja johdonmukainen sijoittaminen, jossa keskitytään pitkän aikavälin tavoitteisiin.",Sijoittamisen psykologia;Vältä sijoittamisen yleisimmät sudenkuopat ,exercise_6,,1-72033457,,,,,,,,,
+poll_section,,,,47-1c3dff4e-fc10-4087-9230-3bcd307c0bbc,,,,,,,,,Älä anna ajan tai tiedon puutteen estää sinua aloittamasta sijoittamista. Aloita pienestä ja lisää tietoa ja taitojasi vähitellen,
 title,,Asiantuntijan extravinkit,,,,,,,,,,,,
-paragraph_section,"*""An investment in knowledge pays the best interest."" — Benjamin Franklinin viisauksia.
+paragraph_section,"**""An investment in knowledge pays the best interest.""** – Benjamin Franklinin viisauksia.
+
 * Kaikki tekevät virheitä, mutta viisas oppii niistä.
 * Sijoittaminen on maraton, ei sprintti.
 * Markkinat ovat kärsivällisen ystävä ja hätiköivän vihollinen.
@@ -78,10 +75,13 @@ paragraph_section,"*""An investment in knowledge pays the best interest."" — B
 * Ajoitus on vaikeaa, mutta säännöllinen sijoittaminen helppoa.
 * Historian menestys ei ole tae tulevasta menestyksestä.
 * Tärkein päätös on aloittaa.",,,,,,,,,,,,,
-title,,Mitä mieltä harjoituksista?,,,,,,,,,,,,
+title,,Kerro mielipiteesi kurssista,,,,,,,,,,,,
 poll_section,,,,47-a79ba661-097a-4d3e-82f2-20d6a83e734d,,,,,,,,,,
-poll_section,,,,47-787e878c-5bef-4e1c-a07e-3e070cff05c,,,,,,,,,,
-paragraph_section,"Näiden lisäksi suosittelemme tekemään vielä erillisen forms-palautekyselyn // Yle-forms-upotuksen, jossa käyttäjiltä voidaan kysyä avointa palautetta ja saamme vielä tarkempia havaintoa ja tarpeita esille sekä mahdolliset tekniset ongelmat tietoomme.",,,,,,,,,,,,,
+paragraph_section,"Anna meille palautetta! Mikä toimi, mikä taas ei?
+Haluaisimme kuulla sinulta mielipiteesi harjoituksista. Mikä toimi erityisen hyvin, missä olisi ollut parantamisen varaa? Olisitko toivonut jotain lisää?
+
+Vastaa alla oleviin kysymyksiin, aikaa menee pari minuuttia. Samalla autat meitä kehittämään sisältöjämme. Palautteet ovat anonyymejä.",,,,,,,,,,,,,
+yleform_section,,,,83-813136f052f94c048189b67ccce53885,,,,,,,,,,
 exercise,"* **Osake**: Yrityksen omistusosuus.
 * **Rahasto**: Sijoituskohde, joka hajauttaa varat.
 * **ETF**: Pörssinoteerattu rahasto.
@@ -109,9 +109,20 @@ exercise,"* **Osake**: Yrityksen omistusosuus.
 * **Kaupankäyntipalkkio**: Välittäjän perimä maksu.
 * **Makroekonomia**: Koko talouden ilmiöiden tutkimus.
 * **Mikroekonomia**: Yksilöiden ja yritysten taloudellinen toiminta.
-* **Yield**: Tuotto prosentteina.
-* **Konsensusarvio**: Analyytikoiden keskimääräinen ennuste.",Sanasto,exercise_7,,,,,,,,,,,
-exercise,"* Seppo Saario: Miten sijoitan pörssiosakkeisiin
-* Seppo Saario: Näin sijotan pörssiosakkeisiin: Opas nuorelle, tie taloudelliseen riippumattomuuteen
+* **Yield**: Tuotto prosentteina.",Sanasto,Sanasto,,,,,,,,,,,
+exercise,"* Seppo Saario: Näin sijotan pörssiosakkeisiin: Opas nuorelle, tie taloudelliseen riippumattomuuteen
+* Seppo Saario: Miten sijoitan pörssiosakkeisiin
 * Esa Juntunen: Viisas sijoittaja
-* Merja Mähkä, Unna Lehtipuu: Sijoittajaksi 7 päivässä",Kirjallisuutta aiheesta,exercise_8,,,,,,,,,,,
+* Merja Mähkä, Unna Lehtipuu: Sijoittajaksi 7 päivässä
+* Julia Thurén: Melkein kaikki rahasta",Kirjallisuutta aiheesta,exercise_8,,,,,,,,,,,
+paragraph_section,LINKKI Ylen kurssisisällöt https://yle.fi/a/74-20092077 (ANNUKALTA TÄHÄN KUVA),,,,,,,,,,,,,
+paragraph_section,LINKKI https://areena.yle.fi/,,,,,,,,,,,,,
+paragraph_section,"**Tekijät:**\
+Asiantuntija: Nuorten osakesäästäjien puheenjohtaja, sijoittaja Maria Nurminen\
+Toimittaja: Joni Nieminen\
+Kuvaus ja editointi: Juuso Koivisto\
+Kuvat: Joni Nieminen, Heidi Anttila\
+Visuaalisuus: Annukka Palmén-Väisänen, Heidi Anttila\
+Koodaus: Teemo Tebest\
+Tekstin editointi: Raili Löyttyniemi\
+Tuottaja: Anna-Leena Lappalainen",,,,,,,,,,,,,
