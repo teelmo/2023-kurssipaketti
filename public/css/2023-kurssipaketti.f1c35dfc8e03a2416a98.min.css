@@ -556,6 +556,31 @@
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_rentoutuminen.exercise_button_rentoutuminen_4_armeliaat_sanat:before {
   background-image: url('../assets/img/rentoutuminen_4_armeliaat_sanat.png');
 }
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_sijoituskurssi {
+  background: #9ed9fa;
+  background: linear-gradient(180deg, #a2fab6 33%, #ebfff2 120%);
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_sijoituskurssi:hover {
+  background: #9ed9fa;
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_sijoituskurssi.exercise_button_exercise_1:before {
+  background-image: url('../assets/img/sijoituskurssi_1_sijoitamisen_aloittaminen.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_sijoituskurssi.exercise_button_exercise_2:before {
+  background-image: url('../assets/img/sijoituskurssi_2_nuorena_aloittamisen_hyodyt.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_sijoituskurssi.exercise_button_exercise_3:before {
+  background-image: url('../assets/img/sijoituskurssi_3_sijoituskohteet.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_sijoituskurssi.exercise_button_exercise_4:before {
+  background-image: url('../assets/img/sijoituskurssi_4_hajauttaminen.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_sijoituskurssi.exercise_button_exercise_5:before {
+  background-image: url('../assets/img/sijoituskurssi_5_sijoitussuunnitelma.png');
+}
+.app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.exercise_button_sijoituskurssi.exercise_button_exercise_6:before {
+  background-image: url('../assets/img/sijoituskurssi_6_psykologia.png');
+}
 .app-root-2023-kurssipaketti .content_container .exercise_container .exercise_toggler button.with_arrow:after {
   color: #000;
   content: '❯';
