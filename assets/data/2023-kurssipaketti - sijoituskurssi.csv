@@ -1,11 +1,13 @@
 type,content,title,group,poll_id,areena_id,areena_caption,ims_id,image_caption,image_copyright,background,extra,areena_extra,footer,internal comment
 full_main_image,,,,,,,39-13783416733189c3b0f2,,,,,,,
-title,,Asiantuntija kehoittaa aloittamaan sijoittamisen heti – näillä ohjeilla pääset alkuun,,,,,,,,,,,,
-paragraph_section,"Suomalaiset sijoittavat entistä innokkaammin: Tilastokeskuksen mukaan lähes kolmanneksella suomalaisista on osakkeita tai rahastosijoituksia. 
+title,,Asiantuntija kehottaa aloittamaan sijoittamisen heti – näillä ohjeilla pääset alkuun,,,,,,,,,,,,
+paragraph_section,"Suomalaiset sijoittavat entistä innokkaammin: [Tilastokeskuksen mukaan](https://stat.fi/uutinen/innostus-sijoittamista-kohtaan-kasvaa-jo-yli-kolmanneksella-vaestosta-rahastosijoituksia-tai-osakkeita) lähes kolmanneksella suomalaisista on osakkeita tai rahastosijoituksia. 
 
-Aloittaminen saattaa kuitenkin tuntua vaikealta, jos sijoittamisen maailma on täysin tuntematon. Tämä kokonaisuus antaa eväitä ensiaskeleiden ottamiseen.",,,,,,,,,,,,,
+Aloittaminen saattaa kuitenkin tuntua vaikealta, jos sijoittamisen maailma on täysin tuntematon. Tämä kokonaisuus antaa eväitä ensiaskeleiden ottamiseen.
+
+",,,,,,,,,,,,,
 poll_section,,,,47-60b3b2a2-90f7-4979-9a99-0af4c44a12ee,,,,,,,,,,
-paragraph_section,"Kurssilla Nuorten osakesäästäjien puheenjohtaja ja sijoittaja **Maria Nurminen** tarjoaa selkeitä ohjeita ja käytännön vinkkejä, jotka tekevät sijoittamisen aloittamisesta helpompaa ja vähemmän pelottavaa.
+paragraph_section,"Tämä artikkeli toimii sinulle kurssina. Kurssilla Nuorten osakesäästäjien puheenjohtaja ja sijoittaja **Maria Nurminen** tarjoaa selkeitä ohjeita ja käytännön vinkkejä, jotka tekevät sijoittamisen aloittamisesta helpompaa ja vähemmän pelottavaa.
 
 Kuudessa eri videossa käydään läpi sijoittamisen perusteita ja sitä, miksi juuri nyt voisi olla hyvä hetki aloittaa sijoittaminen.
 
@@ -115,13 +117,13 @@ exercise,"* Seppo Saario: Näin sijotan pörssiosakkeisiin: Opas nuorelle, tie t
 * Esa Juntunen: Viisas sijoittaja
 * Merja Mähkä, Unna Lehtipuu: Sijoittajaksi 7 päivässä
 * Julia Thurén: Melkein kaikki rahasta",Kirjallisuutta aiheesta,exercise_8,,,,,,,,,,,
-paragraph_section,LINKKI Ylen kurssisisällöt https://yle.fi/a/74-20092077 (ANNUKALTA TÄHÄN KUVA),,,,,,,,,,,,,
-paragraph_section,LINKKI https://areena.yle.fi/,,,,,,,,,,,,,
+paragraph_section,"[![](https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_4240/w_500/dpr_2/v1698983690/39-1377106672de6ad68b25.jpg)](https://yle.fi/a/74-20092077)",,,,,,,,,,,,,
+areena_section,,,,,1-65674506,,,,,,,,,
 paragraph_section,"**Tekijät:**\
 Asiantuntija: Nuorten osakesäästäjien puheenjohtaja, sijoittaja Maria Nurminen\
 Toimittaja: Joni Nieminen\
 Kuvaus ja editointi: Juuso Koivisto\
-Kuvat: Joni Nieminen, Heidi Anttila\
+Kuvat: Heidi Anttila, Joni Nieminen\
 Visuaalisuus: Annukka Palmén-Väisänen, Heidi Anttila\
 Koodaus: Teemo Tebest\
 Tekstin editointi: Raili Löyttyniemi\

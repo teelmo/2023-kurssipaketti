@@ -49,7 +49,7 @@ function Course({ parameters }) {
 
   // Fetch data.
   const fetchData = useCallback(() => {
-    const data_file = `${base_url}/assets/data/2023-kurssipaketti_${course}.csv?v=4`;
+    const data_file = `${base_url}/assets/data/2023-kurssipaketti_${course}.csv?v=7`;
     try {
       fetch(data_file)
         .then((response) => {
@@ -334,7 +334,7 @@ function Course({ parameters }) {
                       appKey="oksf1gBXLCDc7olXOm7m8vrx3xTdU8aX"
                       id={values[4]} // if formsiin joka liitetään
                       language="fi"
-                      theme={darkMode ? 'light' : 'dark'}
+                      theme="light"
                     />
                   </div>
                 );
