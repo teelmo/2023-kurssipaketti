@@ -146,6 +146,9 @@
   max-width: 592px;
   padding: 20px 20px;
 }
+.app-root-2023-kurssipaketti .content_container .content img {
+  width: 100%;
+}
 .app-root-2023-kurssipaketti .content_container .content.content_withbg {
   max-width: 100%;
 }
