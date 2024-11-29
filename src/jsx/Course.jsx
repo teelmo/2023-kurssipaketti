@@ -49,7 +49,7 @@ function Course({ parameters }) {
 
   // Fetch data.
   const fetchData = useCallback(() => {
-    const data_file = `${base_url}/assets/data/2023-kurssipaketti_${course}.csv?v=8`;
+    const data_file = `${base_url}/assets/data/2023-kurssipaketti_${course}.csv?v=11`;
     try {
       fetch(data_file)
         .then((response) => {
@@ -115,7 +115,7 @@ function Course({ parameters }) {
         if (window.ylePlayer !== 'undefined') {
           appRef.current.querySelectorAll('.content > .areena_container > .areena_player_container').forEach((el) => {
             const props = {
-              aspectRatio: (course === 'kutsumuskartta' || course === 'sijoituskurssi') ? '16:9' : '1:1',
+              aspectRatio: (course === 'kutsumuskartta') ? '16:9' : '1:1',
               autoplay: false,
               id: el.dataset.id
             };
