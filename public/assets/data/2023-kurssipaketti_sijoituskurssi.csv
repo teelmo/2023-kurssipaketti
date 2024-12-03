@@ -3,9 +3,7 @@ full_main_image,,,,,,,39-13783416733189c3b0f2,,,,,,,
 title,,Asiantuntija kehottaa aloittamaan sijoittamisen heti – näillä ohjeilla pääset alkuun,,,,,,,,,,,,
 paragraph_section,"Suomalaiset sijoittavat entistä innokkaammin: [Tilastokeskuksen mukaan](https://stat.fi/uutinen/innostus-sijoittamista-kohtaan-kasvaa-jo-yli-kolmanneksella-vaestosta-rahastosijoituksia-tai-osakkeita) lähes kolmanneksella suomalaisista on osakkeita tai rahastosijoituksia. 
 
-Aloittaminen saattaa kuitenkin tuntua vaikealta, jos sijoittamisen maailma on täysin tuntematon. Tämä kokonaisuus antaa eväitä ensiaskeleiden ottamiseen.
-
-",,,,,,,,,,,,,
+Aloittaminen saattaa kuitenkin tuntua vaikealta, jos sijoittamisen maailma on täysin tuntematon. Tämä kokonaisuus antaa eväitä ensiaskeleiden ottamiseen.",,,,,,,,,,,,,
 poll_section,,,,47-60b3b2a2-90f7-4979-9a99-0af4c44a12ee,,,,,,,,,,
 paragraph_section,"Tämä artikkeli toimii sinulle kurssina. Kurssilla Nuorten osakesäästäjien puheenjohtaja ja sijoittaja **Maria Nurminen** tarjoaa selkeitä ohjeita ja käytännön vinkkejä, jotka tekevät sijoittamisen aloittamisesta helpompaa ja vähemmän pelottavaa.
 
@@ -26,16 +24,14 @@ Sijoittaminen mahdollistaa varallisuuden kasvun ja tarjoaa mahdollisuuden hyödy
 
 Pääoma on rahaa, aika mahdollistaa tuottojen kasvun, ja tuotto on palkinto otetusta riskistä.
 
-Älä anna ajan tai tiedon puutteen estää sinua aloittamasta sijoittamista. Aloita pienestä ja lisää tietoa ja taitojasi vähitellen.
-",
+Älä anna ajan tai tiedon puutteen estää sinua aloittamasta sijoittamista. Aloita pienestä ja lisää tietoa ja taitojasi vähitellen.",
 exercise,"Asiantuntija kertoo videolla, kuinka nuorena aloitettu sijoittaminen hyödyntää korkoa korolle -ilmiötä ja kasvattaa varallisuutta pitkällä aikavälillä.",Nuorena aloittamisen hyödyt;Aloita sijoittaminen ajoissa,exercise_2,,1-72617738,,,,,,,,"Ajan myötä saat tuottoa paitsi alkuperäiselle sijoitukselle myös aiemmin kertyneille tuotoille, mikä johtaa eksponentiaaliseen kasvuun.
 
 Mitä aikaisemmin aloitat, sitä enemmän aika voi kasvattaa varallisuuttasi korkoa korolle -ilmiön ansiosta.
 
 Nuorena aloittaessasi sijoittaminen on pitkän aikavälin peliä. Sinulla on enemmän aikaa odottaa mahdollisten tappioiden kääntymistä voitoiksi.
 
-Sijoittaminen nuorena kehittää taitoja talouden hallinnassa, riskienhallinnassa ja pitkäjänteisessä suunnittelussa.
-",
+Sijoittaminen nuorena kehittää taitoja talouden hallinnassa, riskienhallinnassa ja pitkäjänteisessä suunnittelussa.",
 exercise,Seuraavassa videossa käsitellään eri sijoituskohteiden mahdollisuuksia ja riskejä sekä hajauttamisen ja erilaisten sijoitustilien etuja.,Sijoitusvaihtoehdot;Löydä itsellesi paras vaihtoehto,exercise_3,,1-72617760,,,,,,,,"Eri sijoituskohteet, kuten osakkeet, rahastot ja ETF:t, tarjoavat erilaisia mahdollisuuksia ja riskitasoja.
 
 Osakkeet ovat suoria omistuksia yrityksistä, rahastot tarjoavat hajautusta, ja ETF:t yhdistävät molempien ominaisuuksia.
@@ -111,7 +107,7 @@ exercise,"* **Osake**: Yrityksen omistusosuus.
 * **Kaupankäyntipalkkio**: Välittäjän perimä maksu.
 * **Makroekonomia**: Koko talouden ilmiöiden tutkimus.
 * **Mikroekonomia**: Yksilöiden ja yritysten taloudellinen toiminta.
-* **Yield**: Tuotto prosentteina.",Sanasto,Sanasto,,,,,,,,,,,
+* **Yield**: Tuotto prosentteina.",Sanasto,exercise_7,,,,,,,,,,,
 exercise,"* Seppo Saario: Näin sijotan pörssiosakkeisiin: Opas nuorelle, tie taloudelliseen riippumattomuuteen
 * Seppo Saario: Miten sijoitan pörssiosakkeisiin
 * Esa Juntunen: Viisas sijoittaja

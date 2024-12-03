@@ -49,7 +49,7 @@ function Course({ parameters }) {
 
   // Fetch data.
   const fetchData = useCallback(() => {
-    const data_file = `${base_url}/assets/data/2023-kurssipaketti_${course}.csv?v=12`;
+    const data_file = `${base_url}/assets/data/2023-kurssipaketti_${course}.csv?v=13`;
     try {
       fetch(data_file)
         .then((response) => {
