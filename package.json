@@ -55,11 +55,12 @@
   },
   "dependencies": {
     "@yleisradio/comments-plugin": "^1.0.1",
+    "@yleisradio/forms-web": "^1.2.0",
     "convert-csv-to-json": "^2.0.0",
     "csvtojson": "^2.0.10",
     "i18next": "^23.7.6",
     "react-i18next": "^13.4.1",
-    "react-markdown": "^9.0.1",
+    "react-markdown": "^6.0.3",
     "scroll-into-view": "^1.16.2",
     "uuid": "^9.0.1"
   }

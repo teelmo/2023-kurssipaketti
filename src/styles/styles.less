@@ -138,6 +138,9 @@
       margin: auto auto 20px auto;
       max-width: 592px;
       padding: 20px 20px;
+      img {
+        width: 100%;
+      }
       &.content_withbg {
         max-width: 100%;
         div {
@@ -396,6 +399,7 @@
       .exercise_toggler {
         text-align: center;
         &.exercise_closer {
+          margin-bottom: 20px;
           button {
             min-height: auto;
           }
@@ -599,6 +603,43 @@
             &.exercise_button_rentoutuminen_4_armeliaat_sanat {
               &:before {
                 background-image: url('./../assets/img/rentoutuminen_4_armeliaat_sanat.png');
+              }
+            }
+          }
+          &.exercise_button_sijoituskurssi {
+            background: rgb(158, 217, 250);
+            background: linear-gradient(180deg, rgba(162, 250, 182, 1.0) 33%, rgba(235, 255, 242, 1.0) 120%);
+            &:hover {
+              background: rgb(158, 217, 250);
+            }
+            &.exercise_button_exercise_1 {
+              &:before {
+                background-image: url('./../assets/img/sijoituskurssi_1_sijoitamisen_aloittaminen.png');
+              }
+            }
+            &.exercise_button_exercise_2 {
+              &:before {
+                background-image: url('./../assets/img/sijoituskurssi_2_nuorena_aloittamisen_hyodyt.png');
+              }
+            }
+            &.exercise_button_exercise_3 {
+              &:before {
+                background-image: url('./../assets/img/sijoituskurssi_3_sijoituskohteet.png');
+              }
+            }
+            &.exercise_button_exercise_4 {
+              &:before {
+                background-image: url('./../assets/img/sijoituskurssi_4_hajauttaminen.png');
+              }
+            }
+            &.exercise_button_exercise_5 {
+              &:before {
+                background-image: url('./../assets/img/sijoituskurssi_5_sijoitussuunnitelma.png');
+              }
+            }
+            &.exercise_button_exercise_6 {
+              &:before {
+                background-image: url('./../assets/img/sijoituskurssi_6_psykologia.png');
               }
             }
           }

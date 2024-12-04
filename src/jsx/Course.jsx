@@ -16,6 +16,8 @@ import scrollIntoView from 'scroll-into-view';
 // https://github.com/yle-interactive/wiki-site/blob/main/docs/comments-to-tailored-article.md
 import { CommentsPlugin } from '@yleisradio/comments-plugin';
 
+import { FormsRenderer } from '@yleisradio/forms-web';
+
 // Load helpers.
 import slideToggle from './helpers/slideToggle.js';
 import CSVtoJSON from './helpers/CSVtoJSON.js';
@@ -47,7 +49,7 @@ function Course({ parameters }) {
 
   // Fetch data.
   const fetchData = useCallback(() => {
-    const data_file = `${base_url}/assets/data/2023-kurssipaketti_${course}.csv`;
+    const data_file = `${base_url}/assets/data/2023-kurssipaketti_${course}.csv?v=13`;
     try {
       fetch(data_file)
         .then((response) => {
@@ -310,7 +312,7 @@ function Course({ parameters }) {
                           values[13] && <Markdown key={uuidv4()}>{values[13]}</Markdown>
                         }
                         {/* Close */}
-                        <div className="exercise_toggler exercise_closer"><button type="button" onClick={() => closeButton(appRef, values[3])}>Sulje harjoitus</button></div>
+                        <div className="exercise_toggler exercise_closer"><button type="button" onClick={() => closeButton(appRef, values[3])}>Sulje</button></div>
                       </div>
                     </div>
                   </div>
@@ -321,6 +323,19 @@ function Course({ parameters }) {
                     <div className="poll_container">
                       <div className={`js-ydd-yle-tehtava ydd-yle-tehtava ydd-yle-tehtava--exam poll poll_${values[4]}`} data-id={values[4]}>{values[4]}</div>
                     </div>
+                  </div>
+                );
+              case 'yleform_section':
+                return (
+                  <div className="content" key={uuidv4()}>
+                    <FormsRenderer
+                      apiBaseUrl="https://forms.api.yle.fi"
+                      appId="forms_api_lume_prod"
+                      appKey="oksf1gBXLCDc7olXOm7m8vrx3xTdU8aX"
+                      id={values[4]} // if formsiin joka liitetään
+                      language="fi"
+                      theme="light"
+                    />
                   </div>
                 );
               default:
