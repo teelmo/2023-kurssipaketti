@@ -8,14 +8,14 @@ const courses = [
 Viiden helpon tehtävän avulla se onnistuu. Aluksi voit pelata runopeliä. Jatka seuraamalla artisti-runoilija Alvarin ohjeita, joista saat apua kirjoittamisen aloittamiseen. Saat harjoitella runon tekemistä mahdollisimman nopeasti tai tehdä koneapurin avulla haikun. Voit myös arpoa itsellesi kuvan, joka innostaa kirjoittamaan.`,
     link: 'https://yle.fi/a/74-20112746',
     buttonLabel: 'Tutustu runotehtäviin',
-    wide: true,
+    //    wide: true,
     background: '#faf4d2'
   },
 
   {
     img: '39-12924056655bf4eb0c91',
     title: 'Pieni erokoulu',
-    wide: true,
+    //    wide: true,
     text:
 `Kaipaatko käytännön työkalupakkia eropohdintaan tai eron keskelle?
 
@@ -35,7 +35,7 @@ Tervetuloa mukaan Pieneen erokouluun! Tämä on sinun mahdollisuutesi pysähtyä
     title: 'Kutsumuskartta',
     text: 'Onko elämä periaatteessa ok, mutta silti tuntuu, että jotain puuttuu? Kutsumuskarttaharjoitus auttaa sinua muistamaan, mitkä asiat tuovat elämääsi iloa – ja löytämään uusia uusia innostuksen kohteita. Oppaana matkalla on hyvän elämän ehtoja tutkinut apulaiprofessori Frank Martela.',
     link: 'https://yle.fi/aihe/a/20-10006474',
-    wide: true,
+    // wide: true,
     background: `linear-gradient(to top,
       rgba(167, 181, 248, 1) 0%,
       rgba(172, 224, 243, 1) 60%)`
