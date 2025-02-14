@@ -1,28 +1,31 @@
 const courses = [
   {
+    img: '39-139103567518d7a8d4b7',
+    title: 'Opi sijoittamaan!',
+    text:
+'Oletko harkinnut joskus sijoittamista, mutta et ole uskaltanut tai ehtinyt perehtyä? Tällä kurssilla saat selkeitä ohjeita ja käytännön vinkkejä, jotka tekevät sijoittamisen aloittamisesta helpompaa ja vähemmän pelottavaa.',
+    link: 'https://yle.fi/a/74-20114073',
+    buttonLabel: 'Tutustu kurssiin',
+    wide: true,
+    background: '#faf4d2'
+  },
+  {
     img: '39-135651066fb8e3053fae',
     title: 'Tee runo!',
     text:
-`Haluaisitko oppia kirjoittamaan runon? 
-    
-Viiden helpon tehtävän avulla se onnistuu. Aluksi voit pelata runopeliä. Jatka seuraamalla artisti-runoilija Alvarin ohjeita, joista saat apua kirjoittamisen aloittamiseen. Saat harjoitella runon tekemistä mahdollisimman nopeasti tai tehdä koneapurin avulla haikun. Voit myös arpoa itsellesi kuvan, joka innostaa kirjoittamaan.`,
+'Haluatko oppia kirjoittamaan runon? Nämä tehtävät auttavat sinua aloittamaan kirjoittamisen.',
     link: 'https://yle.fi/a/74-20112746',
-    buttonLabel: 'Tutustu runotehtäviin',
-    wide: true,
+    buttonLabel: 'Tutustu kurssiin',
+    //    wide: true,
     background: '#faf4d2'
   },
 
   {
     img: '39-12924056655bf4eb0c91',
     title: 'Pieni erokoulu',
-    wide: true,
+    //    wide: true,
     text:
-`Kaipaatko käytännön työkalupakkia eropohdintaan tai eron keskelle?
-
-Ero on sekamelska tunteita ja fiiliksiä, joista puhuminen ja joiden käsitteleminen voi olla vaikeaa. Pienen erokoulun ja eroterapeutti Viivi Niinikankaan vinkkien ja tehtävien avulla saat työkaluja eron herättämien tunteiden käsittelyyn. Samalla opit tunnistamaan paremmin tarpeitasi sekä vetämään rajojasi.  
-
-Tervetuloa mukaan Pieneen erokouluun! Tämä on sinun mahdollisuutesi pysähtyä itsesi äärelle. 
-    `,
+'Kaipaatko käytännön työkalupakkia eropohdintaan tai eron keskelle?',
     link: 'https://yle.fi/a/74-20090990',
     background: `linear-gradient(
       to bottom,
@@ -33,9 +36,9 @@ Tervetuloa mukaan Pieneen erokouluun! Tämä on sinun mahdollisuutesi pysähtyä
   {
     img: '39-12924026655be3ede3f2',
     title: 'Kutsumuskartta',
-    text: 'Onko elämä periaatteessa ok, mutta silti tuntuu, että jotain puuttuu? Kutsumuskarttaharjoitus auttaa sinua muistamaan, mitkä asiat tuovat elämääsi iloa – ja löytämään uusia uusia innostuksen kohteita. Oppaana matkalla on hyvän elämän ehtoja tutkinut apulaiprofessori Frank Martela.',
+    text: 'Onko elämä periaatteessa ok, mutta silti tuntuu, että jotain puuttuu? Kutsumuskartta auttaa sinua muistamaan, mitkä asiat tuovat elämääsi iloa.',
     link: 'https://yle.fi/aihe/a/20-10006474',
-    wide: true,
+    // wide: true,
     background: `linear-gradient(to top,
       rgba(167, 181, 248, 1) 0%,
       rgba(172, 224, 243, 1) 60%)`
